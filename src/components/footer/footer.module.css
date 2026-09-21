@@ -19,12 +19,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 64px;
+  height: 96px;
   border-radius: 999px;
-  border: 1px solid var(--color-text-muted);
+  border: 1.5px solid var(--color-text-muted);
   background: none;
   color: var(--color-white);
+  font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.3s;
 }
