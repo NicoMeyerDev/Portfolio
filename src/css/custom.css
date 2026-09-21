@@ -28,3 +28,37 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/**
+ * Portfolio design tokens, approximated from the Figma color/component
+ * export (portfolio-briefing/design-components.png). Treat these hex
+ * values as a starting point, not a pixel-perfect match.
+ */
+:root {
+  --color-primary: #2f6fed;
+  --color-primary-dark: #2557bf;
+  --color-dark: #1e2430;
+  --color-surface: #2a303c;
+  --color-accent-teal: #4fab97;
+  --color-accent-mint: #bce3d3;
+  --color-white: #ffffff;
+  --color-text-light: #ffffff;
+  --color-text-muted: #c4cdd9;
+  --color-text-dark: #1e2430;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
