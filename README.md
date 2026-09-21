@@ -21,18 +21,18 @@ This repository hosts a developer blog built with Docusaurus. It includes tools 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v22 or later recommended)
-- [pnpm](https://pnpm.io/) (package manager for faster and more efficient dependency handling)
+- [npm](https://www.npmjs.com/) (bundled with Node.js)
 
 1. Installation
 
 ```
-   $ pnpm install
+   $ npm install
 ```
 
 2. Local Development
 
 ```
-   $ pnpm start
+   $ npm start
 ```
 
    This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -40,7 +40,7 @@ This repository hosts a developer blog built with Docusaurus. It includes tools 
 3. Build
 
 ```
-   $ pnpm build
+   $ npm run build
 ```
 
    This command generates static content into the `build` directory and can be served using any static contents hosting service.
