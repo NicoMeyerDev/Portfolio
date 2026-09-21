@@ -6,14 +6,20 @@
 
 .heading {
   color: var(--color-white);
+  font-size: var(--font-size-section-heading);
   margin-bottom: 2rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-  /* TODO: media query - stack cards in a single column on mobile */
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .seeMore {
