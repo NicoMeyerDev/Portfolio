@@ -1,0 +1,23 @@
+.projectHighlights {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 3rem 0;
+}
+
+.heading {
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  /* TODO: media query - stack cards in a single column on mobile */
+}
+
+.seeMore {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--color-white);
+}
