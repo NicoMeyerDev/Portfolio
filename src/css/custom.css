@@ -30,28 +30,47 @@
 }
 
 /**
- * Portfolio design tokens, approximated from the Figma color/component
- * export (portfolio-briefing/design-components.png). Treat these hex
- * values as a starting point, not a pixel-perfect match.
+ * Portfolio design tokens, taken from the compiled CSS of the reference
+ * implementation (https://coldicka.github.io/my-dso-blog/), not just
+ * approximated from the Figma screenshots.
  */
 :root {
-  --color-primary: #2f6fed;
-  --color-primary-dark: #2557bf;
-  --color-dark: #1e2430;
-  --color-surface: #2a303c;
-  --color-accent-teal: #4fab97;
-  --color-accent-mint: #bce3d3;
+  --color-primary: #3578e5;
+  --color-primary-light: #5696ff;
+  --color-secondary: #262e34;
   --color-white: #ffffff;
-  --color-text-light: #ffffff;
+  --color-black: #262e34;
+  --color-card-gray: #404040;
+  --color-project-card: #2f4563;
+  --color-project-card-mobile: #1e3a6e;
+  --color-tag-text: #1e2a3a;
+  --color-text-light: var(--color-white);
   --color-text-muted: #c4cdd9;
-  --color-text-dark: #1e2430;
 
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Poppins', sans-serif;
+  --font-family: 'Quicksand', sans-serif;
+
+  --font-size-hero-title: 48px;
+  --font-size-section-heading: 32px;
+  --font-size-nav-and-sub: 24px;
+  --font-size-text-24: 18px;
+  --font-size-text-20: 16px;
+  --font-size-text-18: 16px;
+}
+
+/* Reference breakpoint where the desktop layout/type scale kicks in. */
+@media (min-width: 992px) {
+  :root {
+    --font-size-hero-title: 88px;
+    --font-size-section-heading: 64px;
+    --font-size-nav-and-sub: 32px;
+    --font-size-text-24: 24px;
+    --font-size-text-20: 20px;
+    --font-size-text-18: 18px;
+  }
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-family);
 }
 
 h1,
@@ -60,5 +79,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-family);
 }

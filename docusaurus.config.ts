@@ -26,10 +26,11 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // TODO: confirm the exact font family from Figma; Poppins is a best-effort match.
+  // Font confirmed from the reference implementation's compiled CSS
+  // (--font-quicksand in https://coldicka.github.io/my-dso-blog/).
   stylesheets: [
     {
-      href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap',
       type: 'text/css',
     },
   ],
