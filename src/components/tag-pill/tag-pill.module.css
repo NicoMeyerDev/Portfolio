@@ -1,21 +1,23 @@
 .tagPill {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  border-radius: 999px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  /* TODO: fine-tune font size / padding to match the design pixel-for-pixel */
+  justify-content: center;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 6px 10px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .light {
   background-color: var(--color-white);
-  color: var(--color-text-dark);
+  color: var(--color-tag-text);
 }
 
 .dark {
-  background-color: var(--color-dark);
+  background-color: var(--color-secondary);
   color: var(--color-white);
 }
 
