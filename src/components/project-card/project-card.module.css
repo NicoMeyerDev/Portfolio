@@ -1,0 +1,50 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--color-surface);
+  color: var(--color-text-light);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  /* TODO: fine-tune padding/gaps to match the design pixel-for-pixel */
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.imagePlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--color-text-muted);
+  white-space: pre-line;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
