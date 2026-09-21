@@ -74,3 +74,30 @@
     opacity 0.25s;
   /* TODO: animate the three bars into an X when the menu is open */
 }
+
+/* From this breakpoint up, show a plain horizontal nav row instead of
+   the burger + overlay panel. */
+@media (min-width: 992px) {
+  .nav {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    background: none;
+    color: var(--color-white);
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .navLink {
+    color: var(--color-white);
+  }
+
+  .menuButton {
+    display: none;
+  }
+}
