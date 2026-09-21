@@ -111,7 +111,7 @@ export default function ProjectHighlights(): JSX.Element {
               ))}
             </ol>
             <a className={styles.seeMore} href={withBase('/docs')}>
-              ↳ see more projects
+              see more projects
             </a>
           </div>
           <div className={styles.activeCard}>
@@ -140,7 +140,7 @@ export default function ProjectHighlights(): JSX.Element {
             />
           ))}
           <a className={styles.seeMore} href={withBase('/docs')}>
-            ↳ see more projects
+            see more projects
           </a>
         </div>
       </div>
