@@ -5,8 +5,6 @@ import {config as dotenvconfig}  from "dotenv";
 
 dotenvconfig();
 
-const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/NicoMeyerDev/Portfolio'
-
 const config: Config = {
   title: 'DevSecOps Journal',
   tagline: 'Nico Meyer - DevSecOps Engineer in progress',
@@ -60,39 +58,8 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-    navbar: {
-      title: 'DevSecOps Journal',
-      logo: {
-        alt: 'DevSecOps Journal Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
-        {
-          href: gitRepositoryUrl,
-          label: 'Github',
-          position: 'right',
-        },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: gitRepositoryUrl,
-            },
-            {
-              label: 'template',
-              href: 'https://github.com/spmse/dev-blog-template',
-            }
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nico Meyer. Built with Docusaurus and 💚. extended from the developer-akademie-starter`,
-    },
+    // navbar/footer are rendered by our own components (src/theme/Navbar,
+    // src/theme/Footer), so no navbar/footer config is needed here.
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
