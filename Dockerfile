@@ -8,7 +8,7 @@ ARG DEPLOYMENT_BRANCH="main"
 ARG GITHUB_ORG="spmse"
 ARG GITHUB_PROJECT="dev-blog-template"
 
-COPY . $WORKDIR
+COPY . .
 
 RUN npm install && npm run build
 
