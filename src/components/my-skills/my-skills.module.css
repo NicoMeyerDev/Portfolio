@@ -1,0 +1,18 @@
+.mySkills {
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+  padding: 3rem 0;
+}
+
+.heading {
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  row-gap: 1.5rem;
+}
+
+.gridItem {
+  display: flex;
+}
