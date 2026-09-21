@@ -1,0 +1,34 @@
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--color-surface);
+  color: var(--color-text-light);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* TODO: fine-tune padding/gaps to match the design pixel-for-pixel */
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.label {
+  font-weight: 600;
+  margin: 0;
+}
+
+.usage {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
