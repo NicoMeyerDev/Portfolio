@@ -1,0 +1,37 @@
+.header {
+  background-color: var(--color-primary);
+  padding: 1.5rem 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  /* TODO: media query - hide this row and show the burger button below a breakpoint */
+}
+
+.navLink {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.burgerButton {
+  display: none;
+  /* TODO: show this button on mobile once the burger menu logic exists */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerIcon {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: var(--color-white);
+}
