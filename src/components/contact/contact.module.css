@@ -1,0 +1,26 @@
+.contact {
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+  padding: 3rem 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  /* TODO: media query - stack columns vertically on mobile */
+}
+
+.heading {
+  color: var(--color-white);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linkItem {
+  color: var(--color-white);
+}
