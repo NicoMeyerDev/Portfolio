@@ -5,7 +5,7 @@ import {config as dotenvconfig}  from "dotenv";
 
 dotenvconfig();
 
-const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/NicoMeyerDev/dev-blog'
+const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/NicoMeyerDev/Portfolio'
 
 const config: Config = {
   title: 'DevSecOps Journal',
@@ -16,7 +16,7 @@ const config: Config = {
   url: process.env.DEPLOYMENT_URL ?? "https://NicoMeyerDev.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.BASE_URL ?? "/",
+  baseUrl: process.env.BASE_URL ?? "/Portfolio/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
