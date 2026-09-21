@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import clsx from 'clsx';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import ProjectCard from '@site/src/components/project-card';
 import styles from './project-highlights.module.css';
 
@@ -24,7 +25,7 @@ const PROJECTS: Project[] = [
       'behind a custom Docker setup, with volume mapping configured ' +
       'for persistent data storage.',
     imageLabel: 'Baby Tools Shop',
-    docsUrl: '/docs',
+    docsUrl: '/docs/baby-tools-shop',
     repoUrl: '#',
   },
   {
@@ -36,7 +37,7 @@ const PROJECTS: Project[] = [
       'you proud of it? What were you able to implement here? What ' +
       'different algorithms, server architecture did you use?',
     imageLabel: 'Conduit Container',
-    docsUrl: '/docs',
+    docsUrl: '/docs/conduit-container',
     repoUrl: '#',
   },
   {
@@ -48,7 +49,7 @@ const PROJECTS: Project[] = [
       'you proud of it? What were you able to implement here? What ' +
       'different algorithms, server architecture did you use?',
     imageLabel: 'Conduit Deployment',
-    docsUrl: '/docs',
+    docsUrl: '/docs/conduit-deployment',
     repoUrl: '#',
   },
   {
@@ -60,7 +61,7 @@ const PROJECTS: Project[] = [
       'you proud of it? What were you able to implement here? What ' +
       'different algorithms, server architecture did you use?',
     imageLabel: 'Juice Shop Master',
-    docsUrl: '/docs',
+    docsUrl: '/docs/juice-shop-master',
     repoUrl: '#',
   },
   {
@@ -72,14 +73,20 @@ const PROJECTS: Project[] = [
       'you proud of it? What were you able to implement here? What ' +
       'different algorithms, server architecture did you use?',
     imageLabel: 'Minecraft Server',
-    docsUrl: '/docs',
+    docsUrl: '/docs/minecraft-server',
     repoUrl: '#',
   },
 ];
 
 export default function ProjectHighlights(): JSX.Element {
+  const {siteConfig} = useDocusaurusContext();
   const [activeId, setActiveId] = useState(PROJECTS[0].id);
   const activeProject = PROJECTS.find((p) => p.id === activeId) ?? PROJECTS[0];
+
+  // Resolve a site-root-relative path against the configured baseUrl (e.g.
+  // "/Portfolio/"), so links work both locally and on GitHub Pages.
+  const withBase = (path: string): string =>
+    `${siteConfig.baseUrl}${path.replace(/^\//, '')}`;
 
   return (
     <section id="projects" className={styles.projectHighlights}>
@@ -103,8 +110,7 @@ export default function ProjectHighlights(): JSX.Element {
                 </li>
               ))}
             </ol>
-            {/* TODO: point to the finished docs section once project write-ups exist */}
-            <a className={styles.seeMore} href="/docs">
+            <a className={styles.seeMore} href={withBase('/docs')}>
               ↳ see more projects
             </a>
           </div>
@@ -114,7 +120,7 @@ export default function ProjectHighlights(): JSX.Element {
               tags={activeProject.tags}
               description={activeProject.description}
               imageLabel={activeProject.imageLabel}
-              docsUrl={activeProject.docsUrl}
+              docsUrl={withBase(activeProject.docsUrl)}
               repoUrl={activeProject.repoUrl}
             />
           </div>
@@ -129,12 +135,11 @@ export default function ProjectHighlights(): JSX.Element {
               tags={project.tags}
               description={project.description}
               imageLabel={project.imageLabel}
-              docsUrl={project.docsUrl}
+              docsUrl={withBase(project.docsUrl)}
               repoUrl={project.repoUrl}
             />
           ))}
-          {/* TODO: point to the finished docs section once project write-ups exist */}
-          <a className={styles.seeMore} href="/docs">
+          <a className={styles.seeMore} href={withBase('/docs')}>
             ↳ see more projects
           </a>
         </div>

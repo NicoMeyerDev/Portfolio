@@ -1,21 +1,30 @@
 import React, {useState} from 'react';
 import clsx from 'clsx';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './header.module.css';
 
 interface NavItem {
   label: string;
-  href: string;
+  to: string;
 }
 
 const NAV_ITEMS: NavItem[] = [
-  {label: 'About me', href: '#hero'},
-  {label: 'My skills', href: '#skills'},
-  {label: 'My projects', href: '#projects'},
-  {label: 'Contact', href: '#contact'},
+  {label: 'About me', to: '/#hero'},
+  {label: 'My skills', to: '/#skills'},
+  {label: 'My projects', to: '/#projects'},
+  {label: 'Contact', to: '/#contact'},
+  {label: 'Docs', to: '/docs'},
 ];
 
 export default function Header(): JSX.Element {
+  const {siteConfig} = useDocusaurusContext();
   const [isOpen, setIsOpen] = useState(false);
+
+  // Resolve a site-root-relative path against the configured baseUrl, so
+  // links to homepage anchors and /docs work from any page, including a
+  // GitHub Pages baseUrl like "/Portfolio/".
+  const withBase = (path: string): string =>
+    `${siteConfig.baseUrl}${path.replace(/^\//, '')}`;
 
   return (
     <header className={styles.header}>
@@ -23,8 +32,8 @@ export default function Header(): JSX.Element {
         <nav className={clsx(styles.nav, isOpen && styles.navOpen)}>
           {NAV_ITEMS.map((item) => (
             <a
-              key={item.href}
-              href={item.href}
+              key={item.to}
+              href={withBase(item.to)}
               className={styles.navLink}
               onClick={() => setIsOpen(false)}>
               {item.label}
