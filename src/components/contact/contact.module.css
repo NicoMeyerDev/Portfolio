@@ -1,24 +1,40 @@
 .contact {
-  background-color: var(--color-dark);
-  color: var(--color-text-light);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
   padding: 3rem 0;
 }
 
 .inner {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  /* TODO: media query - stack columns vertically on mobile */
+}
+
+@media (min-width: 992px) {
+  .inner {
+    flex-direction: row;
+  }
 }
 
 .heading {
   color: var(--color-white);
+  font-size: var(--font-size-section-heading);
+}
+
+.text p,
+.text li {
+  font-size: var(--font-size-text-18);
 }
 
 .links {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.lookingForward {
+  font-size: var(--font-size-text-18);
 }
 
 .linkItem {
