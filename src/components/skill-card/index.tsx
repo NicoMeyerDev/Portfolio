@@ -13,16 +13,22 @@ export default function SkillCard({
   usage,
 }: SkillCardProps): JSX.Element {
   return (
-    <div className={styles.skillCard}>
-      {/* TODO: replace this text badge with the real skill icon/SVG exported from Figma */}
-      <div className={styles.icon}>{iconLabel}</div>
-      <p className={styles.label}>{label}</p>
-      {/* TODO: hide this list by default and reveal it on hover ("How I used this skill") */}
-      <ul className={styles.usage}>
-        {usage.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+    <div className={styles.flipCard}>
+      <div className={styles.flipCardInner}>
+        <div className={styles.flipCardFront}>
+          {/* TODO: replace this text badge with the real skill icon/SVG exported from Figma */}
+          <div className={styles.icon}>{iconLabel}</div>
+          <p className={styles.label}>{label}</p>
+        </div>
+        <div className={styles.flipCardBack}>
+          <p className={styles.backHeading}>How I used this skill</p>
+          <ul className={styles.usage}>
+            {usage.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
