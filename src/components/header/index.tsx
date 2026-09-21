@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import clsx from 'clsx';
 import styles from './header.module.css';
 
@@ -15,21 +15,30 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export default function Header(): JSX.Element {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={clsx('container', styles.inner)}>
-        <nav className={styles.nav}>
+        <nav className={clsx(styles.nav, isOpen && styles.navOpen)}>
           {NAV_ITEMS.map((item) => (
-            <a key={item.href} href={item.href} className={styles.navLink}>
+            <a
+              key={item.href}
+              href={item.href}
+              className={styles.navLink}
+              onClick={() => setIsOpen(false)}>
               {item.label}
             </a>
           ))}
         </nav>
-        {/* TODO: burger menu logic (toggle nav open/closed on mobile) */}
         <button
           type="button"
-          className={styles.burgerButton}
-          aria-label="Toggle navigation">
+          className={styles.menuButton}
+          aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((prev) => !prev)}>
+          <span className={styles.burgerIcon} />
+          <span className={styles.burgerIcon} />
           <span className={styles.burgerIcon} />
         </button>
       </div>
