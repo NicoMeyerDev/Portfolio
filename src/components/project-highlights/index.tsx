@@ -31,7 +31,7 @@ const PROJECTS: Project[] = [
   {
     id: 'conduit-container',
     title: 'Conduit Container',
-    tags: ['Yaml', 'Shell scripting', 'Container'],
+    tags: ['Yaml', 'Shell scripting', 'Docker'],
     description:
       'Write some information about the project. For example: Why are ' +
       'you proud of it? What were you able to implement here? What ' +
@@ -55,7 +55,7 @@ const PROJECTS: Project[] = [
   {
     id: 'juice-shop-master',
     title: 'Juice Shop Master',
-    tags: ['IT Security', 'Container'],
+    tags: ['IT Security', 'Docker'],
     description:
       'Write some information about the project. For example: Why are ' +
       'you proud of it? What were you able to implement here? What ' +
@@ -67,7 +67,7 @@ const PROJECTS: Project[] = [
   {
     id: 'minecraft-server',
     title: 'Minecraft Server',
-    tags: ['Yaml', 'Shell scripting', 'IT Security', 'Container'],
+    tags: ['Yaml', 'Shell scripting', 'IT Security', 'Docker'],
     description:
       'Write some information about the project. For example: Why are ' +
       'you proud of it? What were you able to implement here? What ' +

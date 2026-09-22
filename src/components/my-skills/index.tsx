@@ -5,79 +5,65 @@ import styles from './my-skills.module.css';
 
 interface SkillItem {
   id: string;
-  iconLabel: string;
+  icon: string;
   label: string;
   usage: string[];
 }
 
+// Order here = render order (3 per row, left to right, top to bottom).
 const SKILLS: SkillItem[] = [
   {
-    id: 'html',
-    iconLabel: 'HTML',
-    label: 'HTML',
-    usage: [
-      'User-friendly navigation menus',
-      'Responsive web design',
-      'Contact forms and login pages',
-      'Transitions, animations and hover effect',
-    ],
-  },
-  {
-    id: 'css',
-    iconLabel: 'CSS',
-    label: 'CSS',
-    usage: [
-      'User-friendly navigation menus',
-      'Responsive web design',
-      'Contact forms and login pages',
-      'Transitions, animations and hover effect',
-    ],
-  },
-  {
-    id: 'static-site',
-    iconLabel: 'SSG',
-    label: 'Static site generator',
-    usage: [
-      'search functionality',
-      'static website and customization',
-      'tags, categories and RSS feeds',
-      'translation',
-    ],
-  },
-  {
-    id: 'python',
-    iconLabel: 'PY',
-    label: 'Python',
+    id: 'ssh',
+    icon: 'img/skills/ssh.svg',
+    label: 'SSH',
     usage: ['Describe how you used this skill'],
   },
   {
-    id: 'shell',
-    iconLabel: 'SH',
-    label: 'Shell scripting',
-    usage: ['Describe how you used this skill'],
-  },
-  {
-    id: 'yaml',
-    iconLabel: 'YAML',
-    label: 'Yaml',
-    usage: ['Describe how you used this skill'],
-  },
-  {
-    id: 'container',
-    iconLabel: 'DOCK',
-    label: 'Container',
+    id: 'docker',
+    icon: 'img/skills/docker.svg',
+    label: 'Docker',
     usage: ['Describe how you used this skill'],
   },
   {
     id: 'cicd',
-    iconLabel: 'CI/CD',
+    icon: 'img/skills/cicd.svg',
     label: 'CI/CD with GitHub Actions',
     usage: ['Describe how you used this skill'],
   },
   {
+    id: 'python',
+    icon: 'img/skills/python.svg',
+    label: 'Python',
+    usage: ['Describe how you used this skill'],
+  },
+  {
     id: 'security',
-    iconLabel: 'SEC',
+    icon: 'img/skills/security.svg',
     label: 'IT Security',
+    usage: ['Describe how you used this skill'],
+  },
+  {
+    id: 'yaml',
+    icon: 'img/skills/yaml.svg',
+    label: 'YAML',
+    usage: ['Describe how you used this skill'],
+  },
+  {
+    id: 'shell',
+    icon: 'img/skills/shell.svg',
+    label: 'Shell scripting',
+    usage: ['Describe how you used this skill'],
+  },
+  {
+    id: 'django',
+    icon: 'img/skills/django.svg',
+    label: 'Django',
+    usage: ['Describe how you used this skill'],
+  },
+  {
+    id: 'static-site-generator',
+    icon: 'img/skills/staticsite.svg',
+    label: 'Static site generator',
     usage: ['Describe how you used this skill'],
   },
 ];
@@ -92,7 +78,7 @@ export default function MySkills(): JSX.Element {
           {SKILLS.map((skill) => (
             <div key={skill.id} className={clsx('col col--4', styles.gridItem)}>
               <SkillCard
-                iconLabel={skill.iconLabel}
+                icon={skill.icon}
                 label={skill.label}
                 usage={skill.usage}
               />

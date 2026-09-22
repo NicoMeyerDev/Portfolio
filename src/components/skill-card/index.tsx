@@ -1,23 +1,24 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './skill-card.module.css';
 
 interface SkillCardProps {
-  iconLabel: string;
+  icon: string;
   label: string;
   usage: string[];
 }
 
 export default function SkillCard({
-  iconLabel,
+  icon,
   label,
   usage,
 }: SkillCardProps): JSX.Element {
+  const iconSrc = useBaseUrl(icon);
   return (
     <div className={styles.flipCard}>
       <div className={styles.flipCardInner}>
         <div className={styles.flipCardFront}>
-          {/* TODO: replace this text badge with the real skill icon/SVG exported from Figma */}
-          <div className={styles.icon}>{iconLabel}</div>
+          <img className={styles.icon} src={iconSrc} alt={`${label} icon`} />
           <p className={styles.label}>{label}</p>
         </div>
         <div className={styles.flipCardBack}>

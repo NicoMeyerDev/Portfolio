@@ -32,21 +32,21 @@
   backface-visibility: hidden;
 }
 
+.flipCardFront {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .flipCardBack {
   transform: rotateY(180deg);
   overflow-y: auto;
 }
 
 .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.5rem;
-  background-color: var(--color-secondary);
-  font-size: 0.75rem;
-  font-weight: 700;
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
 }
 
 .label {
