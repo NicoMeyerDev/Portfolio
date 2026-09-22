@@ -67,7 +67,7 @@
   grid-area: cta;
 }
 
-.imagePlaceholder {
+.photo {
   grid-area: photo;
   justify-self: center;
   width: 100%;
@@ -76,10 +76,11 @@
   max-height: 479px;
   border-radius: 30px;
   background-color: var(--color-white);
+  object-fit: cover;
 }
 
 @media (min-width: 992px) {
-  .imagePlaceholder {
+  .photo {
     justify-self: end;
   }
 }

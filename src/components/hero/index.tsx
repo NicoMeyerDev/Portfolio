@@ -1,9 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Button from '@site/src/components/button';
 import styles from './hero.module.css';
 
 export default function Hero(): JSX.Element {
+  const photoSrc = useBaseUrl('img/profile.png');
   return (
     <section id="hero" className={styles.hero}>
       <div className={clsx('container', styles.inner)}>
@@ -22,11 +24,10 @@ export default function Hero(): JSX.Element {
             Contact me
           </Button>
         </div>
-        {/* TODO: replace with the real profile photo exported from Figma */}
-        <div
-          className={styles.imagePlaceholder}
-          role="img"
-          aria-label="Profile photo placeholder"
+        <img
+          className={styles.photo}
+          src={photoSrc}
+          alt="Nico Meyer"
         />
       </div>
     </section>
