@@ -4,7 +4,6 @@ title: Baby Tools Shop
 sidebar_position: 2
 ---
 
-# Baby Tools Shop
 
 # Baby Tools World
 
@@ -12,7 +11,7 @@ Baby Tools World is an online shop where customers can browse and buy products f
 
 ## Table of contents
 
-- [Baby Tools World](#baby-tools-world)
+- Baby Tools World
   - [Prerequisites](#prerequisites)
   - [Quickstart](#quickstart)
   - [Project structure](#project-structure)
@@ -141,7 +140,7 @@ To run the tests with the `django testrunner` you can use the following command:
 
 - `python manage.py test`, you need to run this in the folder where `manage.py` lives -> `src`
 
-For more information about testing, refer to the testing documentation in this repository, see [testing documentation](./docs/testing.md)
+For more information about testing, refer to the testing documentation in this repository.
 
 ### Running with a WSGI Server
 
@@ -159,7 +158,7 @@ the application can handle HTTP requests efficiently and reliably in a scalable 
 > See the following [quote](https://docs.gunicorn.org/en/stable/index.html) from the official gunicorn website:
 >> Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX.
 
-For more information about WSGI and its configuration, see the [wsgi documentation](./docs/wsgi.md).
+For more information about WSGI and its configuration, see the official documentation.
 
 ### Seeding the application with data
 

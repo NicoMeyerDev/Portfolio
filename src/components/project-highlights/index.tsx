@@ -24,7 +24,7 @@ const PROJECTS: Project[] = [
     tags: ['Python', 'Docker', 'Django'],
     description:
     'A simple, full-stack, Dockerized shop application built with Python and Django. It uses SQLite as the database and runs behind a custom Docker setup, with volume mapping configured for persistent data storage.',
-    image: 'img/projects/placeholder.svg',
+    image: 'img/projects/baby-tools-shop.svg',
     imageLabel: 'Baby Tools Shop',
     docsUrl: '/docs/baby-tools-shop',
     repoUrl: '#',
@@ -37,7 +37,7 @@ const PROJECTS: Project[] = [
       'An automated CI/CD workflow powered by GitHub ' +
       'Actions and the GitHub Container Registry. ' +
       'The pipeline is divided into three sequential stages: building the application, preparing the configuration, and deploying the project remotely through SSH.',
-    image: 'img/projects/placeholder.svg',
+    image: 'img/projects/conduit-container.svg',
     imageLabel: 'Conduit Container',
     docsUrl: '/docs/conduit-container',
     repoUrl: '#',
@@ -49,7 +49,7 @@ const PROJECTS: Project[] = [
     description:
       'A fully Dockerized and automated CI/CD workflow powered by GitHub Actions and the GitHub Container Registry. ' +
       'The pipeline consists of three sequential stages responsible for building the application, preparing the required configuration, and deploying it remotely via SSH.',
-    image: 'img/projects/placeholder.svg',
+    image: 'img/projects/conduit-deployment.svg',
     imageLabel: 'Conduit Deployment',
     docsUrl: '/docs/conduit-deployment',
     repoUrl: '#',
@@ -61,7 +61,7 @@ const PROJECTS: Project[] = [
     description:
       'OWASP Juice Shop vulnerability writeups covering SQL injection, exposed password hashes, authentication flaws, ' +
       'and other common web security issues. The project demonstrates real-world vulnerabilities and provides practical insights into identifying and preventing them.',
-    image: 'img/projects/placeholder.svg',
+    image: 'img/projects/juice-shop-master.svg',
     imageLabel: 'Juice Shop Master',
     docsUrl: '/docs/juice-shop-master',
     repoUrl: '#',
@@ -73,7 +73,7 @@ const PROJECTS: Project[] = [
     description:
       'A containerized, Java-based Minecraft server deployment built from a custom Dockerfile using an OpenJDK base image. ' +
       'An entrypoint script automates runtime initialization, server provisioning, configuration, and startup.',
-    image: 'img/projects/placeholder.svg',
+    image: 'img/projects/minecraft-server.svg',
     imageLabel: 'Minecraft Server',
     docsUrl: '/docs/minecraft-server',
     repoUrl: '#',
