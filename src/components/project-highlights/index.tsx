@@ -9,21 +9,22 @@ interface Project {
   title: string;
   tags: string[];
   description: string;
+  image: string;
   imageLabel: string;
   docsUrl: string;
   repoUrl: string;
 }
 
+// TODO: swap each `image` for the real project screenshot, e.g.
+// 'img/projects/baby-tools-shop.png', once it's exported from Figma.
 const PROJECTS: Project[] = [
   {
     id: 'baby-tools-shop',
     title: 'Baby Tools Shop',
     tags: ['Python', 'Docker', 'Django'],
     description:
-      'A simple, full-stack, Dockerized shop application built with ' +
-      'Python and Django. It uses SQLite as the database and runs ' +
-      'behind a custom Docker setup, with volume mapping configured ' +
-      'for persistent data storage.',
+    'A simple, full-stack, Dockerized shop application built with Python and Django. It uses SQLite as the database and runs behind a custom Docker setup, with volume mapping configured for persistent data storage.',
+    image: 'img/projects/placeholder.svg',
     imageLabel: 'Baby Tools Shop',
     docsUrl: '/docs/baby-tools-shop',
     repoUrl: '#',
@@ -33,9 +34,10 @@ const PROJECTS: Project[] = [
     title: 'Conduit Container',
     tags: ['Yaml', 'Shell scripting', 'Docker'],
     description:
-      'Write some information about the project. For example: Why are ' +
-      'you proud of it? What were you able to implement here? What ' +
-      'different algorithms, server architecture did you use?',
+      'An automated CI/CD workflow powered by GitHub ' +
+      'Actions and the GitHub Container Registry. ' +
+      'The pipeline is divided into three sequential stages: building the application, preparing the configuration, and deploying the project remotely through SSH.',
+    image: 'img/projects/placeholder.svg',
     imageLabel: 'Conduit Container',
     docsUrl: '/docs/conduit-container',
     repoUrl: '#',
@@ -45,9 +47,9 @@ const PROJECTS: Project[] = [
     title: 'Conduit Deployment',
     tags: ['Yaml', 'Shell scripting', 'IT Security'],
     description:
-      'Write some information about the project. For example: Why are ' +
-      'you proud of it? What were you able to implement here? What ' +
-      'different algorithms, server architecture did you use?',
+      'A fully Dockerized and automated CI/CD workflow powered by GitHub Actions and the GitHub Container Registry. ' +
+      'The pipeline consists of three sequential stages responsible for building the application, preparing the required configuration, and deploying it remotely via SSH.',
+    image: 'img/projects/placeholder.svg',
     imageLabel: 'Conduit Deployment',
     docsUrl: '/docs/conduit-deployment',
     repoUrl: '#',
@@ -57,9 +59,9 @@ const PROJECTS: Project[] = [
     title: 'Juice Shop Master',
     tags: ['IT Security', 'Docker'],
     description:
-      'Write some information about the project. For example: Why are ' +
-      'you proud of it? What were you able to implement here? What ' +
-      'different algorithms, server architecture did you use?',
+      'OWASP Juice Shop vulnerability writeups covering SQL injection, exposed password hashes, authentication flaws, ' +
+      'and other common web security issues. The project demonstrates real-world vulnerabilities and provides practical insights into identifying and preventing them.',
+    image: 'img/projects/placeholder.svg',
     imageLabel: 'Juice Shop Master',
     docsUrl: '/docs/juice-shop-master',
     repoUrl: '#',
@@ -69,9 +71,9 @@ const PROJECTS: Project[] = [
     title: 'Minecraft Server',
     tags: ['Yaml', 'Shell scripting', 'IT Security', 'Docker'],
     description:
-      'Write some information about the project. For example: Why are ' +
-      'you proud of it? What were you able to implement here? What ' +
-      'different algorithms, server architecture did you use?',
+      'A containerized, Java-based Minecraft server deployment built from a custom Dockerfile using an OpenJDK base image. ' +
+      'An entrypoint script automates runtime initialization, server provisioning, configuration, and startup.',
+    image: 'img/projects/placeholder.svg',
     imageLabel: 'Minecraft Server',
     docsUrl: '/docs/minecraft-server',
     repoUrl: '#',
@@ -119,6 +121,7 @@ export default function ProjectHighlights(): JSX.Element {
               title={activeProject.title}
               tags={activeProject.tags}
               description={activeProject.description}
+              image={activeProject.image}
               imageLabel={activeProject.imageLabel}
               docsUrl={withBase(activeProject.docsUrl)}
               repoUrl={activeProject.repoUrl}
@@ -134,6 +137,7 @@ export default function ProjectHighlights(): JSX.Element {
               title={project.title}
               tags={project.tags}
               description={project.description}
+              image={project.image}
               imageLabel={project.imageLabel}
               docsUrl={withBase(project.docsUrl)}
               repoUrl={project.repoUrl}

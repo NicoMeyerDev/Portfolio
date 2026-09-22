@@ -24,4 +24,7 @@
 .icon {
   display: inline-flex;
   align-items: center;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }

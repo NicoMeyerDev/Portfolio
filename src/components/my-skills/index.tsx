@@ -16,55 +16,91 @@ const SKILLS: SkillItem[] = [
     id: 'ssh',
     icon: 'img/skills/ssh.svg',
     label: 'SSH',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Connected to a server/VM via SSH to run projects there',
+      'Set up SSH key-based authentication for a server',
+      'Used SSH tunneling to [purpose]',
+    ],
   },
   {
     id: 'docker',
     icon: 'img/skills/docker.svg',
     label: 'Docker',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Containerized a project with a custom Dockerfile',
+      'Built CI/CD pipelines around Docker images',
+      'Automated building, testing, and deploying applications',
+    ],
   },
   {
     id: 'cicd',
     icon: 'img/skills/cicd.svg',
     label: 'CI/CD with GitHub Actions',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Automated builds and tests',
+      'Used pre-built actions for common tasks',
+      'Set up automatic deployment to [target] on push to main',
+    ],
   },
   {
     id: 'python',
     icon: 'img/skills/python.svg',
     label: 'Python',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Built a project using Python',
+      'Wrote scripts to automate tasks',
+      'Built APIs',
+    ],
   },
   {
     id: 'security',
     icon: 'img/skills/security.svg',
     label: 'IT Security',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Simulated attacks and identified vulnerabilities',
+      'Set up multi-factor authentication',
+      'Implemented authentication and authorization mechanisms',
+    ],
   },
   {
     id: 'yaml',
     icon: 'img/skills/yaml.svg',
     label: 'YAML',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Wrote a Kubernetes deployment manifest in YAML',
+      'Wrote GitHub Actions / Docker Compose YAML files for a project',
+      'Used complex YAML data structures such as lists and maps',
+    ],
   },
   {
     id: 'shell',
     icon: 'img/skills/shell.svg',
     label: 'Shell scripting',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Adding new users and setting their permissions',
+      'Searching and filtering logs with grep and awk',
+      'Hardening SSH access on a Linux server',
+    ],
   },
   {
     id: 'django',
     icon: 'img/skills/django.svg',
     label: 'Django',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Built the project backend with Django',
+      'Implemented user authentication and permissions',
+      'Implemented feature views/templates for the project',
+    ],
   },
   {
     id: 'static-site-generator',
     icon: 'img/skills/staticsite.svg',
     label: 'Static site generator',
-    usage: ['Describe how you used this skill'],
+    usage: [
+      'Built this portfolio with Docusaurus',
+      'Configured plugin/theme for the site',
+      'Wrote technical documentation in Markdown',
+    ],
   },
 ];
 
