@@ -61,8 +61,9 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-    // navbar/footer are rendered by our own components (src/theme/Navbar,
-    // src/theme/Footer), so no navbar/footer config is needed here.
+    // Header/Footer are our own components: the homepage renders both in
+    // src/pages/index.tsx, and src/theme/Navbar adds the Header on all other
+    // pages, so no navbar/footer config is needed here.
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

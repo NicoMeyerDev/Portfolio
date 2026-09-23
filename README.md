@@ -133,8 +133,8 @@ The repository is organized as follows:
 - `docs/`: Markdown write-ups for each featured project, shown under the site's `/docs` section.
 - `src/components/`: Custom React components (one folder per component, `index.tsx` + `*.module.css`) that make up the page sections (Header, Hero, My-Skills, Project-Highlights, Contact, Footer, and their sub-components).
 - `src/css/custom.css`: Shared design tokens (colors, fonts, spacing) and global style overrides.
-- `src/pages/index.tsx`: Assembles the section components into the homepage layout.
-- `src/theme/`: Swaps Docusaurus's default Navbar/Footer for the custom `Header`/`Footer` components.
+- `src/pages/index.tsx`: Assembles all section components (Header, Hero, My-Skills, Project-Highlights, Contact, Footer) into the homepage layout.
+- `src/theme/Navbar/`: Replaces Docusaurus's default navbar with the custom `Header` on all non-homepage pages (e.g. `/docs`), since the homepage renders its own `Header`.
 - `static/`: Static assets (images, icons) served as-is, referenced via `useBaseUrl`.
 - `sidebars.ts`: Configures the sidebar structure for the `/docs` section.
 - `docusaurus.config.ts`: Main Docusaurus configuration (site metadata, plugins, theme).
