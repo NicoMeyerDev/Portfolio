@@ -107,9 +107,12 @@ Runs the TypeScript compiler in check-only mode across the project.
 
 Deployment to GitHub Pages is fully automated via GitHub Actions:
 
-- [`.github/workflows/main.yml`](.github/workflows/main.yml) triggers on every push/PR to `main` and calls the reusable [`deploy.yaml`](.github/workflows/deploy.yaml) workflow.
+- [`.github/workflows/main.yml`](.github/workflows/main.yml) triggers on every push to `main` or `project-setup` and on every PR to `main`, and calls the reusable [`deploy.yaml`](.github/workflows/deploy.yaml) workflow.
 - That workflow installs dependencies, creates `.env` from `example.env`, runs `npm run build`, and publishes the `build/` output to GitHub Pages using `actions/deploy-pages`.
-- The deploy job only runs on the repository's default branch, so merging a change into `main` is enough to publish it.
+- The deploy job only runs for pushes to the default branch (`main`) or to `project-setup`. PR runs only build the site, as a check.
+- `project-setup` is allowed to deploy so the site can be reviewed live while PR #1 (`project-setup` → `main`) is still open. Once it is merged, `project-setup` will be removed from both workflows and from the `github-pages` environment's deployment branch rules.
+
+The live site is available at <https://nicomeyerdev.github.io/Portfolio/>.
 
 ### Docker / Nginx (manual)
 
