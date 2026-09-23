@@ -11,7 +11,19 @@
 }
 
 .grid {
+  display: none;
   row-gap: 1.5rem;
+}
+
+/* Infima's .col only goes three-across from 997px, so switch there. */
+@media (min-width: 997px) {
+  .grid {
+    display: flex;
+  }
+
+  .mobileCarousel {
+    display: none;
+  }
 }
 
 .gridItem {

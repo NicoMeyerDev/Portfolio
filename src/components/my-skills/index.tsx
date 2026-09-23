@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import SkillCard from '@site/src/components/skill-card';
+import SkillCarousel from '@site/src/components/skill-carousel';
 import styles from './my-skills.module.css';
 
 interface SkillItem {
@@ -109,7 +110,6 @@ export default function MySkills(): JSX.Element {
     <section id="skills" className={styles.mySkills}>
       <div className="container">
         <h2 className={styles.heading}>My skills</h2>
-        {/* TODO: mobile slider with dot indicator instead of a static grid */}
         <div className={clsx('row', styles.grid)}>
           {SKILLS.map((skill) => (
             <div key={skill.id} className={clsx('col col--4', styles.gridItem)}>
@@ -120,6 +120,11 @@ export default function MySkills(): JSX.Element {
               />
             </div>
           ))}
+        </div>
+
+        {/* Mobile: swipeable slides of three skills with a dot indicator */}
+        <div className={styles.mobileCarousel}>
+          <SkillCarousel skills={SKILLS} />
         </div>
       </div>
     </section>

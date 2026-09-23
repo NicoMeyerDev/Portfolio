@@ -73,7 +73,7 @@ If a variable is not set, `docusaurus.config.ts` falls back to sensible defaults
 
 ### Customizing Content
 
-- **Skills** shown in the "My skills" section are defined as a typed array in [`src/components/my-skills/index.tsx`](src/components/my-skills/index.tsx). Add, remove, or edit an entry's `icon`, `label`, and `usage` bullet points to change what is displayed; icons are SVGs under [`static/img/skills`](static/img/skills).
+- **Skills** shown in the "My skills" section are defined as a typed array in [`src/components/my-skills/index.tsx`](src/components/my-skills/index.tsx). Add, remove, or edit an entry's `icon`, `label`, and `usage` bullet points to change what is displayed; icons are SVGs under [`static/img/skills`](static/img/skills). The same array feeds both the desktop grid of flip cards and the mobile carousel ([`src/components/skill-carousel`](src/components/skill-carousel)), which groups three skills per slide.
 - **Projects** shown in "My project highlights" are defined the same way in [`src/components/project-highlights/index.tsx`](src/components/project-highlights/index.tsx), including tags, description, images, and links to the docs page/repository.
 - **Colors, fonts, and spacing tokens** are defined once as CSS custom properties in [`src/css/custom.css`](src/css/custom.css) and reused across every component's `*.module.css` file, so retheming the site mostly means editing that one file.
 - **New sections/components** should be added as their own folder under `src/components/<kebab-case-name>/`, containing an `index.tsx` (PascalCase component) and a matching `<name>.module.css` file, following the pattern of the existing components.
