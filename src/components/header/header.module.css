@@ -11,6 +11,12 @@
   display: block;
   box-shadow: none;
   padding: 0;
+  transform: translateY(0);
+  transition: transform 0.25s ease;
+}
+
+.headerHidden {
+  transform: translateY(-100%);
 }
 
 .inner {

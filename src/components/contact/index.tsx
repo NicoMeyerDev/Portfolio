@@ -1,9 +1,13 @@
 import React from 'react';
 import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './contact.module.css';
 
 
 export default function Contact(): JSX.Element {
+  const mailIconSrc = useBaseUrl('img/mail-icon.svg');
+  const linkedInIconSrc = useBaseUrl('img/linkedin-icon.svg');
+
   return (
     <section id="contact" className={styles.contact}>
       <div className={clsx('container', styles.inner)}>
@@ -26,14 +30,16 @@ export default function Contact(): JSX.Element {
             Looking forward to hearing from you!
           </p>
           <a className={styles.linkItem} href="mailto:2025nico@gmail.com">
+            <img className={styles.linkIcon} src={mailIconSrc} alt="" aria-hidden="true" />
             2025nico@gmail.com
           </a>
-          
+
           <a
             className={styles.linkItem}
             href="https://www.linkedin.com/in/nico-meyer-672176376/"
             target="_blank"
             rel="noopener noreferrer">
+            <img className={styles.linkIcon} src={linkedInIconSrc} alt="" aria-hidden="true" />
             Profile Page
           </a>
         </div>

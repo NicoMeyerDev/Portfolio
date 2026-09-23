@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './footer.module.css';
 
 function scrollToTop(): void {
@@ -7,6 +8,8 @@ function scrollToTop(): void {
 }
 
 export default function Footer(): JSX.Element {
+  const arrowIconSrc = useBaseUrl('img/button-arrow.svg');
+
   return (
     <footer className={styles.footer}>
       <div className={clsx('container', styles.inner)}>
@@ -15,15 +18,17 @@ export default function Footer(): JSX.Element {
           className={styles.scrollTop}
           onClick={scrollToTop}
           aria-label="Scroll to top">
-          ↑
+          <img className={styles.scrollTopIcon} src={arrowIconSrc} alt="" aria-hidden="true" />
         </button>
-        <p className={styles.copyright}>
-          © Nico Meyer {new Date().getFullYear()}
-        </p>
-        {/* TODO: link to a real legal notice / imprint page once one exists */}
-        <a className={styles.legalNotice} href="#">
-          Legal notice
-        </a>
+        <div className={styles.legalGroup}>
+          <p className={styles.copyright}>
+            © Nico Meyer {new Date().getFullYear()}
+          </p>
+          {/* TODO: link to a real legal notice / imprint page once one exists */}
+          <a className={styles.legalNotice} href="#">
+            Legal notice
+          </a>
+        </div>
       </div>
     </footer>
   );
