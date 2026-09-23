@@ -1,5 +1,5 @@
 .projectHighlights {
-  background-color: var(--color-primary);
+  background-color: var(--color-project-highlight);
   color: var(--color-white);
   padding: 3rem 0;
 }
@@ -21,6 +21,14 @@
 }
 
 @media (min-width: 992px) {
+  .projectHighlights {
+    padding: 72px 0;
+  }
+
+  .heading {
+    margin-bottom: 64px;
+  }
+
   .desktopLayout {
     display: grid;
     grid-template-columns: 1fr 3fr;

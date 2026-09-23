@@ -20,6 +20,13 @@
 .heading {
   color: var(--color-white);
   font-size: var(--font-size-section-heading);
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    padding: 72px 0;
+  }
 }
 
 .text p,

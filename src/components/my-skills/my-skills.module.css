@@ -17,3 +17,13 @@
 .gridItem {
   display: flex;
 }
+
+@media (min-width: 992px) {
+  .mySkills {
+    padding: 72px 0;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+}

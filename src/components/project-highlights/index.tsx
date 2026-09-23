@@ -27,7 +27,7 @@ const PROJECTS: Project[] = [
     image: 'img/projects/baby-tools-shop.svg',
     imageLabel: 'Baby Tools Shop',
     docsUrl: '/docs/baby-tools-shop',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/NicoMeyerDev/Baby-Tools-World',
   },
   {
     id: 'conduit-container',
@@ -40,7 +40,7 @@ const PROJECTS: Project[] = [
     image: 'img/projects/conduit-container.svg',
     imageLabel: 'Conduit Container',
     docsUrl: '/docs/conduit-container',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/NicoMeyerDev/Conduit-Container',
   },
   {
     id: 'conduit-deployment',
@@ -52,7 +52,7 @@ const PROJECTS: Project[] = [
     image: 'img/projects/conduit-deployment.svg',
     imageLabel: 'Conduit Deployment',
     docsUrl: '/docs/conduit-deployment',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/NicoMeyerDev/Conduit-Container',
   },
   {
     id: 'juice-shop-master',
@@ -64,7 +64,7 @@ const PROJECTS: Project[] = [
     image: 'img/projects/juice-shop-master.svg',
     imageLabel: 'Juice Shop Master',
     docsUrl: '/docs/juice-shop-master',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/NicoMeyerDev/dev-blog/tree/main/docs/Juice-Shop-Master',
   },
   {
     id: 'minecraft-server',
@@ -76,7 +76,7 @@ const PROJECTS: Project[] = [
     image: 'img/projects/minecraft-server.svg',
     imageLabel: 'Minecraft Server',
     docsUrl: '/docs/minecraft-server',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/NicoMeyerDev/Mincraft-Server',
   },
 ];
 

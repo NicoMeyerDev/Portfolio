@@ -46,8 +46,7 @@
   height: 220px;
   border-radius: 16px;
   background-color: var(--color-secondary);
-  object-fit: contain;
-  padding: 24px;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
