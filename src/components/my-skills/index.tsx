@@ -17,9 +17,9 @@ const SKILLS: SkillItem[] = [
     icon: 'img/skills/git.svg',
     label: 'Git',
     usage: [
-      'Used feature branches and pull requests to develop and review changes',
-      'Wrote clear, descriptive commit messages to keep history readable',
-      'Resolved merge conflicts and used rebase/cherry-pick to clean up history',
+      'Used feature branches and pull requests',
+      'Wrote clear, descriptive commit messages',
+      'Resolved merge conflicts and used rebase',
     ],
   },
   {
@@ -27,9 +27,9 @@ const SKILLS: SkillItem[] = [
     icon: 'img/skills/docker.svg',
     label: 'Docker',
     usage: [
-      'Containerized a project with a custom Dockerfile',
+      'Containerized a project with a Dockerfile',
       'Built CI/CD pipelines around Docker images',
-      'Automated building, testing, and deploying applications',
+      'Automated builds, tests, and deploys',
     ],
   },
   {
@@ -67,9 +67,9 @@ const SKILLS: SkillItem[] = [
     icon: 'img/skills/yaml.svg',
     label: 'YAML',
     usage: [
-      'Wrote a Kubernetes deployment manifest in YAML',
-      'Wrote GitHub Actions / Docker Compose YAML files for a project',
-      'Used complex YAML data structures such as lists and maps',
+      'Wrote Kubernetes deployment manifests',
+      'Wrote GitHub Actions / Docker Compose files',
+      'Used lists and maps in complex configs',
     ],
   },
   {

@@ -35,7 +35,7 @@ export default function Contact(): JSX.Element {
           </a>
 
           <a
-            className={styles.linkItem}
+            className={clsx(styles.linkItem, styles.profileLink)}
             href="https://www.linkedin.com/in/nico-meyer-672176376/"
             target="_blank"
             rel="noopener noreferrer">

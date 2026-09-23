@@ -20,7 +20,7 @@ export default function Hero(): JSX.Element {
           I’m continuously learning, building real projects, and expanding my skills in a field that never stands still.
           </p>
         <div className={styles.cta}>
-          <Button href="#contact" variant="secondary">
+          <Button href="#contact" variant="light">
             Contact me
           </Button>
         </div>

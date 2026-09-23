@@ -32,6 +32,17 @@
   color: var(--color-white);
 }
 
+.light {
+  background-color: var(--color-white);
+  color: var(--color-hero);
+  font-weight: 500;
+}
+
+.light:hover {
+  background-color: var(--color-text-muted);
+  color: var(--color-hero);
+}
+
 .secondary {
   background-color: transparent;
   color: var(--color-white);

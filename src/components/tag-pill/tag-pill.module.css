@@ -4,11 +4,13 @@
   justify-content: center;
   gap: 6px;
   border-radius: 8px;
-  padding: 6px 10px;
-  min-height: 40px;
+  padding: 4px 8px;
+  min-height: 44px;
+  max-width: 120px;
   font-size: 14px;
   font-weight: 400;
-  white-space: nowrap;
+  line-height: 1.1;
+  text-align: left;
 }
 
 .light {
@@ -24,7 +26,8 @@
 .icon {
   display: inline-flex;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
   object-fit: contain;
 }

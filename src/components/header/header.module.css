@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--color-primary);
+  background-color: var(--color-hero);
   height: 64px;
   position: sticky;
   top: 0;
@@ -96,7 +96,6 @@
     width: auto;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
     padding: 0;
     background: none;
     color: var(--color-white);
@@ -106,8 +105,18 @@
     transition: none;
   }
 
+  .header {
+    height: 109px;
+  }
+
+  .nav {
+    gap: 64px;
+  }
+
   .navLink {
     color: var(--color-white);
+    font-size: 24px;
+    font-weight: 500;
   }
 
   .menuButton {

@@ -39,6 +39,7 @@
   --color-primary-light: #5696ff;
   --color-secondary: #262e34;
   --color-project-highlight: #266ad9;
+  --color-hero: #266ad9;
   --color-white: #ffffff;
   --color-black: #262e34;
   --color-card-gray: #404040;
@@ -49,6 +50,9 @@
   --color-text-muted: #c4cdd9;
 
   --font-family: 'Quicksand', sans-serif;
+
+  /* Design frame is 1440px wide with a 1200px content column. */
+  --ifm-container-width-xl: 1232px;
 
   --font-size-hero-title: 48px;
   --font-size-section-heading: 32px;

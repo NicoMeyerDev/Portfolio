@@ -14,13 +14,19 @@
 @media (min-width: 992px) {
   .inner {
     flex-direction: row;
+    gap: 48px;
+  }
+
+  .links {
+    flex: 0 0 447px;
+    padding-top: 24px;
   }
 }
 
 .heading {
   color: var(--color-white);
   font-size: var(--font-size-section-heading);
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
@@ -32,26 +38,47 @@
 .text p,
 .text li {
   font-size: var(--font-size-text-18);
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.text p {
+  margin: 0;
+}
+
+.text ul {
+  margin: 0;
+  padding-left: 28px;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 24px;
 }
 
 .lookingForward {
-  font-size: var(--font-size-text-18);
+  font-size: var(--font-size-text-24);
+  margin: 0 0 8px;
 }
 
 .linkItem {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 16px;
+  color: var(--color-white);
+  font-size: var(--font-size-text-18);
+}
+
+.linkItem:hover {
   color: var(--color-white);
 }
 
+.profileLink {
+  text-decoration: underline;
+}
+
 .linkIcon {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
 }
