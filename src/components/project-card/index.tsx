@@ -22,8 +22,10 @@ const TAG_ICONS: Record<string, string> = {
   'CI/CD with GitHub Actions': 'img/skills/cicd.svg',
   Python: 'img/skills/python.svg',
   'IT Security': 'img/skills/security.svg',
-  Yaml: 'img/skills/yaml.svg',
-  YAML: 'img/skills/yaml.svg',
+  // Dark-lettered variant: the white "YAML" letters of the skill icon would
+  // disappear on the white tag pill.
+  Yaml: 'img/skills/yaml-dark.svg',
+  YAML: 'img/skills/yaml-dark.svg',
   'Shell scripting': 'img/skills/shell.svg',
   Django: 'img/skills/django.svg',
   'Static site generator': 'img/skills/staticsite.svg',
