@@ -112,7 +112,7 @@ export default function ProjectHighlights(): JSX.Element {
                 </li>
               ))}
             </ol>
-            <a className={styles.seeMore} href={withBase('/docs')}>
+            <a className={styles.seeMore} href={withBase('/docs/baby-tools-shop')}>
               see more projects
             </a>
           </div>
@@ -143,7 +143,7 @@ export default function ProjectHighlights(): JSX.Element {
               repoUrl={project.repoUrl}
             />
           ))}
-          <a className={styles.seeMore} href={withBase('/docs')}>
+          <a className={styles.seeMore} href={withBase('/docs/baby-tools-shop')}>
             see more projects
           </a>
         </div>
