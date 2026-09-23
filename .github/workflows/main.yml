@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+      # TODO: remove once project-setup is merged into main
+      - project-setup
   pull_request:
     branches:
       - main
