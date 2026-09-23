@@ -13,13 +13,13 @@ interface SkillItem {
 // Order here = render order (3 per row, left to right, top to bottom).
 const SKILLS: SkillItem[] = [
   {
-    id: 'ssh',
-    icon: 'img/skills/ssh.svg',
-    label: 'SSH',
+    id: 'git',
+    icon: 'img/skills/git.svg',
+    label: 'Git',
     usage: [
-      'Connected to a server/VM via SSH to run projects there',
-      'Set up SSH key-based authentication for a server',
-      'Used SSH tunneling to [purpose]',
+      'Used feature branches and pull requests to develop and review changes',
+      'Wrote clear, descriptive commit messages to keep history readable',
+      'Resolved merge conflicts and used rebase/cherry-pick to clean up history',
     ],
   },
   {

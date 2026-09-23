@@ -17,7 +17,7 @@ interface ProjectCardProps {
 // Reuses the same icon set as the My Skills cards, so a tag here always
 // matches the icon shown on its corresponding skill card.
 const TAG_ICONS: Record<string, string> = {
-  SSH: 'img/skills/ssh.svg',
+  Git: 'img/skills/git.svg',
   Docker: 'img/skills/docker.svg',
   'CI/CD with GitHub Actions': 'img/skills/cicd.svg',
   Python: 'img/skills/python.svg',

@@ -4,7 +4,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## Repository Description
 
-This repository hosts a developer blog built with Docusaurus. It includes tools and scripts for creating, managing, and deploying static web content. The software supports rapid local development, customizable theming, and seamless deployment to GitHub Pages.
+This repository hosts my DevSecOps portfolio, built with Docusaurus. It presents an "About me" landing page (hero, skills, project highlights, contact) as a set of custom React components, plus a docs section with write-ups for each featured project. The site supports rapid local development, customizable theming, and deployment to GitHub Pages or any static/Nginx host via the included Dockerfile.
 
 ## Table of Contents
 
@@ -13,8 +13,17 @@ This repository hosts a developer blog built with Docusaurus. It includes tools 
   - [Table of Contents](#table-of-contents)
   - [Quickstart](#quickstart)
     - [Prerequisites](#prerequisites)
-  - [Repository Structure](#repository-structure)
+    - [How to Start](#how-to-start)
+  - [Usage](#usage)
+    - [Configuration](#configuration)
+    - [Customizing Content](#customizing-content)
+    - [Build](#build)
+    - [Type Checking](#type-checking)
   - [Deployment](#deployment)
+    - [GitHub Pages (automatic)](#github-pages-automatic)
+    - [Docker / Nginx (manual)](#docker--nginx-manual)
+  - [Repository Structure](#repository-structure)
+  - [License](#license)
 
 ## Quickstart
 
@@ -23,40 +32,118 @@ This repository hosts a developer blog built with Docusaurus. It includes tools 
 - [Node.js](https://nodejs.org/) (v22 or later recommended)
 - [npm](https://www.npmjs.com/) (bundled with Node.js)
 
-1. Installation
+### How to Start
 
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create your local environment file from the provided example:
+
+   ```bash
+   cp example.env .env
+   ```
+
+3. Start the local development server:
+
+   ```bash
+   npm start
+   ```
+
+   This opens a browser window at `http://localhost:3000/`. Most changes are reflected live without restarting the server.
+
+## Usage
+
+### Configuration
+
+The site reads its configuration from environment variables (loaded from `.env` via `dotenv`) in `docusaurus.config.ts`. Copy `example.env` to `.env` and adjust the values to point the build at your own fork/deployment:
+
+| Variable             | Purpose                                                              |
+| --------------------- | --------------------------------------------------------------------- |
+| `DEPLOYMENT_URL`      | The production URL the site is served from (`siteConfig.url`)        |
+| `DEPLOYMENT_BRANCH`   | The branch GitHub Pages deploys are published from                    |
+| `BASE_URL`            | The path the site is served under, e.g. `/Portfolio/` for GitHub Pages project pages |
+| `GITHUB_ORG`          | GitHub organization/user used for the Pages deployment config         |
+| `GITHUB_PROJECT`      | GitHub repository name used for the Pages deployment config           |
+| `GIT_REPOSITORY_URL`  | Repository URL, used for links back to the source                     |
+
+If a variable is not set, `docusaurus.config.ts` falls back to sensible defaults for this repository, so a plain `npm start` works even without a `.env` file.
+
+### Customizing Content
+
+- **Skills** shown in the "My skills" section are defined as a typed array in [`src/components/my-skills/index.tsx`](src/components/my-skills/index.tsx). Add, remove, or edit an entry's `icon`, `label`, and `usage` bullet points to change what is displayed; icons are SVGs under [`static/img/skills`](static/img/skills).
+- **Projects** shown in "My project highlights" are defined the same way in [`src/components/project-highlights/index.tsx`](src/components/project-highlights/index.tsx), including tags, description, images, and links to the docs page/repository.
+- **Colors, fonts, and spacing tokens** are defined once as CSS custom properties in [`src/css/custom.css`](src/css/custom.css) and reused across every component's `*.module.css` file, so retheming the site mostly means editing that one file.
+- **New sections/components** should be added as their own folder under `src/components/<kebab-case-name>/`, containing an `index.tsx` (PascalCase component) and a matching `<name>.module.css` file, following the pattern of the existing components.
+- **Project docs pages** live under [`docs/`](docs) as Markdown files and are wired into the sidebar via [`sidebars.ts`](sidebars.ts).
+
+### Build
+
+```bash
+npm run build
 ```
-   $ npm install
+
+This generates static content into the `build/` directory, which can be served by any static file host.
+
+To preview the production build locally:
+
+```bash
+npm run serve
 ```
 
-2. Local Development
+### Type Checking
 
-```
-   $ npm start
-```
-
-   This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-3. Build
-
-```
-   $ npm run build
+```bash
+npm run typecheck
 ```
 
-   This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Runs the TypeScript compiler in check-only mode across the project.
+
+## Deployment
+
+### GitHub Pages (automatic)
+
+Deployment to GitHub Pages is fully automated via GitHub Actions:
+
+- [`.github/workflows/main.yml`](.github/workflows/main.yml) triggers on every push/PR to `main` and calls the reusable [`deploy.yaml`](.github/workflows/deploy.yaml) workflow.
+- That workflow installs dependencies, creates `.env` from `example.env`, runs `npm run build`, and publishes the `build/` output to GitHub Pages using `actions/deploy-pages`.
+- The deploy job only runs on the repository's default branch, so merging a change into `main` is enough to publish it.
+
+### Docker / Nginx (manual)
+
+The repository also includes a multi-stage [`Dockerfile`](Dockerfile) that builds the site with Node and serves the static output with Nginx, for deployments outside of GitHub Pages:
+
+```bash
+cp example.env .env
+docker build -t devsecops-journal .
+docker run -p 8080:80 devsecops-journal
+```
+
+The site is then available at `http://localhost:8080/`. Build args in the `Dockerfile` (`DEPLOYMENT_URL`, `DEPLOYMENT_BRANCH`, `GITHUB_ORG`, `GITHUB_PROJECT`) can be overridden with `--build-arg` if you need different defaults baked into the image.
 
 ## Repository Structure
 
 The repository is organized as follows:
 
-- `blog/`: Contains markdown files for blog posts.
-- `docs/`: Contains markdown files for documentation.
-- `src/`: Contains custom React components, CSS, and JavaScript.
-- `static/`: Stores static assets (e.g., images, icons).
-- `sidebars.ts`: Configures the structure of sidebars in the documentation section.
-- `docusaurus.config.ts`: Main configuration file for customizing and managing Docusaurus behavior.
-- `example.env`: Contains example environment variables needed to configure and deploy the project.
+- `docs/`: Markdown write-ups for each featured project, shown under the site's `/docs` section.
+- `src/components/`: Custom React components (one folder per component, `index.tsx` + `*.module.css`) that make up the page sections (Header, Hero, My-Skills, Project-Highlights, Contact, Footer, and their sub-components).
+- `src/css/custom.css`: Shared design tokens (colors, fonts, spacing) and global style overrides.
+- `src/pages/index.tsx`: Assembles the section components into the homepage layout.
+- `src/theme/`: Swaps Docusaurus's default Navbar/Footer for the custom `Header`/`Footer` components.
+- `static/`: Static assets (images, icons) served as-is, referenced via `useBaseUrl`.
+- `sidebars.ts`: Configures the sidebar structure for the `/docs` section.
+- `docusaurus.config.ts`: Main Docusaurus configuration (site metadata, plugins, theme).
+- `tsconfig.json`: TypeScript compiler configuration, extending Docusaurus's base config.
+- `babel.config.js`: Babel preset configuration used by Docusaurus's build tooling.
+- `package.json` / `package-lock.json`: Project dependencies and npm scripts.
+- `example.env`: Example environment variables; copy to `.env` to configure your local/deployment build (see [Configuration](#configuration)).
+- `Dockerfile`: Multi-stage build that produces an Nginx image serving the built site (see [Docker / Nginx](#docker--nginx-manual)).
+- `.dockerignore`: Files excluded from the Docker build context.
+- `.github/workflows/`: CI/CD pipelines - building/deploying to GitHub Pages (`main.yml`, `deploy.yaml`) and automatically opening/checking pull requests for feature branches (`create-pr.yaml`, `check-open-pr.yaml`).
+- `LICENSE`: MIT license for this repository.
 
-## Deployment
+## License
 
-This website is automatically deployed to GitHub Pages using a prepared GitHub Actions workflow. The deployment is triggered whenever a commit is pushed to the main branch.
+This project is licensed under the [MIT License](LICENSE).
