@@ -43,16 +43,16 @@ const PROJECTS: Project[] = [
     repoUrl: 'https://github.com/NicoMeyerDev/Conduit-Container',
   },
   {
-    id: 'conduit-deployment',
-    title: 'Conduit Deployment',
+    id: 'wordpress',
+    title: 'WordPress',
     tags: ['Yaml', 'Shell scripting', 'IT Security'],
     description:
-      'A fully Dockerized and automated CI/CD workflow powered by GitHub Actions and the GitHub Container Registry. ' +
-      'The pipeline consists of three sequential stages responsible for building the application, preparing the required configuration, and deploying it remotely via SSH.',
-    image: 'img/projects/conduit-deployment.svg',
-    imageLabel: 'Conduit Deployment',
-    docsUrl: '/docs/conduit-deployment',
-    repoUrl: 'https://github.com/NicoMeyerDev/Conduit-Container',
+      'A self-hosted WordPress server running with Docker Compose, together with a MySQL database and phpMyAdmin. ' +
+      'Data is kept in Docker volumes, restart policies keep the blog online, and all credentials are loaded from a .env file instead of being committed.',
+    image: 'img/projects/wordpress-server.svg',
+    imageLabel: 'WordPress',
+    docsUrl: '/docs/wordpress',
+    repoUrl: 'https://github.com/NicoMeyerDev/Wordpress_Server',
   },
   {
     id: 'juice-shop-master',

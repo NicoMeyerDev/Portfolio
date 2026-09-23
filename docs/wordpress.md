@@ -1,11 +1,11 @@
 ---
 id: wordpress
-title: Wordepress
+title: WordPress
 sidebar_position: 4
 ---
 
 
-# WORDPRESS
+# WordPress
 
 ## Description
 
@@ -36,13 +36,13 @@ cd /path/to/your/projects
 * Clone the repository
 
 ```bash
-git clone https://github.com/NicoMeyerDev/wordpress.git
+git clone https://github.com/NicoMeyerDev/Wordpress_Server.git
 ```
 
 * Navigate to the project directory
 
 ```bash
-cd wordpress
+cd Wordpress_Server
 ```
 
 * Create the environment file
