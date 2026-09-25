@@ -1,0 +1,77 @@
+.flipCard {
+  width: 100%;
+  height: 240px;
+  perspective: 1000px;
+  /* TODO: hover only works on mouse input; add a tap-to-flip fallback for touch/mobile */
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--color-card-gray);
+  color: var(--color-white);
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 22px 18px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flipCardFront {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flipCardBack {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  gap: 20px;
+  padding: 28px;
+  background-color: #79b8ff;
+  box-shadow: none;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.label {
+  font-size: var(--font-size-text-18);
+  font-weight: 500;
+  margin: 0;
+}
+
+.backHeading {
+  font-size: var(--font-size-text-24);
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.usage {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--color-white);
+}

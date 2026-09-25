@@ -1,0 +1,91 @@
+.hero {
+  background-color: var(--color-hero);
+  color: var(--color-white);
+  min-height: 635px;
+  padding: 50px 0 72px;
+  display: flex;
+  align-items: center;
+}
+
+.inner {
+  display: grid;
+  gap: 1.2rem 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'greeting'
+    'name'
+    'role'
+    'photo'
+    'bio'
+    'cta';
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .inner {
+    align-items: start;
+    gap: 0 48px;
+    grid-template-columns: 1fr 442px;
+    grid-template-areas:
+      'greeting photo'
+      'name photo'
+      'role photo'
+      'bio photo'
+      'cta photo';
+  }
+}
+
+.greeting {
+  grid-area: greeting;
+  font-size: var(--font-size-nav-and-sub);
+  font-weight: 300;
+  margin: 0;
+}
+
+.name {
+  grid-area: name;
+  font-size: var(--font-size-hero-title);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+  color: var(--color-white);
+}
+
+.role {
+  grid-area: role;
+  font-size: var(--font-size-nav-and-sub);
+  font-weight: 400;
+  margin: 0 0 1.5rem;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: var(--font-size-text-20);
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: 630px;
+  margin: 0 0 2rem;
+  color: var(--color-white);
+}
+
+.cta {
+  grid-area: cta;
+}
+
+.photo {
+  grid-area: photo;
+  justify-self: center;
+  width: 100%;
+  max-width: 442px;
+  aspect-ratio: 442 / 479;
+  max-height: 479px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .photo {
+    justify-self: end;
+  }
+}

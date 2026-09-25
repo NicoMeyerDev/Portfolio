@@ -1,0 +1,82 @@
+.projectHighlights {
+  background-color: var(--color-project-highlight);
+  color: var(--color-white);
+  padding: 3rem 0;
+}
+
+.heading {
+  color: var(--color-white);
+  font-size: var(--font-size-section-heading);
+  margin-bottom: 2rem;
+}
+
+.desktopLayout {
+  display: none;
+}
+
+.mobileList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .projectHighlights {
+    padding: 72px 0;
+  }
+
+  .heading {
+    margin-bottom: 64px;
+  }
+
+  .desktopLayout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    align-items: start;
+  }
+
+  .mobileList {
+    display: none;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.listItem {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font: inherit;
+  font-size: var(--font-size-text-24);
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.listItem:hover {
+  text-decoration: underline;
+}
+
+.listItemActive {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.seeMore {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--color-white);
+}
+
+.seeMore:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}

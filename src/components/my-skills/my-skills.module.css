@@ -1,0 +1,41 @@
+.mySkills {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 3rem 0;
+}
+
+.heading {
+  color: var(--color-white);
+  font-size: var(--font-size-section-heading);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: none;
+  row-gap: 1.5rem;
+}
+
+/* Infima's .col only goes three-across from 997px, so switch there. */
+@media (min-width: 997px) {
+  .grid {
+    display: flex;
+  }
+
+  .mobileCarousel {
+    display: none;
+  }
+}
+
+.gridItem {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .mySkills {
+    padding: 72px 0;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,89 @@
+.skillCarousel {
+  /* Let the track run edge to edge so neighbouring slides peek in. */
+  margin: 0 calc(-1 * var(--ifm-spacing-horizontal));
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  padding: 0 25px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 calc(100% - 50px);
+  max-width: 340px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 16px;
+  border-radius: 30px;
+  background-color: rgba(38, 106, 217, 0.1);
+  color: var(--color-white);
+}
+
+.skillRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.skillBadge {
+  flex: 0 0 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.usage {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #738398;
+  cursor: pointer;
+  transition:
+    width 0.2s,
+    background-color 0.2s;
+}
+
+.dotActive {
+  width: 18px;
+  background-color: var(--color-white);
+}
