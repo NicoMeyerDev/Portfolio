@@ -12,19 +12,19 @@ export default function LegalNotice(): JSX.Element {
 
         <div className={styles.block}>
           <p>
-            [PLACEHOLDER: full name]
+            Nico Meyer
             <br />
-            [PLACEHOLDER: street and house number]
+            Poststraße 6a
             <br />
-            [PLACEHOLDER: postal code and city]
+            21258 Heidenau
             <br />
-            [PLACEHOLDER: country]
+            Germany
           </p>
         </div>
 
         <div className={styles.block}>
           <h2 className={styles.blockHeading}>Contact</h2>
-          <p>Email: [PLACEHOLDER: email address]</p>
+          <p>Email: 2025nico@gmail.com</p>
           <p>
             You can also contact me via my LinkedIn profile:{' '}
             <a
@@ -44,13 +44,13 @@ export default function LegalNotice(): JSX.Element {
             Abs. 2 MStV:
           </p>
           <p>
-            [PLACEHOLDER: full name]
+            Nico Meyer
             <br />
-            [PLACEHOLDER: street and house number]
+            Poststraße 6a
             <br />
-            [PLACEHOLDER: postal code and city]
+            21258 Heidenau
             <br />
-            [PLACEHOLDER: country]
+            Germany
           </p>
         </div>
 
