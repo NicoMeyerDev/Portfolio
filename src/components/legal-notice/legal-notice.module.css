@@ -33,11 +33,25 @@
   font-size: var(--font-size-text-18);
   font-weight: 300;
   line-height: 1.4;
-  margin: 0;
+  margin: 0 0 0.75rem;
+}
+
+.block p:last-child {
+  margin-bottom: 0;
 }
 
 .blockHeading {
   font-size: var(--font-size-nav-and-sub);
   font-weight: 500;
   margin: 0 0 0.75rem;
+}
+
+.link {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: var(--color-white);
+  text-decoration: underline;
 }
