@@ -1,0 +1,8 @@
+/* Docusaurus wraps src/pages/*.mdx content in a centered, padded
+   Infima .container/.col grid (see MDXPage). Break out of that so the
+   full-bleed Header/Footer look the same as on the homepage. */
+.breakout {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}

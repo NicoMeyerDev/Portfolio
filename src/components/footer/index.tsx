@@ -9,6 +9,7 @@ function scrollToTop(): void {
 
 export default function Footer(): JSX.Element {
   const arrowIconSrc = useBaseUrl('img/button-arrow.svg');
+  const imprintHref = useBaseUrl('imprint');
 
   return (
     <footer className={styles.footer}>
@@ -24,8 +25,7 @@ export default function Footer(): JSX.Element {
           <p className={styles.copyright}>
             © Nico Meyer {new Date().getFullYear()}
           </p>
-          {/* TODO: link to a real legal notice / imprint page once one exists */}
-          <a className={styles.legalNotice} href="#">
+          <a className={styles.legalNotice} href={imprintHref}>
             Legal notice
           </a>
         </div>
