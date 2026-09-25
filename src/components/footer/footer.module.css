@@ -49,3 +49,8 @@
 .legalNotice {
   color: var(--color-text-muted);
 }
+
+.legalNotice:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
