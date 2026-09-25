@@ -26,7 +26,7 @@ export default function Header(): JSX.Element {
     `${siteConfig.baseUrl}${path.replace(/^\//, '')}`;
 
   return (
-    <header className={clsx(styles.header, 'navbar')}>
+    <header className={styles.header}>
       <div className={clsx('container', styles.inner)}>
         <nav className={clsx(styles.nav, isOpen && styles.navOpen)}>
           {NAV_ITEMS.map((item) => (

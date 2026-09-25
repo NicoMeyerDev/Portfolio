@@ -4,13 +4,6 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  /* Reset the Infima .navbar defaults picked up from that class below -
-     it's only there so Docusaurus's TOC scroll-spy (which does
-     document.querySelector('.navbar').clientHeight with no null-check)
-     can find this element on docs pages. */
-  display: block;
-  box-shadow: none;
-  padding: 0;
 }
 
 .inner {

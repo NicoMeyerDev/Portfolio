@@ -1,12 +1,12 @@
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Header from '@site/src/components/header';
+import OriginalNavbar from '@theme-original/Navbar';
 
 // The homepage and the imprint page render <Header /> themselves (see
-// src/pages/index.tsx and src/pages/imprint.mdx), since the portfolio
-// design only applies to those two pages. This override provides the
-// same Header for every other page (e.g. the /docs section).
+// src/pages/index.tsx and src/pages/imprint.mdx) and use the portfolio
+// design, which is exclusive to those two pages. Every other page (the
+// /docs section) keeps Docusaurus's standard navbar and layout instead.
 export default function Navbar(): JSX.Element | null {
   const {pathname} = useLocation();
   const homePath = useBaseUrl('/');
@@ -21,5 +21,5 @@ export default function Navbar(): JSX.Element | null {
     return null;
   }
 
-  return <Header />;
+  return <OriginalNavbar />;
 }
