@@ -30,6 +30,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 22px 18px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .flipCardFront {
@@ -43,7 +44,7 @@
   overflow-y: auto;
   gap: 20px;
   padding: 28px;
-  background-color: rgba(121, 184, 255, 0.5);
+  background-color: #79b8ff;
   box-shadow: none;
 }
 
