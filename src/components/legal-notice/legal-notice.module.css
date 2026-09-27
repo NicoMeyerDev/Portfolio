@@ -1,14 +1,13 @@
 .legalNotice {
   background-color: var(--color-secondary);
   color: var(--color-white);
-  padding: 3rem 0;
-  min-height: calc(100vh - 64px - 463px);
+  padding: calc(3rem + var(--header-height)) 0 3rem;
+  min-height: calc(100vh - 463px);
 }
 
 @media (min-width: 992px) {
   .legalNotice {
-    padding: 72px 0;
-    min-height: calc(100vh - 109px - 463px);
+    padding: calc(72px + var(--header-height)) 0 72px;
   }
 }
 

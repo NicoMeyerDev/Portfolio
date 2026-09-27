@@ -1,6 +1,17 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   background-color: var(--color-hero);
-  height: 64px;
+  height: var(--header-height);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.headerHidden {
+  transform: translateY(-100%);
 }
 
 .inner {
@@ -92,10 +103,6 @@
     visibility: visible;
     transform: none;
     transition: none;
-  }
-
-  .header {
-    height: 109px;
   }
 
   .nav {

@@ -60,6 +60,9 @@
   --font-size-text-24: 18px;
   --font-size-text-20: 16px;
   --font-size-text-18: 16px;
+
+  /* Height of the fixed header, used to offset the content that follows it. */
+  --header-height: 64px;
 }
 
 /* Reference breakpoint where the desktop layout/type scale kicks in. */
@@ -71,6 +74,7 @@
     --font-size-text-24: 24px;
     --font-size-text-20: 20px;
     --font-size-text-18: 18px;
+    --header-height: 109px;
   }
 }
 

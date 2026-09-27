@@ -87,3 +87,20 @@
   width: 18px;
   background-color: var(--color-white);
 }
+
+/* On very narrow phones the fixed 25px track padding and 50px slide inset
+   leave too little room for the badge + usage list, so ease off both. */
+@media (max-width: 400px) {
+  .track {
+    padding: 0 16px;
+  }
+
+  .slide {
+    flex-basis: calc(100% - 32px);
+    padding: 20px 14px;
+  }
+
+  .skillBadge {
+    flex-basis: 64px;
+  }
+}

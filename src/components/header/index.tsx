@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './header.module.css';
@@ -15,9 +15,47 @@ const NAV_ITEMS: NavItem[] = [
   {label: 'Contact', to: '/#contact'},
 ];
 
+// Below this scroll offset the header always stays visible, so it doesn't
+// hide itself over content that hasn't scrolled away yet.
+const HIDE_THRESHOLD = 80;
+
 export default function Header(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   const [isOpen, setIsOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const isOpenRef = useRef(isOpen);
+
+  useEffect(() => {
+    isOpenRef.current = isOpen;
+    if (isOpen) {
+      setIsHidden(false);
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (isOpenRef.current) {
+        lastScrollY = currentScrollY;
+        return;
+      }
+
+      if (currentScrollY <= HIDE_THRESHOLD) {
+        setIsHidden(false);
+      } else if (currentScrollY > lastScrollY) {
+        setIsHidden(true);
+      } else if (currentScrollY < lastScrollY) {
+        setIsHidden(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, {passive: true});
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Resolve a site-root-relative path against the configured baseUrl, so
   // links to homepage anchors and /docs work from any page, including a
@@ -26,7 +64,7 @@ export default function Header(): JSX.Element {
     `${siteConfig.baseUrl}${path.replace(/^\//, '')}`;
 
   return (
-    <header className={styles.header}>
+    <header className={clsx(styles.header, isHidden && styles.headerHidden)}>
       <div className={clsx('container', styles.inner)}>
         <nav className={clsx(styles.nav, isOpen && styles.navOpen)}>
           {NAV_ITEMS.map((item) => (
