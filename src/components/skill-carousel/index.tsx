@@ -8,6 +8,7 @@ interface SkillCarouselItem {
   icon: string;
   label: string;
   usage: string[];
+  lightChip?: boolean;
 }
 
 interface SkillCarouselProps {
@@ -24,7 +25,9 @@ function SkillRow({skill}: SkillRowProps): JSX.Element {
   return (
     <div className={styles.skillRow}>
       <div className={styles.skillBadge}>
-        <img className={styles.icon} src={iconSrc} alt="" />
+        <span className={clsx(skill.lightChip && styles.iconChip)}>
+          <img className={styles.icon} src={iconSrc} alt="" />
+        </span>
         <span className={styles.label}>{skill.label}</span>
       </div>
       <ul className={styles.usage}>

@@ -59,8 +59,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // Social card shown in link previews (og:image)
+    image: 'img/profile.png',
     // Header/Footer are our own components: the homepage renders both in
     // src/pages/index.tsx, and src/theme/Navbar adds the Header on all other
     // pages, so no navbar/footer config is needed here.

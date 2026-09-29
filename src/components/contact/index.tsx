@@ -13,11 +13,8 @@ export default function Contact(): JSX.Element {
       <div className={clsx('container', styles.inner)}>
         <div className={styles.text}>
           <h2 className={styles.heading}>Contact me</h2>
-          <p>Include information like:</p>
+          <p>Here is what I'm looking for and what I bring:</p>
           <ul>
-            <li>
-              Feel free to reach out with job offers or opportunities like...
-            </li>
             <li>Role: I'm looking for a position as a Junior DevSecOps Engineer or Backend Developer,
                and I'm also open to a dual study program in computer science.</li>
             <li>Contribution: After 9 years in the Bundeswehr as a Feldwebel, I bring leadership, reliability and a calm head under pressure,

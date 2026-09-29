@@ -73,10 +73,25 @@
 .seeMore {
   display: inline-block;
   margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid var(--color-white);
+  border-radius: 999px;
   color: var(--color-white);
+  font-size: var(--font-size-text-20);
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
-.seeMore:hover {
-  color: var(--color-white);
-  text-decoration: underline;
+.seeMore::after {
+  content: ' \2192';
+}
+
+.seeMore:hover,
+.seeMore:focus-visible {
+  background-color: var(--color-white);
+  color: var(--color-project-highlight);
+  text-decoration: none;
 }

@@ -9,6 +9,7 @@ interface SkillItem {
   icon: string;
   label: string;
   usage: string[];
+  lightChip?: boolean;
 }
 
 // Order here = render order (3 per row, left to right, top to bottom).
@@ -40,7 +41,7 @@ const SKILLS: SkillItem[] = [
     usage: [
       'Automated builds and tests',
       'Used pre-built actions for common tasks',
-      'Set up automatic deployment to [target] on push to main',
+      'Set up automatic deployment to GitHub Pages on push to main',
     ],
   },
   {
@@ -87,6 +88,7 @@ const SKILLS: SkillItem[] = [
     id: 'django',
     icon: 'img/skills/django.svg',
     label: 'Django',
+    lightChip: true,
     usage: [
       'Built the project backend with Django',
       'Implemented user authentication and permissions',
@@ -117,6 +119,7 @@ export default function MySkills(): JSX.Element {
                 icon={skill.icon}
                 label={skill.label}
                 usage={skill.usage}
+                lightChip={skill.lightChip}
               />
             </div>
           ))}

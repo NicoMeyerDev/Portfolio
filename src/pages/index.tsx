@@ -11,7 +11,7 @@ import Footer from '@site/src/components/footer';
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+    <Layout description={siteConfig.tagline}>
       <Header />
       <Hero />
       <MySkills />

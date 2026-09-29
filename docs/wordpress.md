@@ -11,17 +11,6 @@ sidebar_position: 4
 
 This is a Project to set up, run and maintain your personal Wordpress server. It includes installation, instructions, configuration guidance, server startup procedures and backup management workflows.
 
-## Table of contents
-
-* [Description](#description)
-* [Prerequisites](#prerequisites)
-* [Quickstart](#quickstart)
-* [Usage](#usage)
-    * [Data Persistence](#data-persistence)
-    * [Container Restart Policy](#container-restart-policy)
-    * [Secrets Management](#secrets-management)
-
-
 ## Prerequisites
 To install and run this environment, Docker must be installed on your system.
 

@@ -5,29 +5,9 @@ sidebar_position: 2
 ---
 
 
-# Baby Tools World
+# Baby Tools Shop
 
-Baby Tools World is an online shop where customers can browse and buy products for babies and kids. Customers can leave comments on products and rate them. This project was built as a learning exercise.
-
-## Table of contents
-
-- Baby Tools World
-  - [Prerequisites](#prerequisites)
-  - [Quickstart](#quickstart)
-  - [Project structure](#project-structure)
-  - [Apps Overview](#apps-overview)
-  - [Usage](#usage)
-    - [Configuration](#configuration)
-    - [Running the linting tools](#running-the-linting-tools)
-    - [When to run this](#when-to-run-this)
-    - [Testing](#testing)
-    - [Running tests](#running-tests)
-    - [Running with a WSGI Server](#running-with-a-wsgi-server)
-    - [Seeding the application with data](#seeding-the-application-with-data)
-  - [Containerization](#containerization)
-    - [Build an image](#build-an-image)
-    - [Run a container](#run-a-container)
-    - [Commands in the Docker container](#commands-in-the-docker-container)
+Baby Tools Shop is an online shop where customers can browse and buy products for babies and kids. Customers can leave comments on products and rate them. This project was built as a learning exercise.
 
 ## Prerequisites
 

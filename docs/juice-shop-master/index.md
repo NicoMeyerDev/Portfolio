@@ -11,14 +11,6 @@ sidebar_position: 5
 
 This project documents the analysis and exploitation of selected security vulnerabilities within the OWASP Juice Shop application. All findings, demonstrations, and exploit scenarios are conducted strictly for educational and research purposes in an authorized test environment.
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Quickstart](#quickstart)
-- [Challenges Documentation](#challenges-documentation)
-  - [1. Admin Registration](#1-admin-registration)
-  - [2. Deluxe Fraud](#2-deluxe-fraud)
-
 ## Project Overview
 
 This repository contains the documentation of 2 challenges from the OWASP Juice Shop. Each challenge represents a different type of attack.

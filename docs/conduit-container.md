@@ -8,16 +8,6 @@ sidebar_position: 3
 
 # Conduit Container
 
-## Table of Contents
-* [Prerequisites](#prerequisites)
-* [Quickstart](#quickstart)
-* [Usage](#usage)
-    * [Data Persistence](#data-persistence)
-    * [Container Restart Policy](#container-restart-policy)
-    * [Secrets Management](#secrets-management)
-    * [Automatic deployment](#automatic-deployments)
-
-
 ## Prerequisites
 To install and run this environment, make sure the following software is installed on your system:
 
