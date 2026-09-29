@@ -48,7 +48,7 @@ export function getSkillGroups(): SkillGroup[] {
         {
           id: 'rest-api',
           icon: 'img/skills/api.svg',
-          label: 'REST APIs (Django REST Framework)',
+          label: 'REST APIs',
           usage: [
             translate({id: 'skills.rest.1', message: 'Baute REST-Endpunkte mit Django REST Framework'}),
             translate({id: 'skills.rest.2', message: 'Nutzte Serializer und Viewsets'}),
@@ -69,7 +69,7 @@ export function getSkillGroups(): SkillGroup[] {
         {
           id: 'testing',
           icon: 'img/skills/testing.svg',
-          label: 'Testing (pytest, Postman)',
+          label: 'Testing',
           usage: [
             translate({id: 'skills.testing.1', message: 'Schrieb Unit-Tests mit pytest'}),
             translate({id: 'skills.testing.2', message: 'Nutzte Fixtures für Testdaten'}),
