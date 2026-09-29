@@ -78,8 +78,11 @@
   color: var(--color-white);
 }
 
-.cta {
+.ctaArea {
   grid-area: cta;
+}
+
+.cta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -123,4 +126,13 @@
   .inner {
     grid-template-columns: 1fr 300px;
   }
+}
+
+.cvNote {
+  max-width: 630px;
+  margin: 0.9rem 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--color-white);
 }

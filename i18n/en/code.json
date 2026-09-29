@@ -728,5 +728,8 @@
   },
   "certificates.trainm.details": {
     "message": "E-training from 7 Jul to 24 Oct 2025 with a practical application task"
+  },
+  "cv.note": {
+    "message": "Public short version without address and phone number. I am happy to send the full version on request."
   }
 }

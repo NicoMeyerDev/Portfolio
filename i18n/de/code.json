@@ -728,5 +728,8 @@
   },
   "certificates.trainm.details": {
     "message": "E-Training vom 07.07. bis 24.10.2025 mit praxisorientierter Anwendungsaufgabe"
+  },
+  "cv.note": {
+    "message": "Öffentliche Kurzfassung ohne Adresse und Telefonnummer. Die vollständige Version sende ich gern auf Anfrage."
   }
 }

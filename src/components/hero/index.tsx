@@ -30,23 +30,30 @@ export default function Hero(): JSX.Element {
             Als Kfz-Mechatroniker und ehemaliger Feldwebel habe ich neun Jahre bei der Bundeswehr Verantwortung für komplexe Systeme übernommen. Heute konzentriere ich mich auf Backend-Entwicklung und DevSecOps: Ich baue containerisierte Anwendungen, automatisiere Deployments mit CI/CD und denke Sicherheit von Anfang an mit.
           </Translate>
         </p>
-        <div className={styles.cta}>
-          <Button href="#contact" variant="light" className={styles.ctaButton}>
-            <Translate id="hero.cta.contact">Kontakt aufnehmen</Translate>
-          </Button>
-          <Button
-            href={cvHref}
-            variant="secondary"
-            className={styles.ctaButton}
-            download={CV_DOWNLOAD_NAME}>
-            <Translate id="cv.download">Lebenslauf herunterladen</Translate>
-          </Button>
-          <Button
-            href={certificatesHref}
-            variant="secondary"
-            className={styles.ctaButton}>
-            <Translate id="certificates.view">Zertifikate ansehen</Translate>
-          </Button>
+        <div className={styles.ctaArea}>
+          <div className={styles.cta}>
+            <Button href="#contact" variant="light" className={styles.ctaButton}>
+              <Translate id="hero.cta.contact">Kontakt aufnehmen</Translate>
+            </Button>
+            <Button
+              href={cvHref}
+              variant="secondary"
+              className={styles.ctaButton}
+              download={CV_DOWNLOAD_NAME}>
+              <Translate id="cv.download">Lebenslauf herunterladen</Translate>
+            </Button>
+            <Button
+              href={certificatesHref}
+              variant="secondary"
+              className={styles.ctaButton}>
+              <Translate id="certificates.view">Zertifikate ansehen</Translate>
+            </Button>
+          </div>
+          <p className={styles.cvNote}>
+            <Translate id="cv.note">
+              Öffentliche Kurzfassung ohne Adresse und Telefonnummer. Die vollständige Version sende ich gern auf Anfrage.
+            </Translate>
+          </p>
         </div>
         <img
           className={styles.photo}
