@@ -40,8 +40,7 @@ export function getProjects(): Project[] {
         message: 'Screenshot der Taktix-Anmeldeseite vor einem Spielplan in der Kabine',
       }),
       docLink: '/docs/taktix',
-      // TODO: add the GitHub repo of Taktix.
-      githubLink: undefined,
+      githubLink: 'https://github.com/NicoMeyerDev/matchday-app',
       // TODO: replace with the real live URL of Taktix.
       liveLink: 'https://matchday-app-lqai.onrender.com/',
     },
@@ -84,24 +83,24 @@ export function getProjects(): Project[] {
       githubLink: 'https://github.com/NicoMeyerDev/dev-blog/tree/main/docs/Juice-Shop-Master',
     },
     {
-      id: 'coderr',
-      title: 'Coderr',
+      id: 'videoflix',
+      title: 'Videoflix',
       category: 'backend',
       featured: true,
-      tags: ['Python', 'Django', 'PostgreSQL'],
+      tags: ['Python', 'Django', 'PostgreSQL', 'Docker'],
       description: translate({
-        id: 'projects.coderr.description',
+        id: 'projects.videoflix.description',
         message:
-          'Coderr ist eine Plattform, auf der Anbieter Angebote erstellen und Kunden diese in Anspruch nehmen können. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, inklusive Benutzerverwaltung, Authentifizierung und PostgreSQL-Datenbank.',
+          'Videoflix ist ein containerisiertes Streaming-Backend nach dem Vorbild moderner Streaming-Plattformen. Hochgeladene Videos werden im Hintergrund mit ffmpeg in mehrere Auflösungen (480p, 720p, 1080p) für adaptives HLS-Streaming umgewandelt. Registrierung mit E-Mail-Aktivierung und JWT-Login über HttpOnly-Cookies sind eingebaut.',
       }),
       image: 'img/projects/placeholder.svg',
       imageLabel: translate({
-        id: 'projects.coderr.imageLabel',
-        message: 'Platzhalterbild für das Projekt Coderr',
+        id: 'projects.videoflix.imageLabel',
+        message: 'Platzhalterbild für das Projekt Videoflix',
       }),
-      docLink: '/docs/coderr',
-      // TODO: add GitHub repo and screenshot of Coderr.
-      githubLink: undefined,
+      docLink: '/docs/videoflix',
+      // TODO: add a screenshot of Videoflix.
+      githubLink: 'https://github.com/NicoMeyerDev/Videoflix',
     },
     {
       id: 'quizzly',
@@ -121,6 +120,26 @@ export function getProjects(): Project[] {
       }),
       docLink: '/docs/quizzly',
       githubLink: 'https://github.com/NicoMeyerDev/quizzly-backend',
+    },
+    {
+      id: 'coderr',
+      title: 'Coderr',
+      category: 'backend',
+      featured: false,
+      tags: ['Python', 'Django', 'PostgreSQL'],
+      description: translate({
+        id: 'projects.coderr.description',
+        message:
+          'Coderr ist eine Plattform, auf der Anbieter Angebote erstellen und Kunden diese in Anspruch nehmen können. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, inklusive Benutzerverwaltung, Authentifizierung und PostgreSQL-Datenbank.',
+      }),
+      image: 'img/projects/placeholder.svg',
+      imageLabel: translate({
+        id: 'projects.coderr.imageLabel',
+        message: 'Platzhalterbild für das Projekt Coderr',
+      }),
+      docLink: '/docs/coderr',
+      // TODO: add a screenshot of Coderr.
+      githubLink: 'https://github.com/NicoMeyerDev/coderr-Backend',
     },
     {
       id: 'baby-tools-shop',

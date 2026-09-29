@@ -743,5 +743,11 @@
   },
   "about.p4": {
     "message": "For me, moving into IT is not a complete fresh start but the next step. I bring experience, technical curiosity and the willingness to keep developing. My aim is not to know as many technologies as possible, but to truly understand things and build working solutions with them."
+  },
+  "projects.videoflix.description": {
+    "message": "Videoflix is a containerized streaming backend inspired by modern streaming platforms. Uploaded videos are converted in the background with ffmpeg into several resolutions (480p, 720p, 1080p) for adaptive HLS streaming. Registration with email activation and JWT login via HttpOnly cookies are built in."
+  },
+  "projects.videoflix.imageLabel": {
+    "message": "Placeholder image for the Videoflix project"
   }
 }
