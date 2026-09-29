@@ -36,7 +36,6 @@ export default function LegalNotice(): JSX.Element {
           <h2 className={styles.blockHeading}>
             <Translate id="legal.contact.heading">Kontakt</Translate>
           </h2>
-          {/* TODO: the address comes from src/data/profile.ts; an imprint needs a real, reachable e-mail. */}
           <p>
             <Translate id="legal.contact.email">E-Mail:</Translate>{' '}
             {CONTACT_EMAIL}
