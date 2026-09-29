@@ -16,17 +16,17 @@ export default function About(): JSX.Element {
         <div className={styles.story}>
           <p>
             <Translate id="about.p1">
-              Als ausgebildeter Kfz-Mechatroniker und ehemaliger Feldwebel habe ich neun Jahre bei der Bundeswehr mit komplexen Systemen gearbeitet, Verantwortung übernommen und Probleme unter Druck gelöst.
+              Neben meinem Dienst bei der Bundeswehr habe ich mich nebenberuflich in der IT weitergebildet. Mich treibt an, mein Wissen stetig zu erweitern und die Qualität meiner Arbeit kontinuierlich zu verbessern.
             </Translate>
           </p>
           <p>
             <Translate id="about.p2">
-              Diese Erfahrung bringe ich heute in die Softwareentwicklung ein, mit Schwerpunkt auf Backend-Entwicklung und DevSecOps. Ich baue containerisierte Anwendungen mit Docker, automatisiere Deployments mit CI/CD und verstehe Sicherheit als festen Teil des Entwicklungsprozesses.
+              Mein Weg begann 2025 mit einem E-Training zum Data-Analyst (Python), 2026 folgte der Kurs Python Grundlagen bei der Technischen Akademie Nord. Anschließend habe ich bei der Developer Akademie die Weiterbildung zum Softwareentwickler mit Schwerpunkt Back-End abgeschlossen: 13 Module und vier Capstone-Projekte, darunter Coderr und Quizzly.
             </Translate>
           </p>
           <p>
             <Translate id="about.p3">
-              Der Wechsel in die IT ist für mich kein Neuanfang, sondern der nächste Schritt auf dem, was ich bereits gelernt habe: Ich wende es auf eine neue Art von komplexem System an. Ich lerne laufend weiter, baue echte Projekte und erweitere meine Fähigkeiten in einem Feld, das nie stillsteht.
+              Aktuell mache ich die Weiterbildung zum DevSecOps Engineer, die ich im Oktober 2026 abschließe. Dort vertiefe ich CI/CD mit GitHub Actions, Container-Orchestrierung, IT-Security und Linux-Infrastruktur.
             </Translate>
           </p>
         </div>

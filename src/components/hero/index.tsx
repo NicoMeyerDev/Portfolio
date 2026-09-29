@@ -27,7 +27,7 @@ export default function Hero(): JSX.Element {
         </p>
         <p className={styles.bio}>
           <Translate id="hero.bio">
-            Als Kfz-Mechatroniker und ehemaliger Feldwebel habe ich neun Jahre bei der Bundeswehr Verantwortung für komplexe Systeme übernommen. Heute konzentriere ich mich auf Backend-Entwicklung und DevSecOps: Ich baue containerisierte Anwendungen, automatisiere Deployments mit CI/CD und denke Sicherheit von Anfang an mit.
+            Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler mit Schwerpunkt DevSecOps. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD.
           </Translate>
         </p>
         <div className={styles.ctaArea}>

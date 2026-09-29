@@ -39,124 +39,121 @@
     "message": "Backend"
   },
   "skills.python.1": {
-    "message": "Baute ein Projekt mit Python"
+    "message": "Entwickelte das Backend der Coaching-App Taktix"
   },
   "skills.python.2": {
-    "message": "Schrieb Skripte zur Automatisierung von Aufgaben"
+    "message": "Band das Sprachmodell Gemini für die Quiz-Erzeugung in Quizzly an"
   },
   "skills.python.3": {
-    "message": "Baute APIs"
+    "message": "Schrieb einen Seed-Befehl für Testdaten im Baby Tools Shop"
   },
   "skills.django.1": {
-    "message": "Baute das Projekt-Backend mit Django"
+    "message": "Baute die Backends von Coderr und Quizzly"
   },
   "skills.django.2": {
-    "message": "Implementierte Benutzer-Authentifizierung und Berechtigungen"
+    "message": "Implementierte Registrierung und Login im Baby Tools Shop"
   },
   "skills.django.3": {
-    "message": "Implementierte Views und Templates für das Projekt"
+    "message": "Verwaltete Datenbankänderungen mit Migrationen in Quizzly"
   },
   "skills.rest.1": {
-    "message": "Baute REST-Endpunkte mit Django REST Framework"
+    "message": "Entwickelte die RESTful APIs von Taktix"
   },
   "skills.rest.2": {
-    "message": "Nutzte Serializer und Viewsets"
+    "message": "Baute mit Django REST Framework die API von Coderr"
   },
   "skills.rest.3": {
-    "message": "Sicherte Endpunkte mit Berechtigungen ab"
+    "message": "Sicherte die Endpunkte von Quizzly mit JWT ab"
   },
   "skills.sql.1": {
-    "message": "Schrieb SQL-Abfragen mit Joins und Filtern"
+    "message": "Modellierte die PostgreSQL-Datenbank von Taktix"
   },
   "skills.sql.2": {
-    "message": "Modellierte relationale Datenbankschemas"
+    "message": "Entwarf die Datenbankstruktur für Anbieter, Angebote und Kunden in Coderr"
   },
   "skills.sql.3": {
-    "message": "Betrieb PostgreSQL in Docker-Containern"
+    "message": "Sicherte PostgreSQL-Daten mit einem Docker-Volume im Conduit Container"
   },
   "skills.testing.1": {
-    "message": "Schrieb Unit-Tests mit pytest"
+    "message": "Testete REST-Endpunkte mit Postman-Collections in meinen Django-Backends"
   },
   "skills.testing.2": {
-    "message": "Nutzte Fixtures für Testdaten"
+    "message": "Schrieb Tests mit dem Django-Testrunner im Baby Tools Shop"
   },
   "skills.testing.3": {
-    "message": "Führte Tests automatisch in der CI-Pipeline aus"
+    "message": "Prüfte Verbindung und Neustart des Minecraft Servers mit MCStatus"
   },
   "skills.auth.label": {
     "message": "Authentifizierung"
   },
   "skills.auth.1": {
-    "message": "Implementierte Login und Session-Verwaltung"
+    "message": "Implementierte JWT-Authentifizierung in Quizzly"
   },
   "skills.auth.2": {
-    "message": "Richtete Multi-Faktor-Authentifizierung ein"
+    "message": "Baute Registrierung und Login im Baby Tools Shop"
   },
   "skills.auth.3": {
-    "message": "Beschränkte Zugriffe über Rollen und Berechtigungen"
+    "message": "Setzte Benutzerverwaltung mit Authentifizierung in Coderr um"
   },
   "skills.group.devsecops": {
     "message": "DevSecOps"
   },
   "skills.docker.1": {
-    "message": "Containerisierte ein Projekt mit einem Dockerfile"
+    "message": "Containerisierte den Baby Tools Shop mit Dockerfile und Volume-Mapping"
   },
   "skills.docker.2": {
-    "message": "Baute CI/CD-Pipelines rund um Docker-Images"
+    "message": "Baute ein eigenes Dockerfile auf OpenJDK-Basis für den Minecraft Server"
   },
   "skills.docker.3": {
-    "message": "Automatisierte Builds, Tests und Deployments"
+    "message": "Betrieb WordPress, MySQL und phpMyAdmin mit Docker Compose"
   },
   "skills.cicd.label": {
     "message": "CI/CD mit GitHub Actions"
   },
   "skills.cicd.1": {
-    "message": "Automatisierte Builds und Tests"
+    "message": "Baute die dreistufige Pipeline im Conduit Container: Build, Konfiguration, Deployment"
   },
   "skills.cicd.2": {
-    "message": "Nutzte fertige Actions für Standardaufgaben"
+    "message": "Veröffentlichte Images über die GitHub Container Registry im Conduit Container"
   },
   "skills.cicd.3": {
-    "message": "Richtete automatisches Deployment auf GitHub Pages bei jedem Push auf main ein"
+    "message": "Richtete das automatische Deployment dieses Portfolios auf GitHub Pages ein"
   },
   "skills.shell.label": {
     "message": "Linux / Shell-Scripting"
   },
   "skills.shell.1": {
-    "message": "Legte neue Benutzer an und setzte ihre Berechtigungen"
+    "message": "Schrieb das Start-Skript entrypoint.sh für den Minecraft Server"
   },
   "skills.shell.2": {
-    "message": "Durchsuchte und filterte Logs mit grep und awk"
+    "message": "Deployte per SSH auf einen Linux-Server im Conduit Container"
   },
   "skills.shell.3": {
-    "message": "Härtete den SSH-Zugang auf einem Linux-Server"
+    "message": "Arbeitete mit Kali Linux für Sicherheitstests im Juice Shop Master"
   },
   "skills.security.label": {
     "message": "IT-Sicherheit"
   },
   "skills.security.1": {
-    "message": "Simulierte Angriffe und fand Schwachstellen"
+    "message": "Fing Requests mit Burp Suite ab und erlangte per Mass Assignment Admin-Rechte im Juice Shop Master"
   },
   "skills.security.2": {
-    "message": "Richtete Multi-Faktor-Authentifizierung ein"
+    "message": "Umging die Zahlungsprüfung mit einer manipulierten Anfrage im Juice Shop Master (Deluxe Fraud)"
   },
   "skills.security.3": {
-    "message": "Implementierte Authentifizierungs- und Autorisierungsmechanismen"
+    "message": "Lagerte Zugangsdaten in .env-Dateien statt im Code, im WordPress- und Conduit-Projekt"
   },
   "skills.yaml.1": {
-    "message": "Schrieb GitHub-Actions- und Docker-Compose-Dateien"
+    "message": "Schrieb die Docker-Compose-Dateien für WordPress und Conduit Container"
   },
   "skills.yaml.2": {
-    "message": "Nutzte Listen und Maps in komplexen Konfigurationen"
+    "message": "Definierte den GitHub-Actions-Workflow im Conduit Container"
   },
   "skills.git.1": {
-    "message": "Nutzte Feature-Branches und Pull Requests"
+    "message": "Arbeitete mit Feature-Branches und Pull Requests in diesem Portfolio"
   },
   "skills.git.2": {
-    "message": "Schrieb klare, aussagekräftige Commit-Messages"
-  },
-  "skills.git.3": {
-    "message": "Löste Merge-Konflikte und nutzte Rebase"
+    "message": "Prüfte den Code-Stil mit black und isort vor Commits im Baby Tools Shop"
   },
   "certificates.open": {
     "message": "Ansehen (PDF)"
@@ -204,13 +201,13 @@
     "message": "Über mich"
   },
   "about.p1": {
-    "message": "Als ausgebildeter Kfz-Mechatroniker und ehemaliger Feldwebel habe ich neun Jahre bei der Bundeswehr mit komplexen Systemen gearbeitet, Verantwortung übernommen und Probleme unter Druck gelöst."
+    "message": "Neben meinem Dienst bei der Bundeswehr habe ich mich nebenberuflich in der IT weitergebildet. Mich treibt an, mein Wissen stetig zu erweitern und die Qualität meiner Arbeit kontinuierlich zu verbessern."
   },
   "about.p2": {
-    "message": "Diese Erfahrung bringe ich heute in die Softwareentwicklung ein, mit Schwerpunkt auf Backend-Entwicklung und DevSecOps. Ich baue containerisierte Anwendungen mit Docker, automatisiere Deployments mit CI/CD und verstehe Sicherheit als festen Teil des Entwicklungsprozesses."
+    "message": "Mein Weg begann 2025 mit einem E-Training zum Data-Analyst (Python), 2026 folgte der Kurs Python Grundlagen bei der Technischen Akademie Nord. Anschließend habe ich bei der Developer Akademie die Weiterbildung zum Softwareentwickler mit Schwerpunkt Back-End abgeschlossen: 13 Module und vier Capstone-Projekte, darunter Coderr und Quizzly."
   },
   "about.p3": {
-    "message": "Der Wechsel in die IT ist für mich kein Neuanfang, sondern der nächste Schritt auf dem, was ich bereits gelernt habe: Ich wende es auf eine neue Art von komplexem System an. Ich lerne laufend weiter, baue echte Projekte und erweitere meine Fähigkeiten in einem Feld, das nie stillsteht."
+    "message": "Aktuell mache ich die Weiterbildung zum DevSecOps Engineer, die ich im Oktober 2026 abschließe. Dort vertiefe ich CI/CD mit GitHub Actions, Container-Orchestrierung, IT-Security und Linux-Infrastruktur."
   },
   "contact.heading": {
     "message": "Kontakt"
@@ -273,7 +270,7 @@
     "message": "Hallo 👋 ich bin"
   },
   "hero.bio": {
-    "message": "Als Kfz-Mechatroniker und ehemaliger Feldwebel habe ich neun Jahre bei der Bundeswehr Verantwortung für komplexe Systeme übernommen. Heute konzentriere ich mich auf Backend-Entwicklung und DevSecOps: Ich baue containerisierte Anwendungen, automatisiere Deployments mit CI/CD und denke Sicherheit von Anfang an mit."
+    "message": "Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler mit Schwerpunkt DevSecOps. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD."
   },
   "hero.cta.contact": {
     "message": "Kontakt aufnehmen"
@@ -686,9 +683,6 @@
   },
   "skills.backHeading": {
     "message": "So habe ich es eingesetzt"
-  },
-  "skills.testing.4": {
-    "message": "Erstellte Postman-Collections für manuelle API-Tests"
   },
   "projects.card.live": {
     "message": "Live-Link"
