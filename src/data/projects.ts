@@ -121,8 +121,7 @@ export function getProjects(): Project[] {
         message: 'Vorschau der Quizzly-Oberfläche mit Eingabefeld für eine Video-URL und Übersicht der letzten Quizze',
       }),
       docLink: '/docs/quizzly',
-      // TODO: add GitHub repo of Quizzly.
-      githubLink: undefined,
+      githubLink: 'https://github.com/NicoMeyerDev/quizzly-backend',
     },
     {
       id: 'baby-tools-shop',
