@@ -1,6 +1,6 @@
 {
   "projects.taktix.description": {
-    "message": "Football coaches often still plan training sessions and line-ups with paper notes and chat groups. I developed Taktix as my own backend application that brings these processes together in one place. The app covers the coach's entire day-to-day work: from squad management and training planning through matchday preparation and line-up to follow-up, in six connected modules. Result: a central application that structures planning and reduces the organizational effort around training and matchdays. Taktix is currently in beta and is being tested with real coaches from my club environment."
+    "message": "Coaches often still plan training and matchdays with paper notes and chat groups. Taktix is my own backend application that brings squad management, training planning, matchday preparation and line-ups together in six modules and reduces the organizational effort. Currently in beta, tested with real coaches."
   },
   "projects.taktix.imageLabel": {
     "message": "Screenshot of the Taktix login page in front of a tactics board in the locker room"

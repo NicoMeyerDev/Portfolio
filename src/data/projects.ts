@@ -32,7 +32,7 @@ export function getProjects(): Project[] {
       description: translate({
         id: 'projects.taktix.description',
         message:
-          'Fußballtrainer planen Training und Aufstellungen oft noch mit Zetteln und Chat-Gruppen. Ich habe Taktix als eigene Backend-Anwendung entwickelt, die diese Abläufe zentral an einem Ort bündelt. Die App bildet den kompletten Trainer-Alltag ab: von Kaderverwaltung und Trainingsplanung über Spieltagsvorbereitung und Aufstellung bis zur Nachbereitung in sechs zusammenhängenden Modulen. Ergebnis: eine zentrale Anwendung, die die Planung strukturiert und den organisatorischen Aufwand rund um Training und Spieltag reduziert. Taktix befindet sich aktuell in der Beta-Phase und wird mit echten Trainern aus meinem Vereinsumfeld getestet.',
+          'Trainer planen Training und Spieltag oft noch mit Zetteln und Chat-Gruppen. Taktix ist meine eigene Backend-Anwendung, die Kaderverwaltung, Trainingsplanung, Spieltagsvorbereitung und Aufstellung in sechs Modulen bündelt und den Organisationsaufwand reduziert. Derzeit in der Beta-Phase, getestet mit echten Trainern.',
       }),
       image: 'img/projects/taktix.png',
       imageLabel: translate({
