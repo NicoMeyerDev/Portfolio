@@ -71,7 +71,7 @@ export function getSkillGroups(): SkillGroup[] {
           icon: 'img/skills/testing.svg',
           label: 'Testing',
           usage: [
-            translate({id: 'skills.testing.1', message: 'Testete REST-Endpunkte mit Postman-Collections in meinen Django-Backends'}),
+            translate({id: 'skills.testing.1', message: 'Testete REST-Endpunkte mit Postman-Collections in allen meinen Backend-Projekten'}),
             translate({id: 'skills.testing.2', message: 'Schrieb Tests mit dem Django-Testrunner im Baby Tools Shop'}),
             translate({id: 'skills.testing.3', message: 'Prüfte Verbindung und Neustart des Minecraft Servers mit MCStatus'}),
           ],

@@ -75,7 +75,7 @@
     "message": "Sicherte PostgreSQL-Daten mit einem Docker-Volume im Conduit Container"
   },
   "skills.testing.1": {
-    "message": "Testete REST-Endpunkte mit Postman-Collections in meinen Django-Backends"
+    "message": "Testete REST-Endpunkte mit Postman-Collections in allen meinen Backend-Projekten"
   },
   "skills.testing.2": {
     "message": "Schrieb Tests mit dem Django-Testrunner im Baby Tools Shop"

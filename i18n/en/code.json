@@ -75,7 +75,7 @@
     "message": "Persisted PostgreSQL data with a Docker volume in the Conduit Container"
   },
   "skills.testing.1": {
-    "message": "Tested REST endpoints with Postman collections in my Django backends"
+    "message": "Tested REST endpoints with Postman collections in all my backend projects"
   },
   "skills.testing.2": {
     "message": "Wrote tests with the Django test runner in the Baby Tools Shop"
