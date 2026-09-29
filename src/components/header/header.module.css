@@ -124,3 +124,45 @@
     display: none;
   }
 }
+
+.langSwitch {
+  display: flex;
+  gap: 12px;
+}
+
+.langLink {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--font-size-text-20);
+  text-decoration: none;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.langLink:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.langLinkActive {
+  border-color: currentColor;
+}
+
+@media (min-width: 992px) {
+  .langSwitch {
+    margin-left: auto;
+  }
+
+  .langLink,
+  .langLink:hover {
+    color: var(--color-white);
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    flex: 1;
+  }
+}

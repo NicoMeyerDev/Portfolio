@@ -1,44 +1,83 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Button from '@site/src/components/button';
+import {CONTACT_EMAIL, CV_PATH, LINKEDIN_URL} from '@site/src/data/profile';
 import styles from './contact.module.css';
-
 
 export default function Contact(): JSX.Element {
   const mailIconSrc = useBaseUrl('img/mail-icon.svg');
   const linkedInIconSrc = useBaseUrl('img/linkedin-icon.svg');
+  const cvHref = useBaseUrl(CV_PATH);
+  const certificatesHref = useBaseUrl('/certificates');
 
   return (
     <section id="contact" className={styles.contact}>
       <div className={clsx('container', styles.inner)}>
         <div className={styles.text}>
-          <h2 className={styles.heading}>Contact me</h2>
-          <p>Here is what I'm looking for and what I bring:</p>
+          <h2 className={styles.heading}>
+            <Translate id="contact.heading">Kontakt</Translate>
+          </h2>
+          <p>
+            <Translate id="contact.intro">
+              Hier steht, wonach ich suche und was ich mitbringe:
+            </Translate>
+          </p>
           <ul>
-            <li>Role: I'm looking for a position as a Junior DevSecOps Engineer or Backend Developer,
-               and I'm also open to a dual study program in computer science.</li>
-            <li>Contribution: After 9 years in the Bundeswehr as a Feldwebel, I bring leadership, reliability and a calm head under pressure,
-               combined with hands-on skills in Docker, CI/CD, Linux and Python.</li>
-            <li>Remote: I'm looking for on-site or hybrid roles in the Hamburg/Bremen area and I'm open to remote work anywhere in Germany.</li>
+            <li>
+              <Translate id="contact.role">
+                Rolle: Ich suche eine Stelle als Junior DevSecOps Engineer oder Backend Developer und bin auch offen für ein duales Informatikstudium.
+              </Translate>
+            </li>
+            <li>
+              <Translate id="contact.contribution">
+                Beitrag: Nach 9 Jahren als Feldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python.
+              </Translate>
+            </li>
+            <li>
+              <Translate id="contact.remote">
+                Remote: Ich suche Stellen vor Ort oder hybrid im Raum Hamburg/Bremen und bin offen für Remote-Arbeit in ganz Deutschland.
+              </Translate>
+            </li>
           </ul>
         </div>
         <div className={styles.links}>
           <p className={styles.lookingForward}>
-            Looking forward to hearing from you!
+            <Translate id="contact.lookingForward">
+              Ich freue mich auf Ihre Nachricht!
+            </Translate>
           </p>
-          <a className={styles.linkItem} href="mailto:2025nico@gmail.com">
-            <img className={styles.linkIcon} src={mailIconSrc} alt="" aria-hidden="true" />
-            2025nico@gmail.com
+          <a className={styles.linkItem} href={`mailto:${CONTACT_EMAIL}`}>
+            <img
+              className={styles.linkIcon}
+              src={mailIconSrc}
+              alt={translate({id: 'contact.mailIconAlt', message: 'E-Mail-Symbol'})}
+            />
+            {CONTACT_EMAIL}
           </a>
 
           <a
             className={clsx(styles.linkItem, styles.profileLink)}
-            href="https://www.linkedin.com/in/nico-meyer-672176376/"
+            href={LINKEDIN_URL}
             target="_blank"
             rel="noopener noreferrer">
-            <img className={styles.linkIcon} src={linkedInIconSrc} alt="" aria-hidden="true" />
-            Profile Page
+            <img
+              className={styles.linkIcon}
+              src={linkedInIconSrc}
+              alt={translate({id: 'contact.linkedinIconAlt', message: 'LinkedIn-Logo'})}
+            />
+            LinkedIn
           </a>
+
+          <div className={styles.downloads}>
+            <Button href={cvHref} variant="light" download>
+              <Translate id="cv.download">Lebenslauf herunterladen</Translate>
+            </Button>
+            <Button href={certificatesHref} variant="secondary">
+              <Translate id="certificates.view">Zertifikate ansehen</Translate>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

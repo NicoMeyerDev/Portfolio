@@ -1,6 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import clsx from 'clsx';
+import {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useAlternatePageUtils} from '@docusaurus/theme-common/internal';
 import styles from './header.module.css';
 
 interface NavItem {
@@ -8,11 +10,12 @@ interface NavItem {
   to: string;
 }
 
-const NAV_ITEMS: NavItem[] = [
-  {label: 'About me', to: '/#hero'},
-  {label: 'My skills', to: '/#skills'},
-  {label: 'My projects', to: '/#projects'},
-  {label: 'Contact', to: '/#contact'},
+// Built at render time so translate() picks the active locale.
+const getNavItems = (): NavItem[] => [
+  {label: translate({id: 'nav.about', message: 'Über mich'}), to: '/#about'},
+  {label: translate({id: 'nav.skills', message: 'Skills'}), to: '/#skills'},
+  {label: translate({id: 'nav.projects', message: 'Projekte'}), to: '/#projects'},
+  {label: translate({id: 'nav.contact', message: 'Kontakt'}), to: '/#contact'},
 ];
 
 // Below this scroll offset the header always stays visible, so it doesn't
@@ -20,7 +23,9 @@ const NAV_ITEMS: NavItem[] = [
 const HIDE_THRESHOLD = 80;
 
 export default function Header(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const {siteConfig, i18n} = useDocusaurusContext();
+  const {createUrl} = useAlternatePageUtils();
+  const navItems = getNavItems();
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const isOpenRef = useRef(isOpen);
@@ -67,7 +72,7 @@ export default function Header(): JSX.Element {
     <header className={clsx(styles.header, isHidden && styles.headerHidden)}>
       <div className={clsx('container', styles.inner)}>
         <nav className={clsx(styles.nav, isOpen && styles.navOpen)}>
-          {NAV_ITEMS.map((item) => (
+          {navItems.map((item) => (
             <a
               key={item.to}
               href={withBase(item.to)}
@@ -76,11 +81,33 @@ export default function Header(): JSX.Element {
               {item.label}
             </a>
           ))}
+          <div
+            className={styles.langSwitch}
+            role="group"
+            aria-label={translate({id: 'nav.language', message: 'Sprache'})}>
+            {i18n.locales.map((locale) => (
+              <a
+                key={locale}
+                href={createUrl({locale, fullyQualified: false})}
+                className={clsx(
+                  styles.langLink,
+                  locale === i18n.currentLocale && styles.langLinkActive,
+                )}
+                lang={locale}
+                aria-current={locale === i18n.currentLocale ? 'true' : undefined}>
+                {locale.toUpperCase()}
+              </a>
+            ))}
+          </div>
         </nav>
         <button
           type="button"
           className={styles.menuButton}
-          aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
+          aria-label={
+            isOpen
+              ? translate({id: 'nav.close', message: 'Navigation schließen'})
+              : translate({id: 'nav.open', message: 'Navigation öffnen'})
+          }
           aria-expanded={isOpen}
           onClick={() => setIsOpen((prev) => !prev)}>
           <span className={styles.burgerIcon} />

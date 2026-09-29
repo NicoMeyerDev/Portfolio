@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './footer.module.css';
 
@@ -18,7 +19,7 @@ export default function Footer(): JSX.Element {
           type="button"
           className={styles.scrollTop}
           onClick={scrollToTop}
-          aria-label="Scroll to top">
+          aria-label={translate({id: 'footer.scrollTop', message: 'Nach oben scrollen'})}>
           <img className={styles.scrollTopIcon} src={arrowIconSrc} alt="" aria-hidden="true" />
         </button>
         <div className={styles.legalGroup}>
@@ -26,7 +27,7 @@ export default function Footer(): JSX.Element {
             © Nico Meyer {new Date().getFullYear()}
           </p>
           <a className={styles.legalNotice} href={imprintHref}>
-            Legal notice
+            <Translate id="footer.legalNotice">Impressum</Translate>
           </a>
         </div>
       </div>

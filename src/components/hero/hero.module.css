@@ -15,6 +15,7 @@
     'greeting'
     'name'
     'role'
+    'tagline'
     'photo'
     'bio'
     'cta';
@@ -30,6 +31,7 @@
       'greeting photo'
       'name photo'
       'role photo'
+      'tagline photo'
       'bio photo'
       'cta photo';
   }
@@ -55,6 +57,13 @@
   grid-area: role;
   font-size: var(--font-size-nav-and-sub);
   font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+.tagline {
+  grid-area: tagline;
+  font-size: var(--font-size-text-24);
+  font-weight: 600;
   margin: 0 0 1.5rem;
 }
 
@@ -70,6 +79,9 @@
 
 .cta {
   grid-area: cta;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .photo {
