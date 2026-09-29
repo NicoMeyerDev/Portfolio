@@ -201,7 +201,7 @@
     "message": "Über mich"
   },
   "about.p1": {
-    "message": "Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich fast neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten."
+    "message": "Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten."
   },
   "about.p2": {
     "message": "Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security."
@@ -258,7 +258,7 @@
     "message": "Hallo 👋 ich bin"
   },
   "hero.bio": {
-    "message": "Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD."
+    "message": "Vom Kfz-Mechatroniker und Hauptfeldwebel zum Backend-Entwickler. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD."
   },
   "hero.cta.contact": {
     "message": "Kontakt aufnehmen"
@@ -727,7 +727,7 @@
     "message": "Beitrag:"
   },
   "contact.contribution.text": {
-    "message": "Nach 9 Jahren als Feldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python."
+    "message": "Nach 9 Jahren als Hauptfeldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python."
   },
   "contact.location.label": {
     "message": "Arbeitsort:"

@@ -44,7 +44,7 @@ export default function Contact(): JSX.Element {
                 <Translate id="contact.contribution.label">Beitrag:</Translate>
               </strong>{' '}
               <Translate id="contact.contribution.text">
-                Nach 9 Jahren als Feldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python.
+                Nach 9 Jahren als Hauptfeldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python.
               </Translate>
             </li>
             <li>

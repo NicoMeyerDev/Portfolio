@@ -207,7 +207,7 @@
     "message": "About me"
   },
   "about.p1": {
-    "message": "After my training as an automotive mechatronics technician I served almost nine years in the Bundeswehr, most recently as Hauptfeldwebel with leadership responsibility. There I learned to work in a structured way even under time pressure, to take responsibility and to get up to speed quickly on complex technical topics."
+    "message": "After my training as an automotive mechatronics technician I served nine years in the Bundeswehr, most recently as Hauptfeldwebel with leadership responsibility. There I learned to work in a structured way even under time pressure, to take responsibility and to get up to speed quickly on complex technical topics."
   },
   "about.p2": {
     "message": "Alongside my service I began to engage intensively with IT. What started with Python and data analytics quickly developed toward software development. Today my focus is backend development with Python and Django. I am also increasingly working with topics such as Docker, CI/CD, Linux and IT security."
@@ -258,7 +258,7 @@
     "message": "Hey there. 👋 I am"
   },
   "hero.bio": {
-    "message": "From automotive mechatronics technician and Feldwebel to backend developer. I build Django APIs, containerize them with Docker and automate builds and deployments with CI/CD."
+    "message": "From automotive mechatronics technician and Hauptfeldwebel to backend developer. I build Django APIs, containerize them with Docker and automate builds and deployments with CI/CD."
   },
   "hero.cta.contact": {
     "message": "Get in touch"
@@ -727,7 +727,7 @@
     "message": "Contribution:"
   },
   "contact.contribution.text": {
-    "message": "After 9 years in the Bundeswehr as a Feldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
+    "message": "After 9 years in the Bundeswehr as a Hauptfeldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
   },
   "contact.location.label": {
     "message": "Location:"
