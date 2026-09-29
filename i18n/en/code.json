@@ -742,6 +742,6 @@
     "message": "Videoflix is a containerized streaming backend inspired by modern streaming platforms. Uploaded videos are converted in the background with ffmpeg into several resolutions (480p, 720p, 1080p) for adaptive HLS streaming. Registration with email activation and JWT login via HttpOnly cookies are built in."
   },
   "projects.videoflix.imageLabel": {
-    "message": "Placeholder image for the Videoflix project"
+    "message": "Preview of the Videoflix home page with a selection of videos by category"
   }
 }

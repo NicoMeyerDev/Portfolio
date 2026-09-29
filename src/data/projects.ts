@@ -93,13 +93,12 @@ export function getProjects(): Project[] {
         message:
           'Videoflix ist ein containerisiertes Streaming-Backend nach dem Vorbild moderner Streaming-Plattformen. Hochgeladene Videos werden im Hintergrund mit ffmpeg in mehrere Auflösungen (480p, 720p, 1080p) für adaptives HLS-Streaming umgewandelt. Registrierung mit E-Mail-Aktivierung und JWT-Login über HttpOnly-Cookies sind eingebaut.',
       }),
-      image: 'img/projects/placeholder.svg',
+      image: 'img/projects/videoflix.png',
       imageLabel: translate({
         id: 'projects.videoflix.imageLabel',
-        message: 'Platzhalterbild für das Projekt Videoflix',
+        message: 'Vorschau der Videoflix-Startseite mit Videoauswahl nach Kategorien',
       }),
       docLink: '/docs/videoflix',
-      // TODO: add a screenshot of Videoflix.
       githubLink: 'https://github.com/NicoMeyerDev/Videoflix',
     },
     {
