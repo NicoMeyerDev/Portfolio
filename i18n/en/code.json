@@ -258,7 +258,7 @@
     "message": "Hey there. 👋 I am"
   },
   "hero.bio": {
-    "message": "From automotive mechatronics technician and Feldwebel to backend developer with a focus on DevSecOps. I build Django APIs, containerize them with Docker and automate builds and deployments with CI/CD."
+    "message": "From automotive mechatronics technician and Feldwebel to backend developer. I build Django APIs, containerize them with Docker and automate builds and deployments with CI/CD."
   },
   "hero.cta.contact": {
     "message": "Get in touch"

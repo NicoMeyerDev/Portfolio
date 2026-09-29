@@ -258,7 +258,7 @@
     "message": "Hallo 👋 ich bin"
   },
   "hero.bio": {
-    "message": "Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler mit Schwerpunkt DevSecOps. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD."
+    "message": "Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD."
   },
   "hero.cta.contact": {
     "message": "Kontakt aufnehmen"

@@ -27,7 +27,7 @@ export default function Hero(): JSX.Element {
         </p>
         <p className={styles.bio}>
           <Translate id="hero.bio">
-            Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler mit Schwerpunkt DevSecOps. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD.
+            Vom Kfz-Mechatroniker und Feldwebel zum Backend-Entwickler. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD.
           </Translate>
         </p>
         <div className={styles.ctaArea}>
