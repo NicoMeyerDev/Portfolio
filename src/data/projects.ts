@@ -32,7 +32,7 @@ export function getProjects(): Project[] {
       description: translate({
         id: 'projects.taktix.description',
         message:
-          'Taktix ist eine Coaching- und Taktik-App, die Trainer-Workflows für Fußballvereine digitalisiert. Ich habe die Backend-Architektur der Desktop- und Tablet-PWA konzipiert und umgesetzt: RESTful APIs, PostgreSQL-Datenbank und Docker-Deployment.',
+          'Fußballtrainer planen Training und Aufstellungen oft noch mit Zetteln und Chat-Gruppen. Ich habe Taktix als eigene Backend-Anwendung entwickelt, die diese Abläufe zentral an einem Ort bündelt. Die App bildet den kompletten Trainer-Alltag ab: von Kaderverwaltung und Trainingsplanung über Spieltagsvorbereitung und Aufstellung bis zur Nachbereitung in sechs zusammenhängenden Modulen. Ergebnis: eine zentrale Anwendung, die die Planung strukturiert und den organisatorischen Aufwand rund um Training und Spieltag reduziert. Taktix befindet sich aktuell in der Beta-Phase und wird mit echten Trainern aus meinem Vereinsumfeld getestet.',
       }),
       image: 'img/projects/taktix.png',
       imageLabel: translate({
@@ -43,7 +43,7 @@ export function getProjects(): Project[] {
       // TODO: add the GitHub repo of Taktix.
       githubLink: undefined,
       // TODO: replace with the real live URL of Taktix.
-      liveLink: 'https://example.com',
+      liveLink: 'https://matchday-app-lqai.onrender.com/',
     },
     {
       id: 'conduit-container',
