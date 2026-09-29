@@ -85,42 +85,42 @@ export function getProjects(): Project[] {
       githubLink: 'https://github.com/NicoMeyerDev/Juice-Shop-Master',
     },
     {
-      id: 'project-x',
-      title: 'Projekt X',
+      id: 'coderr',
+      title: 'Coderr',
       category: 'backend',
       featured: true,
-      tags: ['Python'],
+      tags: ['Python', 'Django', 'PostgreSQL'],
       description: translate({
-        id: 'projects.projectx.description',
+        id: 'projects.coderr.description',
         message:
-          'TODO: Platzhalter für das nächste Projekt. Problem, Umsetzung und Ergebnis ergänzen.',
+          'Coderr ist eine Plattform, auf der Anbieter Angebote erstellen und Kunden diese in Anspruch nehmen können. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, inklusive Benutzerverwaltung, Authentifizierung und PostgreSQL-Datenbank.',
       }),
       image: 'img/projects/placeholder.svg',
       imageLabel: translate({
-        id: 'projects.projectx.imageLabel',
-        message: 'Platzhalterbild für Projekt X',
+        id: 'projects.coderr.imageLabel',
+        message: 'Platzhalterbild für das Projekt Coderr',
       }),
-      // TODO: add docs page and GitHub repo of project X.
+      // TODO: add docs page, GitHub repo and screenshot of Coderr.
       docLink: undefined,
       githubLink: undefined,
     },
     {
-      id: 'project-y',
-      title: 'Projekt Y',
-      category: 'devsecops',
+      id: 'quizzly',
+      title: 'Quizzly',
+      category: 'backend',
       featured: true,
-      tags: ['Docker'],
+      tags: ['Python', 'Django'],
       description: translate({
-        id: 'projects.projecty.description',
+        id: 'projects.quizzly.description',
         message:
-          'TODO: Platzhalter für ein weiteres Projekt. Problem, Umsetzung und Ergebnis ergänzen.',
+          'Quizzly erstellt aus Videoinhalten automatisch Quizfragen mithilfe von KI. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs).',
       }),
       image: 'img/projects/placeholder.svg',
       imageLabel: translate({
-        id: 'projects.projecty.imageLabel',
-        message: 'Platzhalterbild für Projekt Y',
+        id: 'projects.quizzly.imageLabel',
+        message: 'Platzhalterbild für das Projekt Quizzly',
       }),
-      // TODO: add docs page and GitHub repo of project Y.
+      // TODO: add docs page, GitHub repo and screenshot of Quizzly.
       docLink: undefined,
       githubLink: undefined,
     },

@@ -24,6 +24,7 @@ const TAG_ICONS: Record<string, string> = {
   YAML: 'img/skills/yaml-dark.svg',
   'Shell scripting': 'img/skills/shell.svg',
   Django: 'img/skills/django.svg',
+  PostgreSQL: 'img/skills/postgresql.svg',
   'Static site generator': 'img/skills/staticsite.svg',
 };
 

@@ -17,12 +17,6 @@
   "projects.juice.imageLabel": {
     "message": "Preview of the Juice Shop Master project"
   },
-  "projects.projectx.description": {
-    "message": "TODO: placeholder for the next project. Add problem, implementation and result."
-  },
-  "projects.projectx.imageLabel": {
-    "message": "Placeholder image for project X"
-  },
   "projects.babytools.description": {
     "message": "A shop for baby and kids products should keep its data even after a restart. I built a full-stack application with Python and Django that runs on SQLite and is operated through a custom Docker setup with volume mapping. Result: a dockerized shop with persistent data."
   },
@@ -681,12 +675,6 @@
     "message": "Tags",
     "description": "The title of the tag list page"
   },
-  "projects.projecty.description": {
-    "message": "TODO: placeholder for another project. Add problem, implementation and result."
-  },
-  "projects.projecty.imageLabel": {
-    "message": "Placeholder image for project Y"
-  },
   "footer.aiNotice": {
     "message": "This website was created with the help of AI (Claude)."
   },
@@ -731,5 +719,17 @@
   },
   "cv.note": {
     "message": "Public short version without address and phone number. I am happy to send the full version on request."
+  },
+  "projects.coderr.description": {
+    "message": "Coderr is a platform where providers create offers and customers can book them. I built the backend with Python, Django and Django REST Framework, including user management, authentication and a PostgreSQL database."
+  },
+  "projects.coderr.imageLabel": {
+    "message": "Placeholder image for the Coderr project"
+  },
+  "projects.quizzly.description": {
+    "message": "Quizzly automatically creates quiz questions from video content using AI. I built the backend with Python, Django and Django REST Framework, with JWT authentication and integration of language models (LLMs)."
+  },
+  "projects.quizzly.imageLabel": {
+    "message": "Placeholder image for the Quizzly project"
   }
 }

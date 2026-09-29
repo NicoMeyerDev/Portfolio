@@ -17,12 +17,6 @@
   "projects.juice.imageLabel": {
     "message": "Vorschau des Projekts Juice Shop Master"
   },
-  "projects.projectx.description": {
-    "message": "TODO: Platzhalter für das nächste Projekt. Problem, Umsetzung und Ergebnis ergänzen."
-  },
-  "projects.projectx.imageLabel": {
-    "message": "Platzhalterbild für Projekt X"
-  },
   "projects.babytools.description": {
     "message": "Ein Shop für Baby- und Kinderprodukte soll auch nach einem Neustart seine Daten behalten. Ich habe eine Full-Stack-Anwendung mit Python und Django gebaut, die mit SQLite läuft und über ein eigenes Docker-Setup mit Volume-Mapping betrieben wird. Ergebnis: ein dockerisierter Shop mit dauerhaft gespeicherten Daten."
   },
@@ -681,12 +675,6 @@
     "message": "Tags",
     "description": "The title of the tag list page"
   },
-  "projects.projecty.description": {
-    "message": "TODO: Platzhalter für ein weiteres Projekt. Problem, Umsetzung und Ergebnis ergänzen."
-  },
-  "projects.projecty.imageLabel": {
-    "message": "Platzhalterbild für Projekt Y"
-  },
   "footer.aiNotice": {
     "message": "Diese Website wurde mit Unterstützung von KI (Claude) erstellt."
   },
@@ -731,5 +719,17 @@
   },
   "cv.note": {
     "message": "Öffentliche Kurzfassung ohne Adresse und Telefonnummer. Die vollständige Version sende ich gern auf Anfrage."
+  },
+  "projects.coderr.description": {
+    "message": "Coderr ist eine Plattform, auf der Anbieter Angebote erstellen und Kunden diese in Anspruch nehmen können. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, inklusive Benutzerverwaltung, Authentifizierung und PostgreSQL-Datenbank."
+  },
+  "projects.coderr.imageLabel": {
+    "message": "Platzhalterbild für das Projekt Coderr"
+  },
+  "projects.quizzly.description": {
+    "message": "Quizzly erstellt aus Videoinhalten automatisch Quizfragen mithilfe von KI. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs)."
+  },
+  "projects.quizzly.imageLabel": {
+    "message": "Platzhalterbild für das Projekt Quizzly"
   }
 }
