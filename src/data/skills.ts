@@ -82,7 +82,7 @@ export function getSkillGroups(): SkillGroup[] {
           label: translate({id: 'skills.auth.label', message: 'Authentifizierung'}),
           usage: [
             translate({id: 'skills.auth.1', message: 'Implementierte JWT-Authentifizierung in Quizzly'}),
-            translate({id: 'skills.auth.2', message: 'Baute Registrierung und Login im Baby Tools Shop'}),
+            translate({id: 'skills.auth.2', message: 'Baute Registrierung und Login in Taktix'}),
             translate({id: 'skills.auth.3', message: 'Setzte Benutzerverwaltung mit Authentifizierung in Coderr um'}),
           ],
         },
