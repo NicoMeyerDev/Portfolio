@@ -70,10 +70,11 @@ So konfigurierst du das Projekt:
 
 ### Linting-Werkzeuge ausführen
 
-> [!tip]
-> Damit die folgenden Routinen laufen, müssen die benötigten Pakete installiert sein (das passiert mit `pip install -r requirements.txt`).
->
-> Wenn du eine virtuelle Umgebung nutzt, muss sie ebenfalls aktiviert sein.
+:::tip
+Damit die folgenden Routinen laufen, müssen die benötigten Pakete installiert sein (das passiert mit `pip install -r requirements.txt`).
+
+Wenn du eine virtuelle Umgebung nutzt, muss sie ebenfalls aktiviert sein.
+:::
 
 Für Code-Qualitätsprüfungen von Stil und Formatierung führst du im Terminal diese Befehle aus:
 
@@ -89,16 +90,18 @@ isort .
 Prüfe den Code-Stil, bevor du Commits ins Remote-Repository pushst.
 Falls du es vergessen und eine Regel verletzt hast, schlägt der CI-Workflow fehl -> Linting ausführen, Änderungen hinzufügen, committen, pushen -> prüfen, ob die Pipeline durchläuft
 
-> [!note]
-> Wenn ein CI-Workflow fehlschlägt, solltest du die Logs prüfen, um herauszufinden, wo er fehlgeschlagen ist und warum.
+:::note
+Wenn ein CI-Workflow fehlschlägt, solltest du die Logs prüfen, um herauszufinden, wo er fehlgeschlagen ist und warum.
+:::
 
 ### Tests
 
 Das Projekt enthält Tests für die jeweiligen Apps in den entsprechenden Paketen.
 Tests in Django können entweder in einer Datei `tests.py` innerhalb einer Django-App liegen oder in einem Modul namens `tests` (im Grunde ein Ordner mit einer Datei `__init__.py`).
 
-> [!TIP]
-> Der Django-Testrunner findet Tests standardmäßig, indem er alle Python-Dateien sucht, deren Name das Wort `test` enthält, z. B. `test.py`, `test_model.py` oder ähnlich.
+:::tip
+Der Django-Testrunner findet Tests standardmäßig, indem er alle Python-Dateien sucht, deren Name das Wort `test` enthält, z. B. `test.py`, `test_model.py` oder ähnlich.
+:::
 
 Beispielstruktur:
 
@@ -153,9 +156,10 @@ python manage.py seed_db
 
 Dieser Abschnitt gibt einen kurzen Überblick über die Containerisierung der Django-App.
 
-> [!NOTE]
-> Diese Anleitung setzt voraus, dass du die Docker Engine, Docker Desktop oder etwas Ähnliches nutzt.
-> Für andere OCI-konforme Werkzeuge unterscheiden sich die Befehle leicht, sind aber im Kern gleich.
+:::note
+Diese Anleitung setzt voraus, dass du die Docker Engine, Docker Desktop oder etwas Ähnliches nutzt.
+Für andere OCI-konforme Werkzeuge unterscheiden sich die Befehle leicht, sind aber im Kern gleich.
+:::
 
 #### Image bauen
 

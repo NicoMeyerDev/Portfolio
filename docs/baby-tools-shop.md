@@ -71,10 +71,11 @@ To configure the project, follow these steps:
 
 ### Running the linting tools
 
-> [!tip]
-> In order to run the routines below the required packages must be installed (done after running `pip install -r requirements.txt`).
->
-> If you are using a virtual environment this also needs to be activated.
+:::tip
+In order to run the routines below the required packages must be installed (done after running `pip install -r requirements.txt`).
+
+If you are using a virtual environment this also needs to be activated.
+:::
 
 To run code-quality checks that check the code-style and formatting you can run the following commands in your terminal:
 
@@ -90,16 +91,18 @@ isort .
 You should check the code-style before pushing the commits to the remote repository.
 In case you forgot it and somehow violated a rule, the CI workflow will fail -> run linting, add changes, commit, push -> see if pipeline passes
 
-> [!note]
-> If a CI workflow fails, you should check the logs to find out where the workflow failed and what was the reason for this failure.
+:::note
+If a CI workflow fails, you should check the logs to find out where the workflow failed and what was the reason for this failure.
+:::
 
 ### Testing
 
 This project contains tests for the corresponding apps in the respective packages.
 Tests in Django can either be located in a `tests.py` file within a django-app, or you could also have a module named `tests` (essentially a folder with an `__init__.py` file).
 
-> [!TIP]
-> The django testrunner will by default discover tests by finding all python files that contain the word `test` in their name, e.g. `test.py`, `test_model.py`, or similar.
+:::tip
+The django testrunner will by default discover tests by finding all python files that contain the word `test` in their name, e.g. `test.py`, `test_model.py`, or similar.
+:::
 
 Example Structure:
 
@@ -156,9 +159,10 @@ python manage.py seed_db
 
 This section should give a brief overview about the containerization of the django app.
 
-> [!NOTE]
-> This guide assumes you are using the docker engine, docker desktop, or anything similar.
-> For other tools that are compliant with the OCI spec the commands will be slightly different, but more or less the same.
+:::note
+This guide assumes you are using the docker engine, docker desktop, or anything similar.
+For other tools that are compliant with the OCI spec the commands will be slightly different, but more or less the same.
+:::
 
 #### Build an image
 

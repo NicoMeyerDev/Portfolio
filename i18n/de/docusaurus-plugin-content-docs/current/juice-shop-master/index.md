@@ -6,8 +6,9 @@ sidebar_position: 5
 
 # Juice Shop Master
 
-> [!IMPORTANT]
-> Dieses Projekt dient ausschließlich meiner beruflichen Weiterbildung. Es werden keine personenbezogenen Daten, Zugangsdaten oder sensiblen Informationen verwendet. Die gesamte Arbeit findet auf einem Kali-Linux-Rechner statt.
+:::info
+Dieses Projekt dient ausschließlich meiner beruflichen Weiterbildung. Es werden keine personenbezogenen Daten, Zugangsdaten oder sensiblen Informationen verwendet. Die gesamte Arbeit findet auf einem Kali-Linux-Rechner statt.
+:::
 
 Dieses Projekt dokumentiert die Analyse und Ausnutzung ausgewählter Sicherheitslücken in der Anwendung OWASP Juice Shop. Alle Erkenntnisse, Demonstrationen und Exploit-Szenarien entstehen ausschließlich zu Lern- und Forschungszwecken in einer autorisierten Testumgebung.
 

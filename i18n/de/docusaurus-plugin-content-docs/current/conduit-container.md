@@ -30,8 +30,10 @@ Benenne die mitgelieferte Beispiel-Konfigurationsdatei um:
 ```bash
 cp example.env .env
 ```
-> [!NOTE]
-> Bearbeite die Datei `.env` und konfiguriere die benötigten Umgebungsvariablen.
+
+:::note
+Bearbeite die Datei `.env` und konfiguriere die benötigten Umgebungsvariablen.
+:::
 
 Mindestens solltest du setzen:
 
@@ -83,8 +85,10 @@ Lege in deinem Projekt diese Ordnerstruktur an:
 └── workflows/
     └── deployment.yaml
 ```
-> [!WARNING]
-> Häufiger Fehler: Der Ordner muss `workflows` (Plural) heißen, sonst erkennt GitHub Actions ihn nicht.
+
+:::warning
+Häufiger Fehler: Der Ordner muss `workflows` (Plural) heißen, sonst erkennt GitHub Actions ihn nicht.
+:::
 
 Definiere in `deployment.yaml` diese vier Abschnitte:
 
@@ -102,8 +106,9 @@ Definiere in `deployment.yaml` diese vier Abschnitte:
 | **Secret** | Ja, wird nie im Klartext angezeigt | privater SSH-Schlüssel, Passwort |
 | **Variable** | Nein, in der Oberfläche sichtbar | GitHub-Benutzername |
 
-> [!WARNING]
-> Verwechsle die beiden nicht. Sensible Zugangsdaten gehören in **Secrets**, nicht in eine einfache `.env`-Datei, die ins Repository committet wird.
+:::warning
+Verwechsle die beiden nicht. Sensible Zugangsdaten gehören in **Secrets**, nicht in eine einfache `.env`-Datei, die ins Repository committet wird.
+:::
 
 ### 3. GitHub Secrets hinzufügen
 
@@ -126,8 +131,9 @@ Definiere in `deployment.yaml` diese vier Abschnitte:
 | **Automatisch** | Einen Commit auf den Trigger-Branch pushen | Keine, funktioniert direkt |
 | **Manuell** | Zum Tab **Actions** gehen → **Run workflow** | Erfordert `workflow_dispatch:` unter `on:` |
 
-> [!TIP]
-> Wenn der Button „Run workflow“ fehlt, prüfe, ob `workflow_dispatch:` in deiner Trigger-Konfiguration steht.
+:::tip
+Wenn der Button „Run workflow“ fehlt, prüfe, ob `workflow_dispatch:` in deiner Trigger-Konfiguration steht.
+:::
 
 Öffne nach dem Auslösen den Tab **Actions**, um den Lauf live zu verfolgen, Schritt für Schritt, inklusive der Logs jeder Stufe.
 
