@@ -727,7 +727,7 @@
     "message": "Platzhalterbild für das Projekt Coderr"
   },
   "projects.quizzly.description": {
-    "message": "Quizzly erstellt aus Videoinhalten automatisch Quizfragen mithilfe von KI. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs)."
+    "message": "Mit Quizly verwandelst du ganz einfach YouTube-Videos in spannende Quizze! Dank KI-Technologie analysiert die App die Inhalte eines Videos und erstellt automatisch ein interaktives Quiz mit 10 Fragen. Ideal zum Lernen, Wiederholen oder einfach zum Spaß. Probiere es aus und teste dein Wissen auf eine neue, unterhaltsame Art! Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs)."
   },
   "projects.quizzly.imageLabel": {
     "message": "Vorschau der Quizzly-Oberfläche mit Eingabefeld für eine Video-URL und Übersicht der letzten Quizze"
