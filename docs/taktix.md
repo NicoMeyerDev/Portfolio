@@ -78,8 +78,8 @@ Live demo: [matchday-app-lqai.onrender.com](https://matchday-app-lqai.onrender.c
 
 Make sure the following software is installed on your system:
 
-- Python 3.12 or newer
-- Node.js 22 or newer
+- Docker (recommended), or alternatively:
+- Python 3.12 or newer and Node.js 22 or newer
 
 ## Quickstart
 
@@ -89,7 +89,45 @@ Make sure the following software is installed on your system:
 git clone https://github.com/NicoMeyerDev/matchday-app
 ```
 
-### Start the backend
+### Start with Docker
+
+Create a `.env` file in the root directory and fill in your values, for example:
+
+```bash
+POSTGRES_DB=matchday
+POSTGRES_USER=matchday_user
+POSTGRES_PASSWORD=your-password
+
+SECRET_KEY=your-secret-key
+DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+
+DJANGO_SUPERUSER_USERNAME=admin
+DJANGO_SUPERUSER_EMAIL=admin@example.com
+DJANGO_SUPERUSER_PASSWORD=your-admin-password
+
+FRONTEND_URL=http://localhost:8080
+DEBUG=False
+```
+
+Then start all containers:
+
+```bash
+docker compose up --build -d
+```
+
+Docker Compose starts three services:
+
+- **db:** PostgreSQL with a named volume (`postgres_data`), so the data survives restarts
+- **backend:** Django REST Framework with gunicorn, at `http://localhost:8000/api/`. The entrypoint script applies the migrations on start and creates the superuser. The container runs as a non-root user.
+- **frontend:** the React frontend behind nginx, at `http://localhost:8080`
+
+:::note
+Use your own secret values in the `.env` file and do not commit the file to the repository.
+:::
+
+### Alternatively: start without Docker
+
+#### Backend
 
 ```bash
 cd backend
@@ -109,7 +147,7 @@ python manage.py runserver
 
 The backend runs at `http://localhost:8000/api/`.
 
-### Start the frontend
+#### Frontend
 
 ```bash
 cd frontend
