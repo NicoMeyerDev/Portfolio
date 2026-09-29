@@ -30,6 +30,28 @@
   }
 }
 
+.badge {
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-tag-text);
+}
+
+.badgeBackend {
+  background-color: #ffd86b;
+}
+
+.badgeDevsecops {
+  background-color: #8ee6b0;
+}
+
+.comingSoon {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-text-18);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
