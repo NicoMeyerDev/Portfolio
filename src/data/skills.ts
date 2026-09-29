@@ -48,7 +48,7 @@ export function getSkillGroups(): SkillGroup[] {
         {
           id: 'rest-api',
           icon: 'img/skills/api.svg',
-          label: 'REST APIs',
+          label: 'REST API',
           usage: [
             translate({id: 'skills.rest.1', message: 'Baute REST-Endpunkte mit Django REST Framework'}),
             translate({id: 'skills.rest.2', message: 'Nutzte Serializer und Viewsets'}),
