@@ -1,7 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="32" cy="32" r="30" fill="#2f7de1"/>
-  <!-- request -->
-  <path d="M15 24h32m-8-8 8 8-8 8" stroke="#ffffff" stroke-width="5"/>
-  <!-- response -->
-  <path d="M49 42H17m8-8-8 8 8 8" stroke="#ffd166" stroke-width="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="7 8 54 54">
+  <defs>
+    <!-- gear shape, centered on 0,0 -->
+    <g id="gear">
+      <circle r="8"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(45)"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(90)"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(135)"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(180)"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(225)"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(270)"/>
+      <rect x="-2.6" y="-11.5" width="5.2" height="7" transform="rotate(315)"/>
+    </g>
+  </defs>
+  <!-- cloud -->
+  <g fill="#79b8ff">
+    <circle cx="19" cy="37" r="10"/>
+    <circle cx="31" cy="27" r="13"/>
+    <circle cx="45" cy="34" r="11"/>
+    <rect x="9" y="37" width="47" height="11" rx="5.5"/>
+  </g>
+  <!-- gear with a separating outline in the card color -->
+  <use xlink:href="#gear" x="45" y="43" fill="#404040" stroke="#404040" stroke-width="5" stroke-linejoin="round"/>
+  <use xlink:href="#gear" x="45" y="43" fill="#ffd166"/>
+  <circle cx="45" cy="43" r="3.4" fill="#79b8ff"/>
 </svg>
