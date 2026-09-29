@@ -81,8 +81,7 @@ export function getProjects(): Project[] {
         message: 'Vorschau des Projekts Juice Shop Master',
       }),
       docLink: '/docs/juice-shop-master',
-      // TODO: create a dedicated repo for the Juice Shop write-ups and check this link.
-      githubLink: 'https://github.com/NicoMeyerDev/Juice-Shop-Master',
+      githubLink: 'https://github.com/NicoMeyerDev/dev-blog/tree/main/docs/Juice-Shop-Master',
     },
     {
       id: 'coderr',

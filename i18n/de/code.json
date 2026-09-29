@@ -212,18 +212,6 @@
   "contact.heading": {
     "message": "Kontakt"
   },
-  "contact.intro": {
-    "message": "Hier steht, wonach ich suche und was ich mitbringe:"
-  },
-  "contact.role": {
-    "message": "Rolle: Ich suche eine Stelle als Junior DevSecOps Engineer oder Backend Developer und bin auch offen für ein duales Informatikstudium."
-  },
-  "contact.contribution": {
-    "message": "Beitrag: Nach 9 Jahren als Feldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python."
-  },
-  "contact.remote": {
-    "message": "Remote: Ich suche Stellen vor Ort oder hybrid im Raum Hamburg/Bremen und bin offen für Remote-Arbeit in ganz Deutschland."
-  },
   "contact.lookingForward": {
     "message": "Ich freue mich auf Ihre Nachricht!"
   },
@@ -673,7 +661,7 @@
     "description": "The title of the tag list page"
   },
   "footer.aiNotice": {
-    "message": "Diese Website wurde mit Unterstützung von KI (Claude) erstellt."
+    "message": "Entwickelt von mir mit Docusaurus – KI-Tools (Claude) habe ich gezielt als Unterstützung eingesetzt."
   },
   "skills.cardLabel": {
     "message": "{label}: so habe ich die Fähigkeit eingesetzt"
@@ -725,5 +713,32 @@
   },
   "projects.quizzly.imageLabel": {
     "message": "Vorschau der Quizzly-Oberfläche mit Eingabefeld für eine Video-URL und Übersicht der letzten Quizze"
+  },
+  "contact.looking.heading": {
+    "message": "Was ich suche"
+  },
+  "contact.role.label": {
+    "message": "Rolle:"
+  },
+  "contact.role.text": {
+    "message": "Ich suche eine Stelle als Junior DevSecOps Engineer oder Backend Developer und bin auch offen für ein duales Informatikstudium."
+  },
+  "contact.contribution.label": {
+    "message": "Beitrag:"
+  },
+  "contact.contribution.text": {
+    "message": "Nach 9 Jahren als Feldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python."
+  },
+  "contact.location.label": {
+    "message": "Arbeitsort:"
+  },
+  "contact.location.text": {
+    "message": "Ich suche Stellen vor Ort oder hybrid im Raum Hamburg/Bremen und bin offen für Remote-Arbeit in ganz Deutschland."
+  },
+  "contact.write": {
+    "message": "Nachricht schreiben"
+  },
+  "contact.githubIconAlt": {
+    "message": "GitHub-Logo"
   }
 }

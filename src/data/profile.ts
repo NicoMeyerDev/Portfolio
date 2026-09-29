@@ -2,6 +2,8 @@
 
 export const CONTACT_EMAIL = 'nicomeyerdev@gmail.com';
 
+export const GITHUB_URL = 'https://github.com/NicoMeyerDev';
+
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/nico-meyer-672176376/';
 
 export const CV_PATH = 'files/lebenslauf.pdf';

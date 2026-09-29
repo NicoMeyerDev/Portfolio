@@ -35,7 +35,7 @@ export default function Footer(): JSX.Element {
           {/* TODO: adjust the wording of this note if needed. */}
           <p className={styles.aiNotice}>
             <Translate id="footer.aiNotice">
-              Diese Website wurde mit Unterstützung von KI (Claude) erstellt.
+              Entwickelt von mir mit Docusaurus – KI-Tools (Claude) habe ich gezielt als Unterstützung eingesetzt.
             </Translate>
           </p>
         </div>

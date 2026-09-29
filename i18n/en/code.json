@@ -218,18 +218,6 @@
   "contact.heading": {
     "message": "Contact me"
   },
-  "contact.intro": {
-    "message": "Here is what I'm looking for and what I bring:"
-  },
-  "contact.role": {
-    "message": "Role: I'm looking for a position as a Junior DevSecOps Engineer or Backend Developer, and I'm also open to a dual study program in computer science."
-  },
-  "contact.contribution": {
-    "message": "Contribution: After 9 years in the Bundeswehr as a Feldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
-  },
-  "contact.remote": {
-    "message": "Remote: I'm looking for on-site or hybrid roles in the Hamburg/Bremen area and I'm open to remote work anywhere in Germany."
-  },
   "contact.lookingForward": {
     "message": "Looking forward to hearing from you!"
   },
@@ -673,7 +661,7 @@
     "description": "The title of the tag list page"
   },
   "footer.aiNotice": {
-    "message": "This website was created with the help of AI (Claude)."
+    "message": "Built by me with Docusaurus – I used AI tools (Claude) deliberately as support."
   },
   "skills.cardLabel": {
     "message": "{label}: how I used this skill"
@@ -725,5 +713,32 @@
   },
   "projects.quizzly.imageLabel": {
     "message": "Preview of the Quizzly interface with a video URL input and an overview of recent quizzes"
+  },
+  "contact.looking.heading": {
+    "message": "What I am looking for"
+  },
+  "contact.role.label": {
+    "message": "Role:"
+  },
+  "contact.role.text": {
+    "message": "I'm looking for a position as a Junior DevSecOps Engineer or Backend Developer, and I'm also open to a dual study program in computer science."
+  },
+  "contact.contribution.label": {
+    "message": "Contribution:"
+  },
+  "contact.contribution.text": {
+    "message": "After 9 years in the Bundeswehr as a Feldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
+  },
+  "contact.location.label": {
+    "message": "Location:"
+  },
+  "contact.location.text": {
+    "message": "I'm looking for on-site or hybrid roles in the Hamburg/Bremen area and I'm open to remote work anywhere in Germany."
+  },
+  "contact.write": {
+    "message": "Write a message"
+  },
+  "contact.githubIconAlt": {
+    "message": "GitHub logo"
   }
 }

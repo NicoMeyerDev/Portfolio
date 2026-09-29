@@ -3,11 +3,14 @@ import clsx from 'clsx';
 import {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useAlternatePageUtils} from '@docusaurus/theme-common/internal';
+import {GITHUB_URL} from '@site/src/data/profile';
 import styles from './header.module.css';
 
 interface NavItem {
   label: string;
   to: string;
+  // Opens in a new tab instead of resolving against the base URL.
+  external?: boolean;
 }
 
 // Built at render time so translate() picks the active locale.
@@ -16,6 +19,7 @@ const getNavItems = (): NavItem[] => [
   {label: translate({id: 'nav.projects', message: 'Projekte'}), to: '/#projects'},
   {label: translate({id: 'nav.skills', message: 'Skills'}), to: '/#skills'},
   {label: translate({id: 'nav.contact', message: 'Kontakt'}), to: '/#contact'},
+  {label: 'GitHub', to: GITHUB_URL, external: true},
 ];
 
 // Below this scroll offset the header always stays visible, so it doesn't
@@ -75,7 +79,9 @@ export default function Header(): JSX.Element {
           {navItems.map((item) => (
             <a
               key={item.to}
-              href={withBase(item.to)}
+              href={item.external ? item.to : withBase(item.to)}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               className={styles.navLink}
               onClick={() => setIsOpen(false)}>
               {item.label}
