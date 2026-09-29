@@ -75,7 +75,7 @@
   width: 100%;
   height: 220px;
   border-radius: 20px;
-  background-color: #0f2f6b;
+  background-color: var(--color-secondary);
   object-fit: cover;
 }
 

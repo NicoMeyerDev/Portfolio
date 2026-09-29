@@ -27,10 +27,10 @@
   --ifm-color-primary-light: #9dccff;
   --ifm-color-primary-lighter: #afd5ff;
   --ifm-color-primary-lightest: #d6e9ff;
-  --ifm-background-color: #0f2a5c;
-  --ifm-background-surface-color: #143c85;
-  --ifm-navbar-background-color: #0f2a5c;
-  --ifm-footer-background-color: #0b2049;
+  --ifm-background-color: #262e34;
+  --ifm-background-surface-color: #2d363d;
+  --ifm-navbar-background-color: #262e34;
+  --ifm-footer-background-color: #1e252a;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -47,11 +47,8 @@
   --color-hero: #266ad9;
   --color-white: #ffffff;
   --color-black: #262e34;
-  /* Blue is the one brand color: sections alternate between the hero blue
-     and a deeper blue, cards use an even deeper navy. */
-  --color-section-alt: #1b4fa5;
-  --color-card-gray: #143c85;
-  --color-project-card: #143c85;
+  --color-card-gray: #404040;
+  --color-project-card: #2f4563;
   --color-project-card-mobile: #1e3a6e;
   --color-tag-text: #1e2a3a;
   --color-text-light: var(--color-white);
