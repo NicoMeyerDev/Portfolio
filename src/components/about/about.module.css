@@ -21,11 +21,7 @@
   }
 
   .story {
-    flex: 3;
-  }
-
-  .facts {
-    flex: 2;
+    max-width: 860px;
   }
 }
 
@@ -35,8 +31,7 @@
   margin-bottom: 1.5rem;
 }
 
-.story p,
-.facts li {
+.story p {
   font-size: var(--font-size-text-18);
   font-weight: 300;
   line-height: 1.4;
@@ -48,21 +43,4 @@
 
 .story p:first-child {
   margin-top: 0;
-}
-
-.factsHeading {
-  margin: 0 0 0.75rem;
-  line-height: 1.4;
-  font-size: var(--font-size-text-24);
-  font-weight: 600;
-  color: var(--color-primary-light);
-}
-
-.facts .factsHeading:first-child {
-  margin-top: 0;
-}
-
-.facts ul {
-  margin: 0 0 1.5rem;
-  padding-left: 1.4rem;
 }

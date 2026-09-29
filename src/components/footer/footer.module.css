@@ -86,3 +86,9 @@
   color: var(--color-white);
   text-decoration: underline;
 }
+
+.aiNotice {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}

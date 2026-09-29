@@ -245,24 +245,6 @@
   "about.p3": {
     "message": "For me, moving into IT is not starting over, but building on what I have already learned and applying it to a new kind of complex system. I am continuously learning, building real projects and expanding my skills in a field that never stands still."
   },
-  "about.education.heading": {
-    "message": "Education / Training"
-  },
-  "about.education.developerAkademie": {
-    "message": "Training as Backend Developer and DevSecOps Engineer (period to follow)"
-  },
-  "about.languages.heading": {
-    "message": "Languages"
-  },
-  "about.languages.german": {
-    "message": "German"
-  },
-  "about.languages.levelTodo": {
-    "message": "Level to follow"
-  },
-  "about.languages.english": {
-    "message": "English"
-  },
   "contact.heading": {
     "message": "Contact me"
   },
@@ -719,5 +701,23 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "projects.projecty.description": {
+    "message": "TODO: placeholder for another project. Add problem, implementation and result."
+  },
+  "projects.projecty.imageLabel": {
+    "message": "Placeholder image for project Y"
+  },
+  "footer.aiNotice": {
+    "message": "This website was created with the help of AI (Claude)."
+  },
+  "skills.cardLabel": {
+    "message": "{label}: how I used this skill"
+  },
+  "skills.flipHint": {
+    "message": "Tap to flip"
+  },
+  "skills.backHeading": {
+    "message": "How I used it"
   }
 }

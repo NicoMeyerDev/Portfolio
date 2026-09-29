@@ -32,6 +32,12 @@ export default function Footer(): JSX.Element {
           <a className={styles.legalNotice} href={imprintHref}>
             <Translate id="footer.legalNotice">Impressum</Translate>
           </a>
+          {/* TODO: adjust the wording of this note if needed. */}
+          <p className={styles.aiNotice}>
+            <Translate id="footer.aiNotice">
+              Diese Website wurde mit Unterstützung von KI (Claude) erstellt.
+            </Translate>
+          </p>
         </div>
       </div>
       <button

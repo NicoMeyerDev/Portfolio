@@ -101,10 +101,30 @@ export function getProjects(): Project[] {
       githubLink: undefined,
     },
     {
+      id: 'project-y',
+      title: 'Projekt Y',
+      category: 'devsecops',
+      featured: true,
+      tags: ['Docker'],
+      description: translate({
+        id: 'projects.projecty.description',
+        message:
+          'TODO: Platzhalter für ein weiteres Projekt. Problem, Umsetzung und Ergebnis ergänzen.',
+      }),
+      image: 'img/projects/placeholder.svg',
+      imageLabel: translate({
+        id: 'projects.projecty.imageLabel',
+        message: 'Platzhalterbild für Projekt Y',
+      }),
+      // TODO: add docs page and GitHub repo of project Y.
+      docLink: undefined,
+      githubLink: undefined,
+    },
+    {
       id: 'baby-tools-shop',
       title: 'Baby Tools Shop',
       category: 'backend',
-      // TODO: set to true once project X is decided/removed and a slot is free.
+      // Shown under "Weitere Projekte" (/projects), after the five featured slots.
       featured: false,
       tags: ['Python', 'Docker', 'Django'],
       description: translate({

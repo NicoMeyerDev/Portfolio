@@ -239,24 +239,6 @@
   "about.p3": {
     "message": "Der Wechsel in die IT ist für mich kein Neuanfang, sondern der nächste Schritt auf dem, was ich bereits gelernt habe: Ich wende es auf eine neue Art von komplexem System an. Ich lerne laufend weiter, baue echte Projekte und erweitere meine Fähigkeiten in einem Feld, das nie stillsteht."
   },
-  "about.education.heading": {
-    "message": "Ausbildung / Weiterbildung"
-  },
-  "about.education.developerAkademie": {
-    "message": "Weiterbildung zum Backend Developer und DevSecOps Engineer (Zeitraum folgt)"
-  },
-  "about.languages.heading": {
-    "message": "Sprachen"
-  },
-  "about.languages.german": {
-    "message": "Deutsch"
-  },
-  "about.languages.levelTodo": {
-    "message": "Niveau folgt"
-  },
-  "about.languages.english": {
-    "message": "Englisch"
-  },
   "contact.heading": {
     "message": "Kontakt"
   },
@@ -719,5 +701,23 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "projects.projecty.description": {
+    "message": "TODO: Platzhalter für ein weiteres Projekt. Problem, Umsetzung und Ergebnis ergänzen."
+  },
+  "projects.projecty.imageLabel": {
+    "message": "Platzhalterbild für Projekt Y"
+  },
+  "footer.aiNotice": {
+    "message": "Diese Website wurde mit Unterstützung von KI (Claude) erstellt."
+  },
+  "skills.cardLabel": {
+    "message": "{label}: so habe ich die Fähigkeit eingesetzt"
+  },
+  "skills.flipHint": {
+    "message": "Tippen zum Umdrehen"
+  },
+  "skills.backHeading": {
+    "message": "So habe ich es eingesetzt"
   }
 }

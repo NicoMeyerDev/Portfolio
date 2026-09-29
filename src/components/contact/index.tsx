@@ -10,7 +10,6 @@ export default function Contact(): JSX.Element {
   const mailIconSrc = useBaseUrl('img/mail-icon.svg');
   const linkedInIconSrc = useBaseUrl('img/linkedin-icon.svg');
   const cvHref = useBaseUrl(CV_PATH);
-  const certificatesHref = useBaseUrl('/certificates');
 
   return (
     <section id="contact" className={styles.contact}>
@@ -73,9 +72,6 @@ export default function Contact(): JSX.Element {
           <div className={styles.downloads}>
             <Button href={cvHref} variant="light" download>
               <Translate id="cv.download">Lebenslauf herunterladen</Translate>
-            </Button>
-            <Button href={certificatesHref} variant="secondary">
-              <Translate id="certificates.view">Zertifikate ansehen</Translate>
             </Button>
           </div>
         </div>

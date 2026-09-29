@@ -55,7 +55,8 @@
 
 .role {
   grid-area: role;
-  font-size: var(--font-size-nav-and-sub);
+  /* Smaller than the other sub headings so the full title fits in one line. */
+  font-size: clamp(18px, 2vw, 26px);
   font-weight: 400;
   margin: 0 0 0.5rem;
 }
