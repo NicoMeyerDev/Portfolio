@@ -73,7 +73,12 @@ export default function ProjectCard({project}: ProjectCardProps): JSX.Element {
                 GitHub
               </Button>
             )}
-            {!project.docLink && !project.githubLink && (
+            {project.liveLink && (
+              <Button href={project.liveLink} variant="light" external>
+                <Translate id="projects.card.live">Live-Link</Translate>
+              </Button>
+            )}
+            {!project.docLink && !project.githubLink && !project.liveLink && (
               <span className={styles.comingSoon}>
                 <Translate id="projects.card.comingSoon">
                   Links folgen

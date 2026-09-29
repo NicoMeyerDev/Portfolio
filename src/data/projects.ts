@@ -14,6 +14,8 @@ export interface Project {
   // Site-internal docs path (e.g. '/docs/wordpress'); resolved with the base URL.
   docLink?: string;
   githubLink?: string;
+  // URL of the running app (opens in a new tab).
+  liveLink?: string;
 }
 
 // Built at render time so translate() picks the active locale.
@@ -37,9 +39,11 @@ export function getProjects(): Project[] {
         id: 'projects.taktix.imageLabel',
         message: 'Platzhalterbild für das Projekt Taktix',
       }),
-      // TODO: add the docs page and the GitHub repo of Taktix.
-      docLink: undefined,
+      docLink: '/docs/taktix',
+      // TODO: add the GitHub repo of Taktix.
       githubLink: undefined,
+      // TODO: replace with the real live URL of Taktix.
+      liveLink: 'https://example.com',
     },
     {
       id: 'conduit-container',

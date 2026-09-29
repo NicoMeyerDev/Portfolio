@@ -713,5 +713,8 @@
   },
   "skills.testing.4": {
     "message": "Erstellte Postman-Collections für manuelle API-Tests"
+  },
+  "projects.card.live": {
+    "message": "Live-Link"
   }
 }

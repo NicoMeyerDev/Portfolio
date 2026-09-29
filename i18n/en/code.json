@@ -713,5 +713,8 @@
   },
   "skills.testing.4": {
     "message": "Created Postman collections for manual API tests"
+  },
+  "projects.card.live": {
+    "message": "Live link"
   }
 }
