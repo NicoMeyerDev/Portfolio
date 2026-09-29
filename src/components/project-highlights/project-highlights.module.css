@@ -96,11 +96,8 @@
   text-decoration: none;
 }
 
-.seeMoreWrap {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.seeMoreWrap .seeMore {
-  margin-top: 0;
+/* Mobile: the button sits below the stacked cards and shouldn't stretch. */
+.mobileList .seeMore {
+  align-self: center;
+  margin-top: 0.5rem;
 }

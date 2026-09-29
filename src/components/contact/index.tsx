@@ -2,14 +2,12 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Button from '@site/src/components/button';
-import {CONTACT_EMAIL, CV_PATH, LINKEDIN_URL} from '@site/src/data/profile';
+import {CONTACT_EMAIL, LINKEDIN_URL} from '@site/src/data/profile';
 import styles from './contact.module.css';
 
 export default function Contact(): JSX.Element {
   const mailIconSrc = useBaseUrl('img/mail-icon.svg');
   const linkedInIconSrc = useBaseUrl('img/linkedin-icon.svg');
-  const cvHref = useBaseUrl(CV_PATH);
 
   return (
     <section id="contact" className={styles.contact}>
@@ -68,12 +66,6 @@ export default function Contact(): JSX.Element {
             />
             LinkedIn
           </a>
-
-          <div className={styles.downloads}>
-            <Button href={cvHref} variant="light" download>
-              <Translate id="cv.download">Lebenslauf herunterladen</Translate>
-            </Button>
-          </div>
         </div>
       </div>
     </section>
