@@ -17,7 +17,7 @@ export interface SkillGroup {
 
 // Built at render time so translate() picks the active locale.
 // TODO: check the bullets of the newer skills (REST APIs, SQL/PostgreSQL,
-// Testing, API docs, Authentication) against what was really done.
+// Testing, Authentication) against what was really done.
 export function getSkillGroups(): SkillGroup[] {
   return [
     {
@@ -68,20 +68,12 @@ export function getSkillGroups(): SkillGroup[] {
         {
           id: 'testing',
           icon: 'img/skills/testing.svg',
-          label: 'Testing (pytest)',
+          label: 'Testing (pytest, Postman)',
           usage: [
             translate({id: 'skills.testing.1', message: 'Schrieb Unit-Tests mit pytest'}),
             translate({id: 'skills.testing.2', message: 'Nutzte Fixtures für Testdaten'}),
             translate({id: 'skills.testing.3', message: 'Führte Tests automatisch in der CI-Pipeline aus'}),
-          ],
-        },
-        {
-          id: 'api-docs',
-          icon: 'img/skills/apidocs.svg',
-          label: translate({id: 'skills.apidocs.label', message: 'API-Doku (OpenAPI / Swagger, Postman)'}),
-          usage: [
-            translate({id: 'skills.apidocs.1', message: 'Dokumentierte Endpunkte mit OpenAPI/Swagger'}),
-            translate({id: 'skills.apidocs.2', message: 'Erstellte Postman-Collections für manuelle API-Tests'}),
+            translate({id: 'skills.testing.4', message: 'Erstellte Postman-Collections für manuelle API-Tests'}),
           ],
         },
         {

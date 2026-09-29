@@ -101,15 +101,6 @@
   "skills.testing.3": {
     "message": "Führte Tests automatisch in der CI-Pipeline aus"
   },
-  "skills.apidocs.label": {
-    "message": "API-Doku (OpenAPI / Swagger, Postman)"
-  },
-  "skills.apidocs.1": {
-    "message": "Dokumentierte Endpunkte mit OpenAPI/Swagger"
-  },
-  "skills.apidocs.2": {
-    "message": "Erstellte Postman-Collections für manuelle API-Tests"
-  },
   "skills.auth.label": {
     "message": "Authentifizierung"
   },
@@ -719,5 +710,8 @@
   },
   "skills.backHeading": {
     "message": "So habe ich es eingesetzt"
+  },
+  "skills.testing.4": {
+    "message": "Erstellte Postman-Collections für manuelle API-Tests"
   }
 }
