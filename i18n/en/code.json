@@ -1,0 +1,723 @@
+{
+  "certificates.date.todo": {
+    "message": "Date to follow"
+  },
+  "certificates.placeholder1.title": {
+    "message": "Certificate 1 (placeholder)"
+  },
+  "certificates.placeholder2.title": {
+    "message": "Certificate 2 (placeholder)"
+  },
+  "certificates.placeholder2.issuer": {
+    "message": "Issuer to follow"
+  },
+  "projects.taktix.description": {
+    "message": "Football coaches often plan training sessions and line-ups with paper notes and chat groups. I built Taktix as my own backend application that brings this planning together in one place. TODO: add result and current status."
+  },
+  "projects.taktix.imageLabel": {
+    "message": "Placeholder image for the Taktix project"
+  },
+  "projects.conduit.description": {
+    "message": "Manual deployments are error-prone and slow. I built a CI/CD pipeline with GitHub Actions and the GitHub Container Registry that builds the application, prepares the configuration and deploys it to the server via SSH. Result: a fully automated path from push to production in three stages."
+  },
+  "projects.conduit.imageLabel": {
+    "message": "Preview of the Conduit Container project"
+  },
+  "projects.juice.description": {
+    "message": "You only really understand security flaws once you exploit them yourself. In the OWASP Juice Shop I reproduced and documented attacks such as SQL injection and authentication flaws. Result: write-ups that show how the flaws work and how to prevent them."
+  },
+  "projects.juice.imageLabel": {
+    "message": "Preview of the Juice Shop Master project"
+  },
+  "projects.projectx.description": {
+    "message": "TODO: placeholder for the next project. Add problem, implementation and result."
+  },
+  "projects.projectx.imageLabel": {
+    "message": "Placeholder image for project X"
+  },
+  "projects.babytools.description": {
+    "message": "A shop for baby and kids products should keep its data even after a restart. I built a full-stack application with Python and Django that runs on SQLite and is operated through a custom Docker setup with volume mapping. Result: a dockerized shop with persistent data."
+  },
+  "projects.babytools.imageLabel": {
+    "message": "Preview of the Baby Tools Shop project"
+  },
+  "projects.wordpress.description": {
+    "message": "A self-hosted WordPress server should run reproducibly and securely. I set it up with Docker Compose, MySQL and phpMyAdmin, put the data into volumes and moved all credentials into a .env file. Result: a blog that stays online through a restart policy, with no secrets in the repo."
+  },
+  "projects.wordpress.imageLabel": {
+    "message": "Preview of the WordPress server project"
+  },
+  "projects.minecraft.description": {
+    "message": "A Java server should be set up and started without manual steps. I containerized it with a custom Dockerfile on an OpenJDK base image and wrote an entrypoint script that automates provisioning, configuration and startup. Result: a server that runs with a single command."
+  },
+  "projects.minecraft.imageLabel": {
+    "message": "Preview of the Minecraft Server project"
+  },
+  "skills.group.backend": {
+    "message": "Backend"
+  },
+  "skills.python.1": {
+    "message": "Built a project using Python"
+  },
+  "skills.python.2": {
+    "message": "Wrote scripts to automate tasks"
+  },
+  "skills.python.3": {
+    "message": "Built APIs"
+  },
+  "skills.django.1": {
+    "message": "Built the project backend with Django"
+  },
+  "skills.django.2": {
+    "message": "Implemented user authentication and permissions"
+  },
+  "skills.django.3": {
+    "message": "Implemented views and templates for the project"
+  },
+  "skills.rest.1": {
+    "message": "Built REST endpoints with Django REST Framework"
+  },
+  "skills.rest.2": {
+    "message": "Used serializers and viewsets"
+  },
+  "skills.rest.3": {
+    "message": "Secured endpoints with permissions"
+  },
+  "skills.sql.1": {
+    "message": "Wrote SQL queries with joins and filters"
+  },
+  "skills.sql.2": {
+    "message": "Modeled relational database schemas"
+  },
+  "skills.sql.3": {
+    "message": "Ran PostgreSQL in Docker containers"
+  },
+  "skills.testing.1": {
+    "message": "Wrote unit tests with pytest"
+  },
+  "skills.testing.2": {
+    "message": "Used fixtures for test data"
+  },
+  "skills.testing.3": {
+    "message": "Ran tests automatically in the CI pipeline"
+  },
+  "skills.apidocs.label": {
+    "message": "API docs (OpenAPI / Swagger, Postman)"
+  },
+  "skills.apidocs.1": {
+    "message": "Documented endpoints with OpenAPI/Swagger"
+  },
+  "skills.apidocs.2": {
+    "message": "Created Postman collections for manual API tests"
+  },
+  "skills.auth.label": {
+    "message": "Authentication"
+  },
+  "skills.auth.1": {
+    "message": "Implemented login and session handling"
+  },
+  "skills.auth.2": {
+    "message": "Set up multi-factor authentication"
+  },
+  "skills.auth.3": {
+    "message": "Restricted access through roles and permissions"
+  },
+  "skills.group.devsecops": {
+    "message": "DevSecOps"
+  },
+  "skills.docker.1": {
+    "message": "Containerized a project with a Dockerfile"
+  },
+  "skills.docker.2": {
+    "message": "Built CI/CD pipelines around Docker images"
+  },
+  "skills.docker.3": {
+    "message": "Automated builds, tests and deployments"
+  },
+  "skills.cicd.label": {
+    "message": "CI/CD with GitHub Actions"
+  },
+  "skills.cicd.1": {
+    "message": "Automated builds and tests"
+  },
+  "skills.cicd.2": {
+    "message": "Used pre-built actions for common tasks"
+  },
+  "skills.cicd.3": {
+    "message": "Set up automatic deployment to GitHub Pages on push to main"
+  },
+  "skills.shell.label": {
+    "message": "Linux / Shell scripting"
+  },
+  "skills.shell.1": {
+    "message": "Added new users and set their permissions"
+  },
+  "skills.shell.2": {
+    "message": "Searched and filtered logs with grep and awk"
+  },
+  "skills.shell.3": {
+    "message": "Hardened SSH access on a Linux server"
+  },
+  "skills.security.label": {
+    "message": "IT security"
+  },
+  "skills.security.1": {
+    "message": "Simulated attacks and identified vulnerabilities"
+  },
+  "skills.security.2": {
+    "message": "Set up multi-factor authentication"
+  },
+  "skills.security.3": {
+    "message": "Implemented authentication and authorization mechanisms"
+  },
+  "skills.yaml.1": {
+    "message": "Wrote GitHub Actions and Docker Compose files"
+  },
+  "skills.yaml.2": {
+    "message": "Used lists and maps in complex configs"
+  },
+  "skills.git.1": {
+    "message": "Used feature branches and pull requests"
+  },
+  "skills.git.2": {
+    "message": "Wrote clear, descriptive commit messages"
+  },
+  "skills.git.3": {
+    "message": "Resolved merge conflicts and used rebase"
+  },
+  "certificates.open": {
+    "message": "View (PDF)"
+  },
+  "certificates.page.title": {
+    "message": "Certificates"
+  },
+  "certificates.page.description": {
+    "message": "Certificates and credentials of Nico Meyer."
+  },
+  "certificates.page.heading": {
+    "message": "Certificates"
+  },
+  "legal.heading": {
+    "message": "Legal notice"
+  },
+  "legal.page.description": {
+    "message": "Legal notice (Impressum)"
+  },
+  "hero.tagline": {
+    "message": "I build backends and bring them safely into production."
+  },
+  "projects.filter.all": {
+    "message": "All"
+  },
+  "projects.filter.backend": {
+    "message": "Backend"
+  },
+  "projects.filter.devsecops": {
+    "message": "DevSecOps"
+  },
+  "projects.page.title": {
+    "message": "Projects"
+  },
+  "projects.page.description": {
+    "message": "All projects by Nico Meyer – backend and DevSecOps."
+  },
+  "projects.page.heading": {
+    "message": "All projects"
+  },
+  "projects.filter.label": {
+    "message": "Filter projects"
+  },
+  "footer.scrollTop": {
+    "message": "Scroll to top"
+  },
+  "footer.legalNotice": {
+    "message": "Legal notice"
+  },
+  "about.heading": {
+    "message": "About me"
+  },
+  "about.p1": {
+    "message": "As a trained automotive mechatronics technician and former Feldwebel, I spent nine years in the Bundeswehr working with complex systems, taking responsibility and solving problems under pressure."
+  },
+  "about.p2": {
+    "message": "Today I bring that experience into software development, with a focus on backend development and DevSecOps. I build containerized applications with Docker, automate deployments with CI/CD and treat security as an integral part of the development process."
+  },
+  "about.p3": {
+    "message": "For me, moving into IT is not starting over, but building on what I have already learned and applying it to a new kind of complex system. I am continuously learning, building real projects and expanding my skills in a field that never stands still."
+  },
+  "about.education.heading": {
+    "message": "Education / Training"
+  },
+  "about.education.developerAkademie": {
+    "message": "Training as Backend Developer and DevSecOps Engineer (period to follow)"
+  },
+  "about.languages.heading": {
+    "message": "Languages"
+  },
+  "about.languages.german": {
+    "message": "German"
+  },
+  "about.languages.levelTodo": {
+    "message": "Level to follow"
+  },
+  "about.languages.english": {
+    "message": "English"
+  },
+  "contact.heading": {
+    "message": "Contact me"
+  },
+  "contact.intro": {
+    "message": "Here is what I'm looking for and what I bring:"
+  },
+  "contact.role": {
+    "message": "Role: I'm looking for a position as a Junior DevSecOps Engineer or Backend Developer, and I'm also open to a dual study program in computer science."
+  },
+  "contact.contribution": {
+    "message": "Contribution: After 9 years in the Bundeswehr as a Feldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
+  },
+  "contact.remote": {
+    "message": "Remote: I'm looking for on-site or hybrid roles in the Hamburg/Bremen area and I'm open to remote work anywhere in Germany."
+  },
+  "contact.lookingForward": {
+    "message": "Looking forward to hearing from you!"
+  },
+  "contact.mailIconAlt": {
+    "message": "Email icon"
+  },
+  "contact.linkedinIconAlt": {
+    "message": "LinkedIn logo"
+  },
+  "cv.download": {
+    "message": "Download CV"
+  },
+  "certificates.view": {
+    "message": "View certificates"
+  },
+  "nav.about": {
+    "message": "About me"
+  },
+  "nav.skills": {
+    "message": "Skills"
+  },
+  "nav.projects": {
+    "message": "Projects"
+  },
+  "nav.contact": {
+    "message": "Contact"
+  },
+  "nav.language": {
+    "message": "Language"
+  },
+  "nav.close": {
+    "message": "Close navigation"
+  },
+  "nav.open": {
+    "message": "Open navigation"
+  },
+  "hero.greeting": {
+    "message": "Hey there. 👋 I am"
+  },
+  "hero.bio": {
+    "message": "As a trained automotive mechatronics technician and former Feldwebel, I spent nine years in the Bundeswehr taking responsibility for complex systems. Today I focus on backend development and DevSecOps: I build containerized applications, automate deployments with CI/CD and treat security as part of the work from the start."
+  },
+  "hero.cta.contact": {
+    "message": "Get in touch"
+  },
+  "hero.photoAlt": {
+    "message": "Portrait photo of Nico Meyer"
+  },
+  "legal.country": {
+    "message": "Germany"
+  },
+  "legal.subheading": {
+    "message": "Information according to § 5 DDG"
+  },
+  "legal.contact.heading": {
+    "message": "Contact"
+  },
+  "legal.contact.email": {
+    "message": "Email:"
+  },
+  "legal.contact.linkedin": {
+    "message": "You can also contact me via my LinkedIn profile:"
+  },
+  "legal.responsible.heading": {
+    "message": "Responsible for content"
+  },
+  "legal.responsible.text": {
+    "message": "Responsible for the content of this website pursuant to § 18 Abs. 2 MStV:"
+  },
+  "legal.content.heading": {
+    "message": "Liability for content"
+  },
+  "legal.content.p1": {
+    "message": "As a service provider, I am responsible for my own content on this website in accordance with general laws. However, I am not obliged to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity."
+  },
+  "legal.content.p2": {
+    "message": "Obligations to remove or block the use of information under generally applicable laws remain unaffected."
+  },
+  "legal.links.heading": {
+    "message": "Liability for links"
+  },
+  "legal.links.p1": {
+    "message": "This website may contain links to external third-party websites. I have no influence over the content of these external websites and therefore cannot assume any liability for such third-party content."
+  },
+  "legal.links.p2": {
+    "message": "The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time the link was created. No unlawful content was apparent at that time."
+  },
+  "legal.links.p3": {
+    "message": "Permanent monitoring of the content of linked pages is not reasonable without specific evidence of a legal violation. If I become aware of any legal violations, I will remove the relevant links promptly."
+  },
+  "legal.copyright.heading": {
+    "message": "Copyright"
+  },
+  "legal.copyright.p1": {
+    "message": "The content and works created by the website operator on this website are subject to German copyright law. Reproduction, editing, distribution or any kind of exploitation outside the limits of copyright law requires the prior written consent of the respective author or creator."
+  },
+  "legal.copyright.p2": {
+    "message": "Downloads and copies of this website are permitted for private, non-commercial use only, unless otherwise stated."
+  },
+  "legal.copyright.p3": {
+    "message": "Where the content on this website was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such where applicable."
+  },
+  "legal.copyright.p4": {
+    "message": "If you nevertheless become aware of a copyright infringement, please notify me accordingly. Upon becoming aware of legal violations, I will remove such content promptly."
+  },
+  "legal.odr.heading": {
+    "message": "EU Online Dispute Resolution"
+  },
+  "legal.odr.text": {
+    "message": "The European Commission provides a platform for online dispute resolution (ODR). However, I am neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+  },
+  "skills.heading": {
+    "message": "My skills"
+  },
+  "projects.badge.backend": {
+    "message": "Backend"
+  },
+  "projects.badge.devsecops": {
+    "message": "DevSecOps"
+  },
+  "projects.card.docs": {
+    "message": "Documentation"
+  },
+  "projects.card.comingSoon": {
+    "message": "Links to follow"
+  },
+  "projects.heading": {
+    "message": "My project highlights"
+  },
+  "projects.seeMore": {
+    "message": "See more projects"
+  },
+  "skills.iconAlt": {
+    "message": "{label} icon"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View all tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read more",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  }
+}
