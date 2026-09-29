@@ -727,7 +727,7 @@
     "message": "Placeholder image for the Coderr project"
   },
   "projects.quizzly.description": {
-    "message": "With Quizly you can easily turn YouTube videos into exciting quizzes! Using AI technology, the app analyzes the content of a video and automatically creates an interactive quiz with 10 questions. Ideal for learning, revising or just for fun. Try it out and test your knowledge in a new, entertaining way! I built the backend with Python, Django and Django REST Framework, with JWT authentication and integration of language models (LLMs)."
+    "message": "With Quizly you turn YouTube videos into interactive quizzes: the app analyzes the video with AI and automatically creates 10 questions. I built the backend with Python, Django and Django REST Framework, with JWT authentication and integration of language models (LLMs)."
   },
   "projects.quizzly.imageLabel": {
     "message": "Preview of the Quizzly interface with a video URL input and an overview of recent quizzes"

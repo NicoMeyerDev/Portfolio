@@ -113,7 +113,7 @@ export function getProjects(): Project[] {
       description: translate({
         id: 'projects.quizzly.description',
         message:
-          'Mit Quizly verwandelst du ganz einfach YouTube-Videos in spannende Quizze! Dank KI-Technologie analysiert die App die Inhalte eines Videos und erstellt automatisch ein interaktives Quiz mit 10 Fragen. Ideal zum Lernen, Wiederholen oder einfach zum Spaß. Probiere es aus und teste dein Wissen auf eine neue, unterhaltsame Art! Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs).',
+          'Mit Quizly verwandelst du YouTube-Videos in interaktive Quizze: Die App analysiert das Video mit KI und erstellt automatisch 10 Fragen. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs).',
       }),
       image: 'img/projects/quizzly.png',
       imageLabel: translate({
