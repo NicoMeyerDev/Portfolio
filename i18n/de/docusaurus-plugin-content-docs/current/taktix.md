@@ -6,11 +6,11 @@ sidebar_position: 1
 
 # Taktix
 
-Taktix ist eine Backend-Anwendung für Fußballtrainer, die ich als eigenes Projekt entwickelt habe. Sie bündelt die Planung von Training und Aufstellungen an einer Stelle.
+Taktix ist eine Coaching- und Taktik-App, die Trainer-Workflows für Fußballvereine digitalisiert. Ich habe sie als eigenes Projekt entwickelt und die Backend-Architektur der Desktop- und Tablet-PWA konzipiert und umgesetzt: RESTful APIs, PostgreSQL-Datenbank und Docker-Deployment.
 
 ## Technik
 
-Python, Django, Docker
+Python, Django, PostgreSQL, Docker
 
 ## Funktionen
 

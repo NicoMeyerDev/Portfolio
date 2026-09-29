@@ -32,12 +32,12 @@ export function getProjects(): Project[] {
       description: translate({
         id: 'projects.taktix.description',
         message:
-          'Fußballtrainer planen Training und Aufstellungen oft mit Zettel und Chat-Gruppen. Ich habe Taktix als eigene Backend-Anwendung entwickelt, die diese Planung an einer Stelle bündelt. TODO: Ergebnis und Stand ergänzen.',
+          'Taktix ist eine Coaching- und Taktik-App, die Trainer-Workflows für Fußballvereine digitalisiert. Ich habe die Backend-Architektur der Desktop- und Tablet-PWA konzipiert und umgesetzt: RESTful APIs, PostgreSQL-Datenbank und Docker-Deployment.',
       }),
-      image: 'img/projects/placeholder.svg',
+      image: 'img/projects/taktix.png',
       imageLabel: translate({
         id: 'projects.taktix.imageLabel',
-        message: 'Platzhalterbild für das Projekt Taktix',
+        message: 'Screenshot der Taktix-Anmeldeseite vor einem Spielplan in der Kabine',
       }),
       docLink: '/docs/taktix',
       // TODO: add the GitHub repo of Taktix.

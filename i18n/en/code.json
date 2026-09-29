@@ -1,9 +1,9 @@
 {
   "projects.taktix.description": {
-    "message": "Football coaches often plan training sessions and line-ups with paper notes and chat groups. I built Taktix as my own backend application that brings this planning together in one place. TODO: add result and current status."
+    "message": "Taktix is a coaching and tactics app that digitizes coach workflows for football clubs. I designed and built the backend architecture of the desktop and tablet PWA: RESTful APIs, a PostgreSQL database and Docker deployment."
   },
   "projects.taktix.imageLabel": {
-    "message": "Placeholder image for the Taktix project"
+    "message": "Screenshot of the Taktix login page in front of a tactics board in the locker room"
   },
   "projects.conduit.description": {
     "message": "Manual deployments are error-prone and slow. I built a CI/CD pipeline with GitHub Actions and the GitHub Container Registry that builds the application, prepares the configuration and deploys it to the server via SSH. Result: a fully automated path from push to production in three stages."
