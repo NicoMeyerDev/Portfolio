@@ -1,5 +1,5 @@
 .legalNotice {
-  background-color: var(--color-secondary);
+  background-color: var(--color-section-alt);
   color: var(--color-white);
   padding: calc(3rem + var(--header-height)) 0 3rem;
   min-height: calc(100vh - 463px);

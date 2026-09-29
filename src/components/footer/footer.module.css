@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-section-alt);
   color: var(--color-text-muted);
   padding: 0;
 }

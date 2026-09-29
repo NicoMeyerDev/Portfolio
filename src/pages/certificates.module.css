@@ -1,5 +1,5 @@
 .page {
-  background-color: var(--color-secondary);
+  background-color: var(--color-section-alt);
   color: var(--color-white);
   min-height: 100vh;
   padding: calc(2rem + var(--header-height)) 0 4rem;
