@@ -207,13 +207,13 @@
     "message": "About me"
   },
   "about.p1": {
-    "message": "Alongside my service in the Bundeswehr I completed IT training in my spare time. What drives me is to keep expanding my knowledge and to continuously improve the quality of my work."
+    "message": "After my training as an automotive mechatronics technician I served almost nine years in the Bundeswehr, most recently as Hauptfeldwebel with leadership responsibility. There I learned to work in a structured way even under time pressure, to take responsibility and to get up to speed quickly on complex technical topics."
   },
   "about.p2": {
-    "message": "My path began in 2025 with an e-training as a Data Analyst (Python); in 2026 I took the Python Fundamentals course at Technische Akademie Nord. I then completed the training as a software developer with a back-end focus at Developer Akademie: 13 modules and four capstone projects, including Coderr and Quizzly."
+    "message": "Alongside my service I began to engage intensively with IT. What started with Python and data analytics quickly developed toward software development. Today my focus is backend development with Python and Django. I am also increasingly working with topics such as Docker, CI/CD, Linux and IT security."
   },
   "about.p3": {
-    "message": "I am currently doing the DevSecOps Engineer training, which I complete in October 2026. There I am deepening CI/CD with GitHub Actions, container orchestration, IT security and Linux infrastructure."
+    "message": "I am currently deepening my knowledge in DevSecOps and working in parallel on my own project, Taktix. I am developing a football coach app that aims to digitize the coach's day-to-day work and make tasks such as line-up planning and tactical instructions simpler and clearer."
   },
   "contact.heading": {
     "message": "Contact me"
@@ -740,5 +740,8 @@
   },
   "contact.githubIconAlt": {
     "message": "GitHub logo"
+  },
+  "about.p4": {
+    "message": "For me, moving into IT is not a complete fresh start but the next step. I bring experience, technical curiosity and the willingness to keep developing. My aim is not to know as many technologies as possible, but to truly understand things and build working solutions with them."
   }
 }

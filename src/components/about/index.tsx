@@ -16,17 +16,22 @@ export default function About(): JSX.Element {
         <div className={styles.story}>
           <p>
             <Translate id="about.p1">
-              Neben meinem Dienst bei der Bundeswehr habe ich mich nebenberuflich in der IT weitergebildet. Mich treibt an, mein Wissen stetig zu erweitern und die Qualität meiner Arbeit kontinuierlich zu verbessern.
+              Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich fast neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten.
             </Translate>
           </p>
           <p>
             <Translate id="about.p2">
-              Mein Weg begann 2025 mit einem E-Training zum Data-Analyst (Python), 2026 folgte der Kurs Python Grundlagen bei der Technischen Akademie Nord. Anschließend habe ich bei der Developer Akademie die Weiterbildung zum Softwareentwickler mit Schwerpunkt Back-End abgeschlossen: 13 Module und vier Capstone-Projekte, darunter Coderr und Quizzly.
+              Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security.
             </Translate>
           </p>
           <p>
             <Translate id="about.p3">
-              Aktuell mache ich die Weiterbildung zum DevSecOps Engineer, die ich im Oktober 2026 abschließe. Dort vertiefe ich CI/CD mit GitHub Actions, Container-Orchestrierung, IT-Security und Linux-Infrastruktur.
+              Aktuell vertiefe ich mein Wissen im Bereich DevSecOps und arbeite parallel an meinem eigenen Projekt Taktix. Dabei entwickle ich eine Fußball-Trainer-App, die den Traineralltag digitalisieren und Aufgaben wie Aufstellungsplanung und taktische Anweisungen einfacher und übersichtlicher machen soll.
+            </Translate>
+          </p>
+          <p>
+            <Translate id="about.p4">
+              Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen.
             </Translate>
           </p>
         </div>
