@@ -11,11 +11,13 @@ export default function Contact(): JSX.Element {
 
   return (
     <section id="contact" className={styles.contact}>
+      <div className="container">
+        <h2 className={styles.heading}>
+          <Translate id="contact.heading">Kontakt</Translate>
+        </h2>
+      </div>
       <div className={clsx('container', styles.inner)}>
         <div className={styles.text}>
-          <h2 className={styles.heading}>
-            <Translate id="contact.heading">Kontakt</Translate>
-          </h2>
           <p>
             <Translate id="contact.intro">
               Hier steht, wonach ich suche und was ich mitbringe:
