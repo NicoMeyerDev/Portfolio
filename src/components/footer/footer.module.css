@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--color-secondary);
-  color: var(--color-text-muted);
+  background-color: var(--color-hero);
+  color: var(--color-white);
   padding: 0;
 }
 
@@ -79,7 +79,8 @@
 }
 
 .legalNotice {
-  color: var(--color-text-muted);
+  color: var(--color-white);
+  text-decoration: underline;
 }
 
 .legalNotice:hover {
@@ -90,5 +91,5 @@
 .aiNotice {
   margin: 8px 0 0;
   font-size: 14px;
-  color: var(--color-text-muted);
+  color: var(--color-white);
 }
