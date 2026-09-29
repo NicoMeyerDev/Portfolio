@@ -115,13 +115,13 @@ export function getProjects(): Project[] {
         message:
           'Quizzly erstellt aus Videoinhalten automatisch Quizfragen mithilfe von KI. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, mit JWT-Authentifizierung und Anbindung von Sprachmodellen (LLMs).',
       }),
-      image: 'img/projects/placeholder.svg',
+      image: 'img/projects/quizzly.png',
       imageLabel: translate({
         id: 'projects.quizzly.imageLabel',
-        message: 'Platzhalterbild für das Projekt Quizzly',
+        message: 'Vorschau der Quizzly-Oberfläche mit Eingabefeld für eine Video-URL und Übersicht der letzten Quizze',
       }),
       docLink: '/docs/quizzly',
-      // TODO: add GitHub repo and screenshot of Quizzly.
+      // TODO: add GitHub repo of Quizzly.
       githubLink: undefined,
     },
     {

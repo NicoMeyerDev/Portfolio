@@ -730,6 +730,6 @@
     "message": "Quizzly automatically creates quiz questions from video content using AI. I built the backend with Python, Django and Django REST Framework, with JWT authentication and integration of language models (LLMs)."
   },
   "projects.quizzly.imageLabel": {
-    "message": "Placeholder image for the Quizzly project"
+    "message": "Preview of the Quizzly interface with a video URL input and an overview of recent quizzes"
   }
 }
