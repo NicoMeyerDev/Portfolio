@@ -21,16 +21,11 @@ export default function About(): JSX.Element {
           </p>
           <p>
             <Translate id="about.p2">
-              Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security.
+              Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security. Aktuell vertiefe ich mein Wissen im Bereich DevSecOps.
             </Translate>
           </p>
           <p>
             <Translate id="about.p3">
-              Aktuell vertiefe ich mein Wissen im Bereich DevSecOps und arbeite parallel an meinem eigenen Projekt Taktix. Dabei entwickle ich eine Fußball-Trainer-App, die den Traineralltag digitalisieren und Aufgaben wie Aufstellungsplanung und taktische Anweisungen einfacher und übersichtlicher machen soll.
-            </Translate>
-          </p>
-          <p>
-            <Translate id="about.p4">
               Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen.
             </Translate>
           </p>

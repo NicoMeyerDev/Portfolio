@@ -204,10 +204,10 @@
     "message": "Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten."
   },
   "about.p2": {
-    "message": "Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security."
+    "message": "Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security. Aktuell vertiefe ich mein Wissen im Bereich DevSecOps."
   },
   "about.p3": {
-    "message": "Aktuell vertiefe ich mein Wissen im Bereich DevSecOps und arbeite parallel an meinem eigenen Projekt Taktix. Dabei entwickle ich eine Fußball-Trainer-App, die den Traineralltag digitalisieren und Aufgaben wie Aufstellungsplanung und taktische Anweisungen einfacher und übersichtlicher machen soll."
+    "message": "Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen."
   },
   "contact.heading": {
     "message": "Kontakt"
@@ -737,9 +737,6 @@
   },
   "contact.githubIconAlt": {
     "message": "GitHub-Logo"
-  },
-  "about.p4": {
-    "message": "Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen."
   },
   "projects.videoflix.description": {
     "message": "Videoflix ist ein containerisiertes Streaming-Backend nach dem Vorbild moderner Streaming-Plattformen. Hochgeladene Videos werden im Hintergrund mit ffmpeg in mehrere Auflösungen (480p, 720p, 1080p) für adaptives HLS-Streaming umgewandelt. Registrierung mit E-Mail-Aktivierung und JWT-Login über HttpOnly-Cookies sind eingebaut."

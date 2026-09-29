@@ -1,8 +1,7 @@
 .hero {
   background-color: var(--color-hero);
   color: var(--color-white);
-  min-height: 635px;
-  padding: calc(50px + var(--header-height)) 0 72px;
+  padding: calc(50px + var(--header-height)) 0 40px;
   display: flex;
   align-items: center;
 }
@@ -23,7 +22,7 @@
 
 @media (min-width: 992px) {
   .inner {
-    align-items: start;
+    align-items: center;
     gap: 0 48px;
     grid-template-columns: 1fr 442px;
     grid-template-areas:

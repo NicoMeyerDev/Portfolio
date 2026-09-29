@@ -210,10 +210,10 @@
     "message": "After my training as an automotive mechatronics technician I served nine years in the Bundeswehr, most recently as Hauptfeldwebel with leadership responsibility. There I learned to work in a structured way even under time pressure, to take responsibility and to get up to speed quickly on complex technical topics."
   },
   "about.p2": {
-    "message": "Alongside my service I began to engage intensively with IT. What started with Python and data analytics quickly developed toward software development. Today my focus is backend development with Python and Django. I am also increasingly working with topics such as Docker, CI/CD, Linux and IT security."
+    "message": "Alongside my service I began to engage intensively with IT. What started with Python and data analytics quickly developed toward software development. Today my focus is backend development with Python and Django. I am also increasingly working with topics such as Docker, CI/CD, Linux and IT security. I am currently deepening my knowledge in DevSecOps."
   },
   "about.p3": {
-    "message": "I am currently deepening my knowledge in DevSecOps and working in parallel on my own project, Taktix. I am developing a football coach app that aims to digitize the coach's day-to-day work and make tasks such as line-up planning and tactical instructions simpler and clearer."
+    "message": "For me, moving into IT is not a complete fresh start but the next step. I bring experience, technical curiosity and the willingness to keep developing. My aim is not to know as many technologies as possible, but to truly understand things and build working solutions with them."
   },
   "contact.heading": {
     "message": "Contact me"
@@ -737,9 +737,6 @@
   },
   "contact.githubIconAlt": {
     "message": "GitHub logo"
-  },
-  "about.p4": {
-    "message": "For me, moving into IT is not a complete fresh start but the next step. I bring experience, technical curiosity and the willingness to keep developing. My aim is not to know as many technologies as possible, but to truly understand things and build working solutions with them."
   },
   "projects.videoflix.description": {
     "message": "Videoflix is a containerized streaming backend inspired by modern streaming platforms. Uploaded videos are converted in the background with ffmpeg into several resolutions (480p, 720p, 1080p) for adaptive HLS streaming. Registration with email activation and JWT login via HttpOnly cookies are built in."
