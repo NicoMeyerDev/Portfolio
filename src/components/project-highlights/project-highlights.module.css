@@ -1,5 +1,5 @@
 .projectHighlights {
-  background-color: var(--color-project-highlight);
+  background-color: var(--color-secondary);
   color: var(--color-white);
   padding: 3rem 0;
 }
@@ -66,7 +66,7 @@
 }
 
 .listItemActive {
-  color: var(--color-secondary);
+  color: #79b8ff;
   font-weight: 700;
 }
 
@@ -92,7 +92,7 @@
 .seeMore:hover,
 .seeMore:focus-visible {
   background-color: var(--color-white);
-  color: var(--color-project-highlight);
+  color: var(--color-secondary);
   text-decoration: none;
 }
 

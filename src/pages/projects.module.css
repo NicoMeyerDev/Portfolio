@@ -1,5 +1,5 @@
 .page {
-  background-color: var(--color-project-highlight);
+  background-color: var(--color-secondary);
   color: var(--color-white);
   min-height: 100vh;
   padding: calc(2rem + var(--header-height)) 0 4rem;
@@ -40,7 +40,7 @@
 .filterButtonActive,
 .filterButtonActive:hover {
   background-color: var(--color-white);
-  color: var(--color-project-highlight);
+  color: var(--color-secondary);
 }
 
 .list {
