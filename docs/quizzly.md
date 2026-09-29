@@ -6,79 +6,55 @@ sidebar_position: 8
 
 # Quizzly
 
-Quizzly is an AI-powered backend that transforms YouTube videos into interactive quizzes.
-Simply provide a YouTube URL, and the app will automatically generate a 10-question quiz
-based on the video content: perfect for learning, reviewing, or just having fun.
+## Description
 
-## Tech
+Quizzly is an AI-powered backend that transforms YouTube videos into interactive quizzes. Simply provide a YouTube URL, and the app will automatically generate a 10-question quiz based on the video content: perfect for learning, reviewing, or just having fun.
 
-Python, Django, Django REST Framework, JWT, Google Gemini (LLM)
+## Prerequisites
 
-## Related repositories
+Make sure the following software is installed on your system:
 
-| Repository   | Description                                                 |
-| ------------ | ----------------------------------------------------------- |
-| **Frontend** | [quizzly-frontend](https://github.com/NicoMeyerDev/quizzly-frontend) |
-| **Backend**  | [quizzly-backend](https://github.com/NicoMeyerDev/quizzly-backend)   |
+- Python 3.12
+- Git
 
-## Requirements
+## Quickstart
 
-Make sure the following is installed on your computer:
-
-- [Python 3.12](https://www.python.org/downloads/)
-- [Git](https://git-scm.com/)
-
-## Installation, step by step
-
-### 1. Clone the repository
-
-Open your terminal (or command prompt) and run:
+### Clone the repository
 
 ```bash
 git clone https://github.com/NicoMeyerDev/Quizzly-backend
 ```
 
-Then navigate into the project folder:
+### Navigate to the project
 
 ```bash
 cd quizzly-backend
 ```
 
-### 2. Create and activate a virtual environment
+### Create and activate a virtual environment
 
 A virtual environment ensures that the installed packages are only used for this project.
-
-**Create the virtual environment:**
 
 ```bash
 python -m venv env
 ```
 
-**Activate the virtual environment:**
+Activate it:
 
-- **Windows**
+- on Windows run: `.\env\Scripts\Activate.ps1`
+- on macOS/Linux run: `source env/bin/activate`
 
-```bash
-.\env\Scripts\Activate.ps1
-```
+:::note
+You will know it worked when `(env)` appears at the beginning of your command line.
+:::
 
-- **Mac/Linux**
-
-```bash
-source env/bin/activate
-```
-
-> **Tip:** You will know it worked when `(env)` appears at the beginning of your command line.
-
-### 3. Install dependencies
-
-Install all required packages from `requirements.txt`:
+### Install the dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Set up environment variables
+### Configure the application
 
 Create a `.env` file in the root directory and add your Gemini API key:
 
@@ -86,24 +62,39 @@ Create a `.env` file in the root directory and add your Gemini API key:
 GEMINI_API_KEY=your-api-key-here
 ```
 
-> **Tip:** You can get a free API key at [Google AI Studio](https://aistudio.google.com).
-
-### 5. Set up the database
+### Set up the database
 
 ```bash
 python manage.py migrate
 ```
 
-> **Note:** Running `makemigrations` is not necessary, because the migration files are already included in the project. `migrate` is enough.
-
-### 6. Start the server
+### Start the application
 
 ```bash
 python manage.py runserver
 ```
 
-The API will then be available at:
+### Open the application
 
-```
-http://127.0.0.1:8000/
-```
+`http://127.0.0.1:8000/`
+
+## Usage
+
+### Configuration
+
+The AI features use the Google Gemini API. The key is read from the `GEMINI_API_KEY` variable in the `.env` file. You can get a free API key at [Google AI Studio](https://aistudio.google.com).
+
+### Database
+
+The migration files are already included in the project, so running `makemigrations` is not necessary. `python manage.py migrate` is enough.
+
+### Related repositories
+
+| Repository   | Description                                                          |
+| ------------ | -------------------------------------------------------------------- |
+| **Frontend** | [quizzly-frontend](https://github.com/NicoMeyerDev/quizzly-frontend) |
+| **Backend**  | [quizzly-backend](https://github.com/NicoMeyerDev/quizzly-backend)   |
+
+**Tech:** Python, Django, Django REST Framework, JWT, Google Gemini (LLM)
+
+<!-- TODO: add architecture details and screenshots -->
