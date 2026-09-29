@@ -1,16 +1,4 @@
 {
-  "certificates.date.todo": {
-    "message": "Date to follow"
-  },
-  "certificates.placeholder1.title": {
-    "message": "Certificate 1 (placeholder)"
-  },
-  "certificates.placeholder2.title": {
-    "message": "Certificate 2 (placeholder)"
-  },
-  "certificates.placeholder2.issuer": {
-    "message": "Issuer to follow"
-  },
   "projects.taktix.description": {
     "message": "Football coaches often plan training sessions and line-ups with paper notes and chat groups. I built Taktix as my own backend application that brings this planning together in one place. TODO: add result and current status."
   },
@@ -716,5 +704,29 @@
   },
   "projects.card.live": {
     "message": "Live link"
+  },
+  "certificates.devakademie.title": {
+    "message": "Software Developer, focus on Web Applications Back-End Development"
+  },
+  "certificates.devakademie.date": {
+    "message": "1 June 2026"
+  },
+  "certificates.devakademie.details": {
+    "message": "Training program with 13 modules and 4 complex capstone projects (Python, Django, PostgreSQL, Docker, Linux, Redis, Cloud)"
+  },
+  "certificates.tanord.title": {
+    "message": "Python Fundamentals"
+  },
+  "certificates.tanord.date": {
+    "message": "27 March 2026"
+  },
+  "certificates.tanord.details": {
+    "message": "Online course from 16 Feb to 27 Mar 2026 with a final project on automating work processes"
+  },
+  "certificates.trainm.date": {
+    "message": "24 October 2025"
+  },
+  "certificates.trainm.details": {
+    "message": "E-training from 7 Jul to 24 Oct 2025 with a practical application task"
   }
 }

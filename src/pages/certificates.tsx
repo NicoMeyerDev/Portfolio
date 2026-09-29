@@ -12,11 +12,12 @@ function CertificateItem({certificate}: {certificate: Certificate}): JSX.Element
   const fileHref = useBaseUrl(certificate.file);
   return (
     <li className={styles.item}>
-      <div>
+      <div className={styles.text}>
         <h2 className={styles.title}>{certificate.title}</h2>
         <p className={styles.meta}>
           {certificate.issuer} · {certificate.date}
         </p>
+        <p className={styles.details}>{certificate.details}</p>
       </div>
       <Button href={fileHref} variant="light" external>
         <Translate id="certificates.open">Ansehen (PDF)</Translate>

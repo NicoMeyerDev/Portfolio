@@ -9,7 +9,7 @@ interface ButtonProps {
   // Opens the link in a new tab (for external URLs).
   external?: boolean;
   // Downloads the linked file instead of navigating to it.
-  download?: boolean;
+  download?: boolean | string;
   onClick?: () => void;
   type?: 'button' | 'submit';
   className?: string;
@@ -32,7 +32,7 @@ export default function Button({
       <a
         className={classes}
         href={href}
-        download={download ? true : undefined}
+        download={download ? download : undefined}
         target={external ? '_blank' : undefined}
         rel={external ? 'noopener noreferrer' : undefined}>
         {children}

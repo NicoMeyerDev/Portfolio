@@ -4,7 +4,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Button from '@site/src/components/button';
-import {CV_PATH} from '@site/src/data/profile';
+import {CV_DOWNLOAD_NAME, CV_PATH} from '@site/src/data/profile';
 import styles from './hero.module.css';
 
 export default function Hero(): JSX.Element {
@@ -38,7 +38,7 @@ export default function Hero(): JSX.Element {
             href={cvHref}
             variant="secondary"
             className={styles.ctaButton}
-            download>
+            download={CV_DOWNLOAD_NAME}>
             <Translate id="cv.download">Lebenslauf herunterladen</Translate>
           </Button>
           <Button
