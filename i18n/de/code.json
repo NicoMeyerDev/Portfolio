@@ -257,9 +257,6 @@
   "hero.greeting": {
     "message": "Hallo 👋 ich bin"
   },
-  "hero.bio": {
-    "message": "Vom Kfz-Mechatroniker und Hauptfeldwebel zum Backend-Entwickler. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD."
-  },
   "hero.cta.contact": {
     "message": "Kontakt aufnehmen"
   },

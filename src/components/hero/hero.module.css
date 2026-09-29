@@ -17,7 +17,6 @@
     'role'
     'tagline'
     'photo'
-    'bio'
     'cta';
   width: 100%;
 }
@@ -32,7 +31,6 @@
       'name photo'
       'role photo'
       'tagline photo'
-      'bio photo'
       'cta photo';
   }
 }
@@ -66,16 +64,6 @@
   font-size: var(--font-size-text-24);
   font-weight: 600;
   margin: 0 0 1.5rem;
-}
-
-.bio {
-  grid-area: bio;
-  font-size: var(--font-size-text-20);
-  font-weight: 500;
-  line-height: 1.3;
-  max-width: 630px;
-  margin: 0 0 2rem;
-  color: var(--color-white);
 }
 
 .ctaArea {

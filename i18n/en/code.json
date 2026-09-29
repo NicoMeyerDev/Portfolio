@@ -257,9 +257,6 @@
   "hero.greeting": {
     "message": "Hey there. 👋 I am"
   },
-  "hero.bio": {
-    "message": "From automotive mechatronics technician and Hauptfeldwebel to backend developer. I build Django APIs, containerize them with Docker and automate builds and deployments with CI/CD."
-  },
   "hero.cta.contact": {
     "message": "Get in touch"
   },

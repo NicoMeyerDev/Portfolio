@@ -25,11 +25,6 @@ export default function Hero(): JSX.Element {
             Ich baue Backends und bringe sie sicher in Produktion.
           </Translate>
         </p>
-        <p className={styles.bio}>
-          <Translate id="hero.bio">
-            Vom Kfz-Mechatroniker und Hauptfeldwebel zum Backend-Entwickler. Ich baue Django-APIs, containerisiere sie mit Docker und automatisiere Builds und Deployments mit CI/CD.
-          </Translate>
-        </p>
         <div className={styles.ctaArea}>
           <div className={styles.cta}>
             <Button href="#contact" variant="light" className={styles.ctaButton}>
