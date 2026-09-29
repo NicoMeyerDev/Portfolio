@@ -100,8 +100,8 @@ export function getProjects(): Project[] {
         id: 'projects.coderr.imageLabel',
         message: 'Platzhalterbild für das Projekt Coderr',
       }),
-      // TODO: add docs page, GitHub repo and screenshot of Coderr.
-      docLink: undefined,
+      docLink: '/docs/coderr',
+      // TODO: add GitHub repo and screenshot of Coderr.
       githubLink: undefined,
     },
     {
@@ -120,8 +120,8 @@ export function getProjects(): Project[] {
         id: 'projects.quizzly.imageLabel',
         message: 'Platzhalterbild für das Projekt Quizzly',
       }),
-      // TODO: add docs page, GitHub repo and screenshot of Quizzly.
-      docLink: undefined,
+      docLink: '/docs/quizzly',
+      // TODO: add GitHub repo and screenshot of Quizzly.
       githubLink: undefined,
     },
     {
