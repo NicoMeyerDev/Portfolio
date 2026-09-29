@@ -23,8 +23,8 @@ export default function Home(): JSX.Element {
       <Header />
       <Hero />
       <About />
-      <MySkills />
       <ProjectHighlights />
+      <MySkills />
       <Contact />
       <Footer />
     </Layout>

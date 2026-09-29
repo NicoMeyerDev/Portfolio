@@ -46,11 +46,20 @@
   margin: 0 0 1rem;
 }
 
+.story p:first-child {
+  margin-top: 0;
+}
+
 .factsHeading {
   margin: 0 0 0.75rem;
+  line-height: 1.4;
   font-size: var(--font-size-text-24);
   font-weight: 600;
   color: var(--color-primary-light);
+}
+
+.facts .factsHeading:first-child {
+  margin-top: 0;
 }
 
 .facts ul {

@@ -42,9 +42,6 @@ export default function ProjectHighlights(): JSX.Element {
                 </li>
               ))}
             </ol>
-            <a className={styles.seeMore} href={projectsUrl}>
-              <Translate id="projects.seeMore">Weitere Projekte</Translate>
-            </a>
           </div>
           <div className={styles.activeCard}>
             {activeProject && <ProjectCard project={activeProject} />}
@@ -56,6 +53,10 @@ export default function ProjectHighlights(): JSX.Element {
           {featured.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
+        </div>
+
+        {/* Single "more projects" button below the tab component / mobile list */}
+        <div className={styles.seeMoreWrap}>
           <a className={styles.seeMore} href={projectsUrl}>
             <Translate id="projects.seeMore">Weitere Projekte</Translate>
           </a>

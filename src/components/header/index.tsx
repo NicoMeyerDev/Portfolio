@@ -13,8 +13,8 @@ interface NavItem {
 // Built at render time so translate() picks the active locale.
 const getNavItems = (): NavItem[] => [
   {label: translate({id: 'nav.about', message: 'Über mich'}), to: '/#about'},
-  {label: translate({id: 'nav.skills', message: 'Skills'}), to: '/#skills'},
   {label: translate({id: 'nav.projects', message: 'Projekte'}), to: '/#projects'},
+  {label: translate({id: 'nav.skills', message: 'Skills'}), to: '/#skills'},
   {label: translate({id: 'nav.contact', message: 'Kontakt'}), to: '/#contact'},
 ];
 

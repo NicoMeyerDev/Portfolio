@@ -27,6 +27,7 @@
 
 .gridItem {
   display: flex;
+  align-items: stretch;
 }
 
 /* Infima's .col--12 is full width; go two-across on tablets and

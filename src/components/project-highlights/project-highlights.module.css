@@ -95,3 +95,12 @@
   color: var(--color-project-highlight);
   text-decoration: none;
 }
+
+.seeMoreWrap {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.seeMoreWrap .seeMore {
+  margin-top: 0;
+}

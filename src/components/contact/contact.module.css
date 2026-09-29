@@ -36,10 +36,12 @@
 }
 
 .text p,
-.text li {
+.text li,
+.lookingForward,
+.linkItem {
   font-size: var(--font-size-text-18);
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .text p {
@@ -58,7 +60,6 @@
 }
 
 .lookingForward {
-  font-size: var(--font-size-text-24);
   margin: 0 0 8px;
 }
 
@@ -67,7 +68,6 @@
   align-items: center;
   gap: 16px;
   color: var(--color-white);
-  font-size: var(--font-size-text-18);
 }
 
 .linkItem:hover {

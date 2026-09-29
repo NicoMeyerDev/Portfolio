@@ -6,11 +6,13 @@ import styles from './about.module.css';
 export default function About(): JSX.Element {
   return (
     <section id="about" className={styles.about}>
+      <div className="container">
+        <h2 className={styles.heading}>
+          <Translate id="about.heading">Über mich</Translate>
+        </h2>
+      </div>
       <div className={clsx('container', styles.inner)}>
         <div className={styles.story}>
-          <h2 className={styles.heading}>
-            <Translate id="about.heading">Über mich</Translate>
-          </h2>
           <p>
             <Translate id="about.p1">
               Als ausgebildeter Kfz-Mechatroniker und ehemaliger Feldwebel habe ich neun Jahre bei der Bundeswehr mit komplexen Systemen gearbeitet, Verantwortung übernommen und Probleme unter Druck gelöst.

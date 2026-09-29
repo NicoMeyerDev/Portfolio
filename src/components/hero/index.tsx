@@ -31,13 +31,20 @@ export default function Hero(): JSX.Element {
           </Translate>
         </p>
         <div className={styles.cta}>
-          <Button href="#contact" variant="light">
+          <Button href="#contact" variant="light" className={styles.ctaButton}>
             <Translate id="hero.cta.contact">Kontakt aufnehmen</Translate>
           </Button>
-          <Button href={cvHref} variant="secondary" download>
+          <Button
+            href={cvHref}
+            variant="secondary"
+            className={styles.ctaButton}
+            download>
             <Translate id="cv.download">Lebenslauf herunterladen</Translate>
           </Button>
-          <Button href={certificatesHref} variant="secondary">
+          <Button
+            href={certificatesHref}
+            variant="secondary"
+            className={styles.ctaButton}>
             <Translate id="certificates.view">Zertifikate ansehen</Translate>
           </Button>
         </div>
