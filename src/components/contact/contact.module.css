@@ -1,7 +1,7 @@
 .contact {
   background-color: var(--color-hero);
   color: var(--color-white);
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .inner {
@@ -19,19 +19,19 @@
 
   .links {
     flex: 0 0 447px;
-    padding-top: 24px;
+    padding-top: 8px;
   }
 }
 
 .heading {
   color: var(--color-white);
   font-size: var(--font-size-section-heading);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
   .contact {
-    padding: 72px 0;
+    padding: 44px 0;
   }
 }
 
