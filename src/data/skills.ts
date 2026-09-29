@@ -57,7 +57,8 @@ export function getSkillGroups(): SkillGroup[] {
         },
         {
           id: 'sql',
-          icon: 'img/skills/database.svg',
+          icon: 'img/skills/postgresql.svg',
+          lightChip: true,
           label: 'SQL / PostgreSQL',
           usage: [
             translate({id: 'skills.sql.1', message: 'Schrieb SQL-Abfragen mit Joins und Filtern'}),
