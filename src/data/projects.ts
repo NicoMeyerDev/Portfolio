@@ -137,7 +137,7 @@ export function getProjects(): Project[] {
         message: 'Platzhalterbild für das Projekt Coderr',
       }),
       docLink: '/docs/coderr',
-      // TODO: add a screenshot of Coderr.
+      
       githubLink: 'https://github.com/NicoMeyerDev/coderr-Backend',
     },
     {
@@ -196,8 +196,6 @@ export function getProjects(): Project[] {
         message: 'Vorschau des Projekts Minecraft Server',
       }),
       docLink: '/docs/minecraft-server',
-      // TODO: the GitHub repo is still named "Mincraft-Server" (typo). Rename it to
-      // "Minecraft-Server" on GitHub (GitHub redirects the old URL), then this link works.
       githubLink: 'https://github.com/NicoMeyerDev/Minecraft-Server',
     },
   ];
