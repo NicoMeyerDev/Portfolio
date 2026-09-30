@@ -10,12 +10,6 @@ sidebar_position: 6
 # Description
 This is a Project to set up, run and maintain your personal Minecraft server. It includes installation, instructions, configuration guidance, server startup procedures and backup management workflows.
 
-# Table of contents
-- Prerequisites
-- Quickstart
-- Usage
-- Testing
-
 # Prerequisites
 - Docker Engine should be installed and running.
 - You should be confortable using a terminal/shell and basic Docker concepts.
