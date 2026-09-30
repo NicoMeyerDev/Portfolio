@@ -131,7 +131,7 @@ export function getProjects(): Project[] {
         message:
           'Coderr ist eine Plattform, auf der Anbieter Angebote erstellen und Kunden diese in Anspruch nehmen können. Ich habe das Backend mit Python, Django und Django REST Framework gebaut, inklusive Benutzerverwaltung, Authentifizierung und PostgreSQL-Datenbank.',
       }),
-      image: 'img/projects/placeholder.svg',
+      image: 'img/projects/coderr.png',
       imageLabel: translate({
         id: 'projects.coderr.imageLabel',
         message: 'Platzhalterbild für das Projekt Coderr',
