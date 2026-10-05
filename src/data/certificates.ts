@@ -16,6 +16,20 @@ export interface Certificate {
 export function getCertificates(): Certificate[] {
   return [
     {
+      id: 'devsecops',
+      title: translate({
+        id: 'certificates.devsecops.title',
+        message: 'DevSecOps Spezialist, Schwerpunkt Cloud und Automation',
+      }),
+      issuer: 'Developer Akademie GmbH',
+      date: translate({id: 'certificates.devsecops.date', message: '30.09.2026'}),
+      details: translate({
+        id: 'certificates.devsecops.details',
+        message: 'AZAV-zertifizierte Weiterbildung mit 12 Modulen und über 9 Projekten (IT-Security, Python, Linux, Shell-Scripting, YAML, Docker, Cloud, CI/CD)',
+      }),
+      file: 'files/zertifikate/developer-akademie-devsecops-abschlusszertifikat.pdf',
+    },
+    {
       id: 'developer-akademie',
       title: translate({
         id: 'certificates.devakademie.title',
@@ -26,20 +40,6 @@ export function getCertificates(): Certificate[] {
       details: translate({
         id: 'certificates.devakademie.details',
         message: 'Weiterbildung mit 13 Modulen und 4 komplexen Capstone-Projekten (Python, Django, PostgreSQL, Docker, Linux, Redis, Cloud)',
-      }),
-      file: 'files/zertifikate/developer-akademie-abschlusszertifikat.pdf',
-    },
-    {
-      id: 'developer-akademie',
-      title: translate({
-        id: 'certificates.devakademie.title',
-        message: 'Qualifikation zum DevSecOps Spezialisten mit Schwerpunkt cloud und Automation',
-      }),
-      issuer: 'Developer Akademie GmbH',
-      date: translate({id: 'certificates.devakademie.date', message: '01.10.2026'}),
-      details: translate({
-        id: 'certificates.devakademie.details',
-        message: 'Weiterbildung mit 12 Modulen und 9 komplexen Projekten (Python, Linux, Shell-scripting, Yaml, Docker, Cloud, CI/DC)',
       }),
       file: 'files/zertifikate/developer-akademie-abschlusszertifikat.pdf',
     },
