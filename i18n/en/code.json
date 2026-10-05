@@ -42,25 +42,25 @@
     "message": "Developed the backend of the coaching app Taktix"
   },
   "skills.python.2": {
-    "message": "Integrated the Gemini language model for quiz generation in Quizzly"
+    "message": "Integrated Gemini for automated quiz creation in Quizzly"
   },
   "skills.python.3": {
-    "message": "Wrote a seed command for test data in the Baby Tools Shop"
+    "message": "Developed a seed command to create test data in the Baby Tools Shop"
   },
   "skills.django.1": {
-    "message": "Built the backends of Coderr and Quizzly"
+    "message": "Developed the backends of Coderr and Quizzly"
   },
   "skills.django.2": {
-    "message": "Implemented registration and login in the Baby Tools Shop"
+    "message": "Implemented registration and login in Taktix"
   },
   "skills.django.3": {
     "message": "Managed database changes with migrations in Quizzly"
   },
   "skills.rest.1": {
-    "message": "Developed the RESTful APIs of Taktix"
+    "message": "Developed the REST API of Taktix"
   },
   "skills.rest.2": {
-    "message": "Built the Coderr API with Django REST Framework"
+    "message": "Developed the Coderr API with Django REST Framework"
   },
   "skills.rest.3": {
     "message": "Secured the Quizzly endpoints with JWT"
@@ -75,7 +75,7 @@
     "message": "Persisted PostgreSQL data with a Docker volume in the Conduit Container"
   },
   "skills.testing.1": {
-    "message": "Tested REST endpoints with Postman collections in all my backend projects"
+    "message": "Tested REST endpoints with Postman collections in my backend projects"
   },
   "skills.testing.2": {
     "message": "Wrote tests with the Django test runner in the Baby Tools Shop"
@@ -90,10 +90,10 @@
     "message": "Implemented JWT authentication in Quizzly"
   },
   "skills.auth.2": {
-    "message": "Built registration and login in the Baby Tools Shop"
+    "message": "Implemented registration and login in Taktix"
   },
   "skills.auth.3": {
-    "message": "Implemented user management with authentication in Coderr"
+    "message": "Implemented user management and authentication in Coderr"
   },
   "skills.group.devsecops": {
     "message": "DevSecOps"
@@ -102,7 +102,7 @@
     "message": "Containerized the Baby Tools Shop with a Dockerfile and volume mapping"
   },
   "skills.docker.2": {
-    "message": "Built a custom Dockerfile on an OpenJDK base for the Minecraft Server"
+    "message": "Created a custom Dockerfile on an OpenJDK base for the Minecraft server"
   },
   "skills.docker.3": {
     "message": "Ran WordPress, MySQL and phpMyAdmin with Docker Compose"
@@ -126,7 +126,7 @@
     "message": "Wrote the entrypoint.sh start script for the Minecraft Server"
   },
   "skills.shell.2": {
-    "message": "Deployed to a Linux server via SSH in the Conduit Container"
+    "message": "Implemented deployment via SSH to a Linux server in the Conduit container"
   },
   "skills.shell.3": {
     "message": "Worked with Kali Linux for security testing in Juice Shop Master"
@@ -135,7 +135,7 @@
     "message": "IT security"
   },
   "skills.security.1": {
-    "message": "Intercepted requests with Burp Suite and gained admin rights via mass assignment in Juice Shop Master"
+    "message": "Analyzed requests with Burp Suite and gained admin rights via mass assignment in Juice Shop Master"
   },
   "skills.security.2": {
     "message": "Bypassed the payment check with a manipulated request in Juice Shop Master (Deluxe Fraud)"
@@ -150,10 +150,10 @@
     "message": "Defined the GitHub Actions workflow in the Conduit Container"
   },
   "skills.git.1": {
-    "message": "Worked with feature branches and pull requests in this portfolio"
+    "message": "Worked with feature branches and pull requests in my projects"
   },
   "skills.git.2": {
-    "message": "Checked code style with black and isort before commits in the Baby Tools Shop"
+    "message": "Checked code style with black and isort before commits in my projects"
   },
   "certificates.open": {
     "message": "View (PDF)"
@@ -671,6 +671,15 @@
   },
   "projects.card.live": {
     "message": "Live link"
+  },
+  "certificates.devsecops.title": {
+    "message": "DevSecOps Specialist, focus on Cloud and Automation"
+  },
+  "certificates.devsecops.date": {
+    "message": "30 September 2026"
+  },
+  "certificates.devsecops.details": {
+    "message": "AZAV-certified training program with 12 modules and over 9 projects (IT security, Python, Linux, shell scripting, YAML, Docker, Cloud, CI/CD)"
   },
   "certificates.devakademie.title": {
     "message": "Software Developer, focus on Web Applications Back-End Development"

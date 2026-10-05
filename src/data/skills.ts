@@ -30,8 +30,8 @@ export function getSkillGroups(): SkillGroup[] {
           label: 'Python',
           usage: [
             translate({id: 'skills.python.1', message: 'Entwickelte das Backend der Coaching-App Taktix'}),
-            translate({id: 'skills.python.2', message: 'Band das Sprachmodell Gemini für die Quiz-Erzeugung in Quizzly an'}),
-            translate({id: 'skills.python.3', message: 'Schrieb einen Seed-Befehl für Testdaten im Baby Tools Shop'}),
+            translate({id: 'skills.python.2', message: 'Integrierte Gemini zur automatisierten Quiz-Erstellung in Quizzly'}),
+            translate({id: 'skills.python.3', message: 'Entwickelte einen Seed-Befehl zur Erstellung von Testdaten im Baby Tools Shop'}),
           ],
         },
         {
@@ -40,8 +40,8 @@ export function getSkillGroups(): SkillGroup[] {
           label: 'Django',
           lightChip: true,
           usage: [
-            translate({id: 'skills.django.1', message: 'Baute die Backends von Coderr und Quizzly'}),
-            translate({id: 'skills.django.2', message: 'Implementierte Registrierung und Login im Baby Tools Shop'}),
+            translate({id: 'skills.django.1', message: 'Entwickelte die Backends von Coderr und Quizzly'}),
+            translate({id: 'skills.django.2', message: 'Implementierte Registrierung und Login bei Taktix'}),
             translate({id: 'skills.django.3', message: 'Verwaltete Datenbankänderungen mit Migrationen in Quizzly'}),
           ],
         },
@@ -50,8 +50,8 @@ export function getSkillGroups(): SkillGroup[] {
           icon: 'img/skills/api.svg',
           label: 'REST API',
           usage: [
-            translate({id: 'skills.rest.1', message: 'Entwickelte die RESTful APIs von Taktix'}),
-            translate({id: 'skills.rest.2', message: 'Baute mit Django REST Framework die API von Coderr'}),
+            translate({id: 'skills.rest.1', message: 'Entwickelte die REST-API von Taktix'}),
+            translate({id: 'skills.rest.2', message: 'Entwickelte mit Django REST Framework die API von Coderr'}),
             translate({id: 'skills.rest.3', message: 'Sicherte die Endpunkte von Quizzly mit JWT ab'}),
           ],
         },
@@ -71,7 +71,7 @@ export function getSkillGroups(): SkillGroup[] {
           icon: 'img/skills/testing.svg',
           label: 'Testing',
           usage: [
-            translate({id: 'skills.testing.1', message: 'Testete REST-Endpunkte mit Postman-Collections in allen meinen Backend-Projekten'}),
+            translate({id: 'skills.testing.1', message: 'Testete REST-Endpunkte mit Postman-Collections in meinen Backend-Projekten'}),
             translate({id: 'skills.testing.2', message: 'Schrieb Tests mit dem Django-Testrunner im Baby Tools Shop'}),
             translate({id: 'skills.testing.3', message: 'Prüfte Verbindung und Neustart des Minecraft Servers mit MCStatus'}),
           ],
@@ -82,8 +82,8 @@ export function getSkillGroups(): SkillGroup[] {
           label: translate({id: 'skills.auth.label', message: 'Authentifizierung'}),
           usage: [
             translate({id: 'skills.auth.1', message: 'Implementierte JWT-Authentifizierung in Quizzly'}),
-            translate({id: 'skills.auth.2', message: 'Baute Registrierung und Login in Taktix'}),
-            translate({id: 'skills.auth.3', message: 'Setzte Benutzerverwaltung mit Authentifizierung in Coderr um'}),
+            translate({id: 'skills.auth.2', message: 'Implementierte Registrierung und Login in Taktix'}),
+            translate({id: 'skills.auth.3', message: 'Implementierte Benutzerverwaltung und Authentifizierung in Coderr'}),
           ],
         },
       ],
@@ -98,7 +98,7 @@ export function getSkillGroups(): SkillGroup[] {
           label: 'Docker',
           usage: [
             translate({id: 'skills.docker.1', message: 'Containerisierte den Baby Tools Shop mit Dockerfile und Volume-Mapping'}),
-            translate({id: 'skills.docker.2', message: 'Baute ein eigenes Dockerfile auf OpenJDK-Basis für den Minecraft Server'}),
+            translate({id: 'skills.docker.2', message: 'Erstellte ein eigenes Dockerfile auf OpenJDK-Basis für den Minecraft-Server'}),
             translate({id: 'skills.docker.3', message: 'Betrieb WordPress, MySQL und phpMyAdmin mit Docker Compose'}),
           ],
         },
@@ -118,7 +118,7 @@ export function getSkillGroups(): SkillGroup[] {
           label: translate({id: 'skills.shell.label', message: 'Linux / Shell-Scripting'}),
           usage: [
             translate({id: 'skills.shell.1', message: 'Schrieb das Start-Skript entrypoint.sh für den Minecraft Server'}),
-            translate({id: 'skills.shell.2', message: 'Deployte per SSH auf einen Linux-Server im Conduit Container'}),
+            translate({id: 'skills.shell.2', message: 'Implementierte das Deployment per SSH auf einen Linux-Server im Conduit-Container'}),
             translate({id: 'skills.shell.3', message: 'Arbeitete mit Kali Linux für Sicherheitstests im Juice Shop Master'}),
           ],
         },
@@ -127,7 +127,7 @@ export function getSkillGroups(): SkillGroup[] {
           icon: 'img/skills/security.svg',
           label: translate({id: 'skills.security.label', message: 'IT-Sicherheit'}),
           usage: [
-            translate({id: 'skills.security.1', message: 'Fing Requests mit Burp Suite ab und erlangte per Mass Assignment Admin-Rechte im Juice Shop Master'}),
+            translate({id: 'skills.security.1', message: 'Analysierte Requests mit Burp Suite und erlangte per Mass Assignment Admin-Rechte im Juice Shop Master'}),
             translate({id: 'skills.security.2', message: 'Umging die Zahlungsprüfung mit einer manipulierten Anfrage im Juice Shop Master (Deluxe Fraud)'}),
             translate({id: 'skills.security.3', message: 'Lagerte Zugangsdaten in .env-Dateien statt im Code, im WordPress- und Conduit-Projekt'}),
           ],
@@ -146,8 +146,8 @@ export function getSkillGroups(): SkillGroup[] {
           icon: 'img/skills/git.svg',
           label: 'Git',
           usage: [
-            translate({id: 'skills.git.1', message: 'Arbeitete mit Feature-Branches und Pull Requests in diesem Portfolio'}),
-            translate({id: 'skills.git.2', message: 'Prüfte den Code-Stil mit black und isort vor Commits im Baby Tools Shop'}),
+            translate({id: 'skills.git.1', message: 'Arbeitete mit Feature-Branches und Pull Requests in meinen Projekten'}),
+            translate({id: 'skills.git.2', message: 'Prüfte den Code-Stil mit black und isort vor Commits in meinen Projekten'}),
           ],
         },
       ],

@@ -30,6 +30,20 @@ export function getCertificates(): Certificate[] {
       file: 'files/zertifikate/developer-akademie-abschlusszertifikat.pdf',
     },
     {
+      id: 'developer-akademie',
+      title: translate({
+        id: 'certificates.devakademie.title',
+        message: 'Qualifikation zum DevSecOps Spezialisten mit Schwerpunkt cloud und Automation',
+      }),
+      issuer: 'Developer Akademie GmbH',
+      date: translate({id: 'certificates.devakademie.date', message: '01.10.2026'}),
+      details: translate({
+        id: 'certificates.devakademie.details',
+        message: 'Weiterbildung mit 12 Modulen und 9 komplexen Projekten (Python, Linux, Shell-scripting, Yaml, Docker, Cloud, CI/DC)',
+      }),
+      file: 'files/zertifikate/developer-akademie-abschlusszertifikat.pdf',
+    },
+    {
       id: 'ta-nord-python',
       title: translate({
         id: 'certificates.tanord.title',
