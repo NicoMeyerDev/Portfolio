@@ -1,0 +1,11 @@
+// Central place for personal data that appears on several pages.
+
+export const CONTACT_EMAIL = 'nicomeyerdev@gmail.com';
+
+export const GITHUB_URL = 'https://github.com/NicoMeyerDev';
+
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/nico-meyer-672176376/';
+
+export const CV_PATH = 'files/lebenslauf.pdf';
+// File name the browser suggests when the CV is downloaded.
+export const CV_DOWNLOAD_NAME = 'Lebenslauf Nico Meyer.pdf';

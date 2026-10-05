@@ -6,8 +6,8 @@ import {config as dotenvconfig}  from "dotenv";
 dotenvconfig();
 
 const config: Config = {
-  title: 'DevSecOps Journal',
-  tagline: 'Nico Meyer - DevSecOps Engineer in progress',
+  title: 'Junior Backend Developer & DevSecOps Engineer',
+  tagline: 'Ich baue Backends und bringe sie sicher in Produktion.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -39,8 +39,12 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de', 'en'],
+    localeConfigs: {
+      de: {label: 'Deutsch', htmlLang: 'de-DE'},
+      en: {label: 'English', htmlLang: 'en-US'},
+    },
   },
 
   presets: [
@@ -59,8 +63,15 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // Social card shown in link previews (og:image)
+    image: 'img/profile.png',
+    navbar: {
+      title: 'Nico Meyer',
+      items: [
+        {to: '/', label: 'Portfolio', position: 'left'},
+        {type: 'localeDropdown', position: 'right'},
+      ],
+    },
     // Header/Footer are our own components: the homepage renders both in
     // src/pages/index.tsx, and src/theme/Navbar adds the Header on all other
     // pages, so no navbar/footer config is needed here.

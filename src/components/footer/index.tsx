@@ -1,35 +1,64 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import clsx from 'clsx';
+import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './footer.module.css';
+
+// The button only shows once the visitor has scrolled a bit.
+const SHOW_AFTER_SCROLL = 300;
 
 function scrollToTop(): void {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 export default function Footer(): JSX.Element {
-  const arrowIconSrc = useBaseUrl('img/button-arrow.svg');
   const imprintHref = useBaseUrl('imprint');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowScrollTop(window.scrollY > SHOW_AFTER_SCROLL);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, {passive: true});
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <footer className={styles.footer}>
       <div className={clsx('container', styles.inner)}>
-        <button
-          type="button"
-          className={styles.scrollTop}
-          onClick={scrollToTop}
-          aria-label="Scroll to top">
-          <img className={styles.scrollTopIcon} src={arrowIconSrc} alt="" aria-hidden="true" />
-        </button>
         <div className={styles.legalGroup}>
           <p className={styles.copyright}>
             © Nico Meyer {new Date().getFullYear()}
           </p>
           <a className={styles.legalNotice} href={imprintHref}>
-            Legal notice
+            <Translate id="footer.legalNotice">Impressum</Translate>
           </a>
+          {/* TODO: adjust the wording of this note if needed. */}
+          <p className={styles.aiNotice}>
+            <Translate id="footer.aiNotice">
+              Entwickelt von mir mit Docusaurus – KI-Tools (Claude) habe ich gezielt als Unterstützung eingesetzt.
+            </Translate>
+          </p>
         </div>
       </div>
+      <button
+        type="button"
+        className={clsx(styles.scrollTop, showScrollTop && styles.scrollTopVisible)}
+        onClick={scrollToTop}
+        tabIndex={showScrollTop ? 0 : -1}
+        aria-hidden={!showScrollTop}
+        aria-label={translate({id: 'footer.scrollTop', message: 'Nach oben scrollen'})}>
+        <svg
+          className={styles.scrollTopIcon}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true">
+          <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+      </button>
     </footer>
   );
 }

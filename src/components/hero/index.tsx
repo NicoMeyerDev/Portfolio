@@ -1,33 +1,62 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Button from '@site/src/components/button';
+import {CV_DOWNLOAD_NAME, CV_PATH} from '@site/src/data/profile';
 import styles from './hero.module.css';
 
 export default function Hero(): JSX.Element {
   const photoSrc = useBaseUrl('img/profile.png');
+  const cvHref = useBaseUrl(CV_PATH);
+  const certificatesHref = useBaseUrl('/certificates');
+  const {siteConfig} = useDocusaurusContext();
   return (
     <section id="hero" className={styles.hero}>
       <div className={clsx('container', styles.inner)}>
-        <p className={styles.greeting}>Hey there. 👋 I am</p>
+        <p className={styles.greeting}>
+          <Translate id="hero.greeting">Hallo 👋 ich bin</Translate>
+        </p>
         <h1 className={styles.name}>Nico Meyer</h1>
-        <p className={styles.role}>DevSecOps Engineer</p>
-        <p className={styles.bio}>
-          As a trained automotive mechatronics technician and former Feldwebel, I spent nine years in the Bundeswehr working with complex systems, taking responsibility, and solving problems under pressure.
-          Today, I bring that experience into software development, with a focus on backend development and DevSecOps.
-          I build containerized applications with Docker, automate deployments with CI/CD, and treat security as an integral part of the development process.
-          For me, moving into IT isn’t starting over, but building on what I’ve already learned and applying it to a new kind of complex system.
-          I’m continuously learning, building real projects, and expanding my skills in a field that never stands still.
+        <p className={styles.role}>{siteConfig.title}</p>
+        <p className={styles.tagline}>
+          <Translate id="hero.tagline">
+            Ich baue Backends und bringe sie sicher in Produktion.
+          </Translate>
+        </p>
+        <div className={styles.ctaArea}>
+          <div className={styles.cta}>
+            <Button href="#contact" variant="light" className={styles.ctaButton}>
+              <Translate id="hero.cta.contact">Kontakt aufnehmen</Translate>
+            </Button>
+            <Button
+              href={cvHref}
+              variant="secondary"
+              className={styles.ctaButton}
+              download={CV_DOWNLOAD_NAME}>
+              <Translate id="cv.download">Lebenslauf herunterladen</Translate>
+            </Button>
+            <Button
+              href={certificatesHref}
+              variant="secondary"
+              className={styles.ctaButton}>
+              <Translate id="certificates.view">Zertifikate ansehen</Translate>
+            </Button>
+          </div>
+          <p className={styles.cvNote}>
+            <Translate id="cv.note">
+              Öffentliche Kurzfassung ohne Adresse und Telefonnummer. Die vollständige Version sende ich gern auf Anfrage.
+            </Translate>
           </p>
-        <div className={styles.cta}>
-          <Button href="#contact" variant="light">
-            Contact me
-          </Button>
         </div>
         <img
           className={styles.photo}
           src={photoSrc}
-          alt="Nico Meyer"
+          alt={translate({
+            id: 'hero.photoAlt',
+            message: 'Porträtfoto von Nico Meyer',
+          })}
         />
       </div>
     </section>

@@ -8,16 +8,6 @@ sidebar_position: 3
 
 # Conduit Container
 
-## Table of Contents
-* [Prerequisites](#prerequisites)
-* [Quickstart](#quickstart)
-* [Usage](#usage)
-    * [Data Persistence](#data-persistence)
-    * [Container Restart Policy](#container-restart-policy)
-    * [Secrets Management](#secrets-management)
-    * [Automatic deployment](#automatic-deployments)
-
-
 ## Prerequisites
 To install and run this environment, make sure the following software is installed on your system:
 
@@ -42,8 +32,10 @@ Rename the provided example configuration file:
 ```bash
 cp example.env .env
 ```
-> [!NOTE]
-> Edit the `.env` file and configure the required environment variables.
+
+:::note
+Edit the `.env` file and configure the required environment variables.
+:::
 
 At minimum you should set:
 
@@ -95,8 +87,10 @@ Create the following folder structure in your project:
 └── workflows/
     └── deployment.yaml
 ```
-> [!WARNING]
-> Common mistake: The folder must be named `workflows` (plural), otherwise GitHub Actions won't detect it.
+
+:::warning
+Common mistake: The folder must be named `workflows` (plural), otherwise GitHub Actions won't detect it.
+:::
 
 Inside `deployment.yaml`, define these four sections:
 
@@ -114,8 +108,9 @@ Inside `deployment.yaml`, define these four sections:
 | **Secret** | Yes — never shown in plain text | SSH private key, password |
 | **Variable** | No — visible in the UI | GitHub username |
 
-> [!WARNING]
-> Don't mix these up. Sensitive login data belongs in **Secrets**, not in a plain `.env` file committed to the repo.
+:::warning
+Don't mix these up. Sensitive login data belongs in **Secrets**, not in a plain `.env` file committed to the repo.
+:::
 
 ### 3. Adding GitHub Secrets
 
@@ -138,8 +133,9 @@ Inside `deployment.yaml`, define these four sections:
 | **Automatic** | Push a commit to the trigger branch | None — works out of the box |
 | **Manual** | Go to the **Actions** tab → **Run workflow** | Requires `workflow_dispatch:` under `on:` |
 
-> [!TIP]
-> If the "Run workflow" button is missing, check that `workflow_dispatch:` is included in your trigger config.
+:::tip
+If the "Run workflow" button is missing, check that `workflow_dispatch:` is included in your trigger config.
+:::
 
 After triggering, open the **Actions** tab to watch the run live, step by step, including logs for each stage.
 
