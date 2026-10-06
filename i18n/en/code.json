@@ -155,6 +155,27 @@
   "skills.git.2": {
     "message": "Checked code style with black and isort before commits in my projects"
   },
+  "skills.group.ai": {
+    "message": "AI"
+  },
+  "skills.ai.dev.label": {
+    "message": "AI-Assisted Development"
+  },
+  "skills.ai.dev.1": {
+    "message": "I use AI for error analysis, code reviews and research, for example on Taktix"
+  },
+  "skills.ai.dev.2": {
+    "message": "I make architecture decisions myself and review and test generated code before every commit"
+  },
+  "skills.ai.apps.label": {
+    "message": "AI in Applications"
+  },
+  "skills.ai.apps.1": {
+    "message": "I integrate AI deliberately into my own applications, e.g. Gemini for quiz generation in Quizzly"
+  },
+  "skills.ai.apps.2": {
+    "message": "I am developing rules for AI use: tasks, data limits and checking of results"
+  },
   "certificates.open": {
     "message": "View (PDF)"
   },
@@ -207,13 +228,13 @@
     "message": "About me"
   },
   "about.p1": {
-    "message": "I have served in the Bundeswehr for several years and carry responsibility for people there: I lead them, train them and prepare them for deployment. This role taught me to work in a structured way, to take responsibility and to keep an overview even in complex situations. Over time it became clear to me: I do not want to merely run existing processes, but to build and improve something myself."
+    "message": "I have been a soldier for nine years, most recently as a Hauptfeldwebel with leadership responsibility for up to 50 soldiers, whom I trained and prepared for deployment. In doing so I learned to work in a structured way, to make decisions and to keep an overview in complex situations. At the same time I saw how much time slow, paper-based processes cost, and wanted not just to manage them but to make them better with software."
   },
   "about.p2": {
-    "message": "That drive led me into IT. Alongside my service I trained intensively for more than a year, focusing on backend development with Python and Django, complemented by DevSecOps. It was important to me to apply what I learned right away: in projects of my own I turned knowledge into working applications."
+    "message": "That is how my path into IT began. Alongside my service I trained intensively for more than a year, among others at the Developer Akademie. My focus was backend development with Python and Django, complemented by DevSecOps. What mattered to me was not just taking in what I learned in theory, but applying it directly. In projects of my own such as Taktix, an application for football coaches, I turned it into working software."
   },
   "about.p3": {
-    "message": "Today my goal is clear: understand problems and build concrete solutions. Simplifying, digitizing and automating processes is, for me, more than technology; it is the chance to make things better in a lasting way. I bring the responsibility and structure of my career so far with me."
+    "message": "Today I want to build backends that are stable, secure and maintainable, and to automate processes that needlessly cost time in everyday work. I bring the technical foundation from training and projects, and the experience in leadership and responsibility from my career so far."
   },
   "contact.heading": {
     "message": "Contact me"
@@ -733,7 +754,7 @@
     "message": "Contribution:"
   },
   "contact.contribution.text": {
-    "message": "After 9 years in the Bundeswehr as a Hauptfeldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
+    "message": "After 9 years in the Bundeswehr, most recently as a Hauptfeldwebel, I bring leadership, reliability and a calm head under pressure, combined with hands-on skills in Docker, CI/CD, Linux and Python."
   },
   "contact.location.label": {
     "message": "Location:"

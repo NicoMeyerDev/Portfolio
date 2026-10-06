@@ -16,17 +16,17 @@ export default function About(): JSX.Element {
         <div className={styles.story}>
           <p>
             <Translate id="about.p1">
-              Seit mehreren Jahren diene ich bei der Bundeswehr und trage dort Verantwortung für Menschen: Ich führe, bilde aus und bereite sie auf ihren Einsatz vor. Diese Aufgabe hat mich gelehrt, strukturiert zu arbeiten, Verantwortung zu übernehmen und auch in komplexen Situationen den Überblick zu behalten. Mit der Zeit wurde mir klar: Ich möchte nicht nur bestehende Abläufe steuern, sondern selbst etwas entwickeln und verbessern.
+              Seit neun Jahren bin ich Soldat, zuletzt als Hauptfeldwebel mit Führungsverantwortung für bis zu 50 Soldaten, die ich ausgebildet und auf ihren Einsatz vorbereitet habe. Dabei habe ich gelernt, strukturiert zu arbeiten, Entscheidungen zu treffen und in komplexen Situationen den Überblick zu behalten. Gleichzeitig habe ich erlebt, wie viel Zeit langsame, papierbasierte Abläufe kosten, und wollte sie nicht nur verwalten, sondern mit Software besser machen.
             </Translate>
           </p>
           <p>
             <Translate id="about.p2">
-              Aus diesem Anspruch entstand mein Weg in die IT. Neben dem Dienst habe ich mich über ein Jahr intensiv weitergebildet, mit Schwerpunkt auf Backend-Entwicklung mit Python und Django, ergänzt durch DevSecOps. Mir war dabei wichtig, Gelerntes sofort anzuwenden: In eigenen Projekten habe ich aus Wissen funktionierende Anwendungen gemacht.
+              So begann mein Weg in die IT. Parallel zu meinem Dienst habe ich mich über ein Jahr intensiv weitergebildet, unter anderem bei der Developer Akademie. Mein Schwerpunkt lag auf der Backend-Entwicklung mit Python und Django, ergänzt durch DevSecOps. Entscheidend war für mich, das Gelernte nicht nur theoretisch aufzunehmen, sondern direkt anzuwenden. In eigenen Projekten wie Taktix, einer Anwendung für Fußballtrainer, habe ich daraus funktionierende Software entwickelt.
             </Translate>
           </p>
           <p>
             <Translate id="about.p3">
-              Heute ist mein Ziel klar: Probleme verstehen und konkrete Lösungen bauen. Prozesse zu vereinfachen, zu digitalisieren und zu automatisieren ist für mich mehr als Technik, es ist die Möglichkeit, Dinge nachhaltig besser zu machen. Die Verantwortung und Struktur aus meiner bisherigen Laufbahn bringe ich dabei mit.
+              Heute möchte ich Backends entwickeln, die stabil, sicher und wartbar sind, und Abläufe automatisieren, die im Alltag unnötig Zeit kosten. Das technische Fundament bringe ich aus Weiterbildung und Projekten mit, die Erfahrung in Führung und Verantwortung aus meiner bisherigen Laufbahn.
             </Translate>
           </p>
         </div>
