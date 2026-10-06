@@ -10,7 +10,7 @@ export interface Skill {
 }
 
 export interface SkillGroup {
-  id: 'backend' | 'devsecops';
+  id: 'backend' | 'devsecops' | 'ai';
   title: string;
   skills: Skill[];
 }
@@ -148,6 +148,30 @@ export function getSkillGroups(): SkillGroup[] {
           usage: [
             translate({id: 'skills.git.1', message: 'Arbeitete mit Feature-Branches und Pull Requests in meinen Projekten'}),
             translate({id: 'skills.git.2', message: 'Prüfte den Code-Stil mit black und isort vor Commits in meinen Projekten'}),
+          ],
+        },
+      ],
+    },
+    {
+      id: 'ai',
+      title: translate({id: 'skills.group.ai', message: 'KI'}),
+      skills: [
+        {
+          id: 'ai-dev',
+          icon: 'img/skills/ai-dev.svg',
+          label: translate({id: 'skills.ai.dev.label', message: 'KI-gestützte Entwicklung'}),
+          usage: [
+            translate({id: 'skills.ai.dev.1', message: 'Nutze KI für Fehleranalyse, Code-Reviews und Recherche, zum Beispiel bei Taktix'}),
+            translate({id: 'skills.ai.dev.2', message: 'Treffe Architekturentscheidungen selbst und prüfe und teste generierten Code vor jedem Commit'}),
+          ],
+        },
+        {
+          id: 'ai-apps',
+          icon: 'img/skills/ai-apps.svg',
+          label: translate({id: 'skills.ai.apps.label', message: 'KI in Anwendungen'}),
+          usage: [
+            translate({id: 'skills.ai.apps.1', message: 'Integriere KI gezielt in eigene Anwendungen, z. B. Gemini zur Quiz-Erstellung in Quizzly'}),
+            translate({id: 'skills.ai.apps.2', message: 'Entwickle ein Regelwerk für KI-Nutzung: Aufgaben, Datengrenzen und Prüfung der Ergebnisse'}),
           ],
         },
       ],

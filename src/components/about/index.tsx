@@ -16,17 +16,17 @@ export default function About(): JSX.Element {
         <div className={styles.story}>
           <p>
             <Translate id="about.p1">
-              Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten.
+              Seit neun Jahren bin ich Soldat, zuletzt als Hauptfeldwebel mit Führungsverantwortung für bis zu 50 Soldaten, die ich ausgebildet und auf ihren Einsatz vorbereitet habe. Dabei habe ich gelernt, strukturiert zu arbeiten, Entscheidungen zu treffen und in komplexen Situationen den Überblick zu behalten. Gleichzeitig habe ich erlebt, wie viel Zeit langsame, papierbasierte Abläufe kosten, und wollte sie nicht nur verwalten, sondern mit Software besser machen.
             </Translate>
           </p>
           <p>
             <Translate id="about.p2">
-              Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security. Aktuell vertiefe ich mein Wissen im Bereich DevSecOps.
+              So begann mein Weg in die IT. Parallel zu meinem Dienst habe ich mich über ein Jahr intensiv weitergebildet, unter anderem bei der Developer Akademie. Mein Schwerpunkt lag auf der Backend-Entwicklung mit Python und Django, ergänzt durch DevSecOps. Entscheidend war für mich, das Gelernte nicht nur theoretisch aufzunehmen, sondern direkt anzuwenden. In eigenen Projekten wie Taktix, einer Anwendung für Fußballtrainer, habe ich daraus funktionierende Software entwickelt.
             </Translate>
           </p>
           <p>
             <Translate id="about.p3">
-              Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen.
+              Heute möchte ich Backends entwickeln, die stabil, sicher und wartbar sind, und Abläufe automatisieren, die im Alltag unnötig Zeit kosten. Das technische Fundament bringe ich aus Weiterbildung und Projekten mit, die Erfahrung in Führung und Verantwortung aus meiner bisherigen Laufbahn.
             </Translate>
           </p>
         </div>

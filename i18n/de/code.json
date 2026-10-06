@@ -155,6 +155,27 @@
   "skills.git.2": {
     "message": "Prüfte den Code-Stil mit black und isort vor Commits in meinen Projekten"
   },
+  "skills.group.ai": {
+    "message": "KI"
+  },
+  "skills.ai.dev.label": {
+    "message": "KI-gestützte Entwicklung"
+  },
+  "skills.ai.dev.1": {
+    "message": "Nutze KI für Fehleranalyse, Code-Reviews und Recherche, zum Beispiel bei Taktix"
+  },
+  "skills.ai.dev.2": {
+    "message": "Treffe Architekturentscheidungen selbst und prüfe und teste generierten Code vor jedem Commit"
+  },
+  "skills.ai.apps.label": {
+    "message": "KI in Anwendungen"
+  },
+  "skills.ai.apps.1": {
+    "message": "Integriere KI gezielt in eigene Anwendungen, z. B. Gemini zur Quiz-Erstellung in Quizzly"
+  },
+  "skills.ai.apps.2": {
+    "message": "Entwickle ein Regelwerk für KI-Nutzung: Aufgaben, Datengrenzen und Prüfung der Ergebnisse"
+  },
   "certificates.open": {
     "message": "Ansehen (PDF)"
   },
@@ -201,13 +222,13 @@
     "message": "Über mich"
   },
   "about.p1": {
-    "message": "Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten."
+    "message": "Seit neun Jahren bin ich Soldat, zuletzt als Hauptfeldwebel mit Führungsverantwortung für bis zu 50 Soldaten, die ich ausgebildet und auf ihren Einsatz vorbereitet habe. Dabei habe ich gelernt, strukturiert zu arbeiten, Entscheidungen zu treffen und in komplexen Situationen den Überblick zu behalten. Gleichzeitig habe ich erlebt, wie viel Zeit langsame, papierbasierte Abläufe kosten, und wollte sie nicht nur verwalten, sondern mit Software besser machen."
   },
   "about.p2": {
-    "message": "Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security. Aktuell vertiefe ich mein Wissen im Bereich DevSecOps."
+    "message": "So begann mein Weg in die IT. Parallel zu meinem Dienst habe ich mich über ein Jahr intensiv weitergebildet, unter anderem bei der Developer Akademie. Mein Schwerpunkt lag auf der Backend-Entwicklung mit Python und Django, ergänzt durch DevSecOps. Entscheidend war für mich, das Gelernte nicht nur theoretisch aufzunehmen, sondern direkt anzuwenden. In eigenen Projekten wie Taktix, einer Anwendung für Fußballtrainer, habe ich daraus funktionierende Software entwickelt."
   },
   "about.p3": {
-    "message": "Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen."
+    "message": "Heute möchte ich Backends entwickeln, die stabil, sicher und wartbar sind, und Abläufe automatisieren, die im Alltag unnötig Zeit kosten. Das technische Fundament bringe ich aus Weiterbildung und Projekten mit, die Erfahrung in Führung und Verantwortung aus meiner bisherigen Laufbahn."
   },
   "contact.heading": {
     "message": "Kontakt"
@@ -733,7 +754,7 @@
     "message": "Beitrag:"
   },
   "contact.contribution.text": {
-    "message": "Nach 9 Jahren als Hauptfeldwebel bei der Bundeswehr bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python."
+    "message": "Nach 9 Jahren bei der Bundeswehr, zuletzt als Hauptfeldwebel, bringe ich Führungsstärke, Zuverlässigkeit und einen kühlen Kopf unter Druck mit, dazu praktische Kenntnisse in Docker, CI/CD, Linux und Python."
   },
   "contact.location.label": {
     "message": "Arbeitsort:"
