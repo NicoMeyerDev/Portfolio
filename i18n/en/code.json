@@ -207,13 +207,13 @@
     "message": "About me"
   },
   "about.p1": {
-    "message": "After my training as an automotive mechatronics technician I served nine years in the Bundeswehr, most recently as Hauptfeldwebel with leadership responsibility. There I learned to work in a structured way even under time pressure, to take responsibility and to get up to speed quickly on complex technical topics."
+    "message": "I have served in the Bundeswehr for several years and carry responsibility for people there: I lead them, train them and prepare them for deployment. This role taught me to work in a structured way, to take responsibility and to keep an overview even in complex situations. Over time it became clear to me: I do not want to merely run existing processes, but to build and improve something myself."
   },
   "about.p2": {
-    "message": "Alongside my service I began to engage intensively with IT. What started with Python and data analytics quickly developed toward software development. Today my focus is backend development with Python and Django. I am also increasingly working with topics such as Docker, CI/CD, Linux and IT security. I am currently deepening my knowledge in DevSecOps."
+    "message": "That drive led me into IT. Alongside my service I trained intensively for more than a year, focusing on backend development with Python and Django, complemented by DevSecOps. It was important to me to apply what I learned right away: in projects of my own I turned knowledge into working applications."
   },
   "about.p3": {
-    "message": "For me, moving into IT is not a complete fresh start but the next step. I bring experience, technical curiosity and the willingness to keep developing. My aim is not to know as many technologies as possible, but to truly understand things and build working solutions with them."
+    "message": "Today my goal is clear: understand problems and build concrete solutions. Simplifying, digitizing and automating processes is, for me, more than technology; it is the chance to make things better in a lasting way. I bring the responsibility and structure of my career so far with me."
   },
   "contact.heading": {
     "message": "Contact me"

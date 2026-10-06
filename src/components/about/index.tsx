@@ -16,17 +16,17 @@ export default function About(): JSX.Element {
         <div className={styles.story}>
           <p>
             <Translate id="about.p1">
-              Nach meiner Ausbildung zum Kfz-Mechatroniker habe ich neun Jahre bei der Bundeswehr gedient, zuletzt als Hauptfeldwebel mit Führungsverantwortung. Dabei habe ich gelernt, auch unter Zeitdruck strukturiert zu arbeiten, Verantwortung zu übernehmen und mich schnell in komplexe technische Themen einzuarbeiten.
+              Seit mehreren Jahren diene ich bei der Bundeswehr und trage dort Verantwortung für Menschen: Ich führe, bilde aus und bereite sie auf ihren Einsatz vor. Diese Aufgabe hat mich gelehrt, strukturiert zu arbeiten, Verantwortung zu übernehmen und auch in komplexen Situationen den Überblick zu behalten. Mit der Zeit wurde mir klar: Ich möchte nicht nur bestehende Abläufe steuern, sondern selbst etwas entwickeln und verbessern.
             </Translate>
           </p>
           <p>
             <Translate id="about.p2">
-              Parallel zu meinem Dienst habe ich angefangen, mich intensiv mit der IT zu beschäftigen. Was zunächst mit Python und Data Analytics begann, hat sich schnell in Richtung Softwareentwicklung entwickelt. Heute liegt mein Schwerpunkt auf Backend-Entwicklung mit Python und Django. Dabei beschäftige ich mich zunehmend auch mit Themen wie Docker, CI/CD, Linux und IT-Security. Aktuell vertiefe ich mein Wissen im Bereich DevSecOps.
+              Aus diesem Anspruch entstand mein Weg in die IT. Neben dem Dienst habe ich mich über ein Jahr intensiv weitergebildet, mit Schwerpunkt auf Backend-Entwicklung mit Python und Django, ergänzt durch DevSecOps. Mir war dabei wichtig, Gelerntes sofort anzuwenden: In eigenen Projekten habe ich aus Wissen funktionierende Anwendungen gemacht.
             </Translate>
           </p>
           <p>
             <Translate id="about.p3">
-              Für mich ist der Wechsel in die IT kein kompletter Neuanfang, sondern der nächste Schritt. Ich bringe Erfahrung, technische Neugier und die Bereitschaft mit, mich ständig weiterzuentwickeln. Mein Anspruch ist dabei nicht, möglichst viele Technologien zu kennen, sondern Dinge wirklich zu verstehen und mit ihnen funktionierende Lösungen zu bauen.
+              Heute ist mein Ziel klar: Probleme verstehen und konkrete Lösungen bauen. Prozesse zu vereinfachen, zu digitalisieren und zu automatisieren ist für mich mehr als Technik, es ist die Möglichkeit, Dinge nachhaltig besser zu machen. Die Verantwortung und Struktur aus meiner bisherigen Laufbahn bringe ich dabei mit.
             </Translate>
           </p>
         </div>
